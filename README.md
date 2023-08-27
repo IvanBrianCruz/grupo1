@@ -1,2 +1,2 @@
-# grupo_5_proyectointegrador
+# grupo_1_proyectointegrador
 Proyector integrador digitalhouse
