@@ -7,7 +7,7 @@ const productsController = {
     // Manejo del pedido get con ruta
     productoDetalle: (req, res) => {
         // comunicarse con el modelo, conseguir información
-        res.sendFile(path.resolve(__dirname, "../views/producto.html"))
+        res.render('../views/producto')
     },
     productocarga: (req, res) => {
         // comunicarse con el modelo, conseguir información

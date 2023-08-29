@@ -18,7 +18,7 @@ body {
 
 
 /* Estilos para dispositivos móviles */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   .logo01 img {
       width: 80%; /* La imagen ocupa el 80% del ancho de la pantalla */
       height: auto; /* La altura se ajusta automáticamente para mantener las proporciones */
@@ -33,7 +33,7 @@ body {
 
 
 /* Estilos para dispositivos móviles */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   .search-container {
     display: flex;
     flex-direction: column;
@@ -69,7 +69,7 @@ body {
 }
 
 /* Estilos para pantallas de PC */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .search-container {
     display: flex;
     justify-content: flex-end;
@@ -308,22 +308,7 @@ height: 600px; /* Ajusta la altura de la caja para mantener la proporción */
 
 
 /* Estilos para el elemento .precio-juego */
-.precio-juego {
-  color: #ffffff; /* Cambia el color del texto a naranja oscuro */
-  font-size: 300px; /* Cambia el tamaño de la fuente a 40px */
-  margin-top: 50px; /* Añade un margen superior de 30px */
-  margin-bottom: -190px; /* Añade un margen inferior de 20px */
-  font-family: 'Baskerville Old Face', sans-serif;
-  margin-left: 450px; /* Añade un margen izquierdo de 450px */
-  position: relative; /* Añade posición relativa para mover el elemento */
-  top: -600px; /* Desplaza el elemento 100px hacia abajo */
-  left: 850px; /* Desplaza el elemento 50px hacia la derecha */
-}
 
-/* Estilos para el encabezado h2 */
-.precio-juego-pc {
-  font-size: 70px; /* Tamaño inicial de la fuente a 40px */
-}
 
 /* Estilos para dispositivos móviles */
 @media screen and (min-width: 767px) {
@@ -347,17 +332,25 @@ height: 600px; /* Ajusta la altura de la caja para mantener la proporción */
 
 .contenedor{
     display: flex;
-    
     gap: 20px; /* Ajusta el espacio vertical entre los botones */
     flex-wrap: wrap;
     justify-content: space-around;
-   
     flex-direction: column;
+    margin-left: 240px;
+    margin-top: -69px;
     
 }
 
 
+/* Estilos para el encabezado h2 */
 
+.precio-juego-pc {
+    font-size: 70px;
+    width: 220px;
+    height: 40px;
+    margin-left: 919px;
+    margin-top: -548px;
+}
 
 .btn{
     position: relative;
@@ -367,26 +360,29 @@ height: 600px; /* Ajusta la altura de la caja para mantener la proporción */
     letter-spacing:10px;
     text-indent: 1px;
     z-index: 2;
+    height: 40px;
+    left: 910px;
+    top:-69px;
 }
 .btn-1 {
-    width: 220px;
+  width: 220px;
     height: 40px;
-    left: 1300px;
-    top: -450px;
+    left: 910px;
+    top: -33px;
    
   }
 .btn-2 {
-  width: 220px;
+  width: 195px;
   height: 40px;
-  left: 1300px;
-  top: -450px;
+  left: 926px;
+  margin-top: -70x;
   }
   
   .btn-3 {
-    width: 220px;
+    width: 195px;
     height: 40px;
-    left: 1300px;
-    top: -450px;
+    left: 925px;
+    top: -99px;
   }
   
 
@@ -768,7 +764,7 @@ body {
 
 .descripcion-juego {
   max-width: var(--descripcion-width);
-  margin: -10% auto;
+  margin: 10% auto;
   padding: 20px;
 }
 

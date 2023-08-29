@@ -1,9 +1,14 @@
-// Requerir los paquetes que vamos a utilizar
-const express = require("express");
+const express = require('express');
+const methodOverride = require('method-override');
+const path = require('path');
+
 const app = express();
 
+app.use(express.static(path.join(__dirname, '../public')));  // Necesario para los archivos estáticos en el folder /publ
+// Configuraciones y middlewares;
 
-
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
 
 

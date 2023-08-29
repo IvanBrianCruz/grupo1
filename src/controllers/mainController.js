@@ -1,13 +1,18 @@
 // Requerimos path para poder enviar los archivos HTML
+const fs = require('fs');
 const path = require("path");
+//vinculamos con el ejs.
+const productsFilePath = path.join(__dirname, '../data/productsdatabase.json');
+
 
 // Creamos el objeto literal con los métodos a exportar
 const mainController = {
 
     // Manejo del pedido get con ruta
     index: (req, res) => {
+        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         // comunicarse con el modelo, conseguir información
-        res.sendFile(path.resolve(__dirname, "../views/inicio.html"))
+        res.render('../views/inicio',{ products:products})
     },
     bibloteca: (req, res) => {
         // comunicarse con el modelo, conseguir información
@@ -22,7 +27,7 @@ const mainController = {
         res.sendFile(path.resolve(__dirname, "../views/carrito.html"))
     },
     
-   
+
    
 }
 

@@ -1,3 +1,76 @@
-{
-    "trabajando": "es esto"
-  }
+[
+  {
+   "id": 1,
+   "name":"Mortal Kombat 1" ,
+   "price": 79 ,
+   "image": "/img/imagenes-productos/producto01.png"
+  },
+  {
+    "id": 2,
+    "link": "http://localhost:3060/producto",
+    "name":"Grand Theft Auto VI",
+    "price":99.98 ,
+    "image": "/img/imagenes-productos/producto02.png"
+   },
+
+   {
+    "id": 3,
+    "name":"Minecraft",
+    "price": 24,
+    "image": "/img/imagenes-productos/producto03.png"
+   },
+   {
+    "id": 4,
+    "name":"FIFA 23",
+    "price": 35,
+    "image": "/img/imagenes-productos/producto04.png"
+   },
+   {
+    "id": 5,
+    "name":"Divil MayCry 5",
+    "price":55 ,
+    "image": "/img/imagenes-productos/producto05.png"
+   },
+   {
+    "id":6,
+    "name":"Demons Slayers",
+    "price":58 ,
+    "image": "/img/imagenes-productos/producto06.png"
+   },
+   {
+    "id": 7,
+    "name":"Serious Sam 4",
+    "price": 19.99,
+    "image": "/img/imagenes-productos/producto07.png"
+   },
+   {
+    "id": 8,
+    "name":"Left 4 Dead 3",
+    "price": 99,
+    "image": "/img/imagenes-productos/producto08.png"
+   },
+   {
+    "id": 9,
+    "name":"Half-Life 3",
+    "price": 150 ,
+    "image": "/img/imagenes-productos/producto09.png"
+   },
+   {
+    "id": 10,
+    "name":"Madison",
+    "price": 39,
+    "image": "/img/imagenes-productos/producto10.png"
+   },
+   {
+    "id": 11,
+    "name":"Rust",
+    "price": 9.99,
+    "image": "/img/imagenes-productos/producto11.png"
+   },
+   {
+    "id": 12,
+    "name":"The Last of US parte II",
+    "price": 59,
+    "image":  "/img/imagenes-productos/producto12.png"
+   }
+]
