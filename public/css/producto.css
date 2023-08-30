@@ -1,812 +1,464 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url('/img/fondo.png'); /* Ruta de la imagen de fondo */
-      background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-      background-position: center; /* Centra la imagen de fondo */
-  }
-/**** fin fondo de pagina******/
-
-.logo01 img {
-  width: 100%; /* La imagen ocupa todo el ancho del div */
-  height: auto; /* La altura se ajusta automáticamente para mantener las proporciones */
-  max-width: 300px; /* Tamaño máximo para pantallas de PC */
-  display: block; /* Esto es importante para que el ancho máximo funcione correctamente */
-  margin-left: 20px;
-  margin-top: 20px;
+  background-color: #5e089f;
 }
 
-
-/* Estilos para dispositivos móviles */
-@media screen and (max-width: 600px) {
-  .logo01 img {
-      width: 80%; /* La imagen ocupa el 80% del ancho de la pantalla */
-      height: auto; /* La altura se ajusta automáticamente para mantener las proporciones */
-      max-width: none; /* Eliminamos el tamaño máximo para dispositivos móviles */
-      display: block; /* Esto es importante para que el ancho funcione correctamente */
-      margin: 0 auto; /* Centra la imagen horizontalmente */
-      margin-top: 20px;
-  }
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-/*********    barra de busqueda    ***********/
+/*header pricipal*/
 
 
-/* Estilos para dispositivos móviles */
-@media screen and (max-width: 600px) {
-  .search-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
+.header-container {
+  background-color: #4300fb;
 
-  .search-box {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  input[type="text"] {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-
-  button {
-    font-size: 24px;
-  }
-  .usuario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-  .btn-logo img {
-    width: 15%; /* Ajusta el tamaño de la imagen según tus necesidades */
-    height: auto;
-  }
 }
 
-/* Estilos para pantallas de PC */
-@media screen and (min-width: 600px) {
-  .search-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .search-box {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    cursor: pointer;
-  }
-
-  input[type="text"] {
-    font-size: 25px;
-  }
-
-  button {
-    font-size: 30px;
-  }
-
-  .usuario {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .usuario img {
-    max-width: 90px; /* Tamaño máximo para pantallas de PC */
-}
-}
-
-/* cursor para botones  */
-
-/* Estilos para el botón con imagen y cursor de enlace */
-.btn-logo {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-
-/* Estilos adicionales para la imagen dentro del botón (opcional) */
-
-
-
-
-/* Estilos para el botón con icono y cursor de enlace */
-.btn-icon {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 2 ;
-}
-
-/* Estilos adicionales para el icono dentro del botón (opcional) */
-.btn-icon i {
-  color: #ff0000; /* Cambia el color del icono si lo deseas */
-  /* Ajusta el tamaño del icono según tus necesidades */
+#logo {
+  display: inline;
   font-size: 30px;
+  margin: 1vw 2vw;
+  text-decoration: none;
+  color: white;
 }
 
-/*******************************      fin de la parte superior ***********************************/
 
+#carrito {
+  width: 6vw;
+  margin: 0 10px 0 0;
 
-/* Estilos para el menú */
+}
 
-/* Estilos para el menú en pantallas de PC */
-.menu {
-  background-color: transparent; /*si queres un color de fondo el el menu cambia qui*/
-  font-family: 'Bauhaus 93', sans-serif;
+/**/
+#carrito:hover {
+  transform: scale(1.15);
+}
+
+.fa-circle-user {
+  font-size: 5vw;
+}
+
+/**/
+.fa-circle-user:hover {
+  transform: scale(1.15);
+}
+
+.header-container {
   display: flex;
-  justify-content: center;
-  padding: 1 30px;
-  margin: 0 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.menu ul {
+.search-flex {
+  display: flex;
+  align-self: center;
+  background-color: #ffffff;
+  padding: 1vw;
+  border-radius: 25px;
+
+}
+
+.nav-principal {
+  display: flex;
+}
+
+.nav-principal a {
+  display: flex;
+  text-decoration: none;
+}
+
+.burger-menu {
+  font-size: 15px;
+}
+
+/* agregando barra de navegacion*/
+.barra-navegacion {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4300fb;
+  padding: 1vw;
+}
+
+.barra-navegacion ul {
+  display: none;
+  margin: auto;
+}
+
+.barra-navegacion li {
+
+  margin: 0vw 2vw;
+}
+
+li a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+li a:hover {
+  background-color: #00000000;
+}
+
+/*hasta aqui termina*/
+
+.micarrito {
+  color: white;
+  display: none;
+  align-items: center;
+}
+
+.ingresar {
+  color: white;
+  display: none;
+  align-items: center;
+}
+
+.search {
+  background-color: #ffffff;
+  width: 30vw;
+}
+
+.boton {
+  background-color: #ffffff;
+}
+
+
+ul li {
   list-style: none;
+  margin: 0 1vw 0 0;
+}
+
+.nav-principal {
   display: flex;
   align-items: center;
   padding: 0;
-  margin: 0;
+  margin: 0 10px 0 0;
 }
 
-.menu li {
-  margin: 0 50px;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: #fff;
-  padding: 10px;
-  font-size: 32px;
-}
-
-.menu li a:hover {
-  background-color: #4507ff;
-}
-
-/* Estilos para el menú en pantallas de móviles */
-@media screen and (max-width: 767px) {
-  .menu {
-      flex-direction: column;
-      align-items: center;
-      background-color: transparent; /*si queres un color de fondo el el menu cambia qui*/
-      font-family: 'Bauhaus 93', sans-serif;
-      padding: 10px;
-  }
-  
-  .menu ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0;
-      margin: 0;
-  }
-  
-  .menu li {
-      margin: 10px 0;
-  }
-}
-/*fin del barra menu*/
-
-/*** titulo juego ******/
-
-
-/* Estilos para el encabezado h2 */
-.titulo-del-juego {
-  color: #ffffff; /* Cambia el color del texto a naranja oscuro */
-  font-size: 300px; /* Cambia el tamaño de la fuente a 40px */
-  margin-top: 50px; /* Añade un margen superior de 30px */
-  margin-bottom: -190px; /* Añade un margen inferior de 20px */
-  font-family: 'Baskerville Old Face', sans-serif;
-  margin-left: 450px;
-}
-
-/* Estilos para el encabezado h2 */
-.cambiar-tamano {
- 
-  font-size: 70px; /* Tamaño inicial de la fuente a 40px */
-  
-}
-/* Estilos para el encabezado h2 en dispositivos móviles */
-@media screen and (max-width: 767px) {
-  .titulo-del-juego {
-    text-align: center; /* Centra el texto horizontalmente */
-    font-size: 60px; /* Tamaño de fuente para dispositivos móviles */
-    margin: 50px auto; /* Margen superior e inferior de 50px, centrado horizontalmente */
-    width: 90%; /* Ancho del título al 90% de la pantalla */
-    font-family: 'Baskerville Old Face', sans-serif;
-  }
-
-  /* Estilos adicionales para cambiar el tamaño del texto en dispositivos móviles */
-  .cambiar-tamano {
-    font-size: 50px; /* Tamaño de fuente para dispositivos móviles */
-  }
-}
-
-
-
-
-/**** carucel inicio ***************/
-
-  
-
-.carrusel {
+/*css del detalle del producto */
+.conteiner {
   display: flex;
-  gap: 10px;
-  justify-content: center;
 }
 
-.carrusel ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  max-width: 800px; 
-  scroll-behavior: smooth;
+.producto {
+  border-bottom: solid 1px rgb(128, 128, 128);
 }
 
-.carrusel-fotos {
-  display: flex;
-  gap: 10px;
-  overflow: auto;
-
-width: 800px; /* Ajusta el ancho de la caja */
-height: 600px; /* Ajusta la altura de la caja para mantener la proporción */
-
+/*barra de producto*/
+.linea-horizontal {
+  border: 1px solid #175700;
+  /* Ancho y color del borde de la línea */
+  margin: 20px 0;
+  /* Espacio antes y después de la línea */
 }
 
-.carrusel-fotos img {
-  /*background: black;            en fonde de las imgenes 
-  border: 4px solid black;   borde de la caja de images */
-  width: 800px;
-  height: 700px;
-  object-fit: contain;
+h2 {
+  margin: 0 15px;
+  font-size: 4vw;
 }
 
-.carrusel-menu {
-  display: none;
-}
-
-.carrusel-todo{
-  transform: translate(-100px, 30px); /*si quieres mover el carrusel hizontalmente (x , y) verticalmente*/
-  
-}
-
-@media screen and (min-width: 500px) {
-  .carrusel-fotos {
-    overflow: hidden;
-  }
-
-  .carrusel-fotos img {
-    width: 800px;
-    height: 700px;
-  }
-  .carrusel-menu {
-    display: flex;
-    gap: 8px;
-    justify-content:center;
-  }
-  .carrusel-menu img {
-    box-sizing: border-box;
-    width: 150px;
-    height: 100px;
-    border: 0px solid;
-  }
-  .carrusel-menu img:hover {
-    border: none;
-  }
-}
-
-/**          fin carucel    ******/
-
-
-/*** precio juego ******/
-
-
-/* Estilos para el elemento .precio-juego */
-
-
-/* Estilos para dispositivos móviles */
-@media screen and (min-width: 767px) {
-  
-  .precio-juego-movil {
-    display: none;
-  }
-}
-
-
-
-
-
-
-
-/******************** inicio de botones ********************************/
-
-@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto:wght@100&@700&display=swap');
-
-
-
-.contenedor{
-    display: flex;
-    gap: 20px; /* Ajusta el espacio vertical entre los botones */
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: column;
-    margin-left: 240px;
-    margin-top: -69px;
-    
-}
-
-
-/* Estilos para el encabezado h2 */
-
-.precio-juego-pc {
-    font-size: 70px;
-    width: 220px;
-    height: 40px;
-    margin-left: 919px;
-    margin-top: -548px;
-}
-
-.btn{
-    position: relative;
-    padding: 20px 50px;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing:10px;
-    text-indent: 1px;
-    z-index: 2;
-    height: 40px;
-    left: 910px;
-    top:-69px;
-}
-.btn-1 {
-  width: 220px;
-    height: 40px;
-    left: 910px;
-    top: -33px;
-   
-  }
-.btn-2 {
-  width: 195px;
-  height: 40px;
-  left: 926px;
-  margin-top: -70x;
-  }
-  
-  .btn-3 {
-    width: 195px;
-    height: 40px;
-    left: 925px;
-    top: -99px;
-  }
-  
-
-
-
-/*-----------boton de barido ----------*/
-
-.btn-2{
-    transition: all 0.6s ease;
-    
-}
-
-.btn-2::after{
-    content: "";
-    position: absolute;
-    width: 20%;
-    height: 110%;
-    left: -10%;
-    top: 0;
-    transform: skew(20deg, 0deg);
-    background-color: #ffffff;
-    z-index: -1;
-    transition: all 0.4s ease;
-}
-
-.btn-2::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    transform: skew(20deg, 0deg);
-    border: 3px solid #03cc57;
-    transition: all 0.4s ease;
-    z-index: -1;
-}
-
-.btn-2:hover::after{
-    background-color: #ffffff31;
-    transform: skew(20deg, 0deg) translateX(240px);
-}
-
-.btn-2:hover::before{
-    background-color: #03cc57;
-    border: 3px solid #029740;
-    transform: skew(20deg, 0deg) scale(1.1);
-}
-/*****/
-.btn-3{
-    transition: all 0.6s ease;
-}
-
-.btn-3::after{
-    content: "";
-    position: absolute;
-    width: 20%;
-    height: 110%;
-    left: -10%;
-    top: 0;
-    transform: skew(20deg, 0deg);
-    background-color: #ffffff;
-    z-index: -1;
-    transition: all 0.4s ease;
-}
-
-.btn-3::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    transform: skew(20deg, 0deg);
-    border: 3px solid #ec0da5;
-    transition: all 0.4s ease;
-    z-index: -1;
-}
-
-.btn-3:hover::after{
-    background-color: #ffffff31;
-    transform: skew(20deg, 0deg) translateX(240px);
-}
-
-.btn-3:hover::before{
-    background-color: #ec0da5;
-    border: 3px solid #ec0da5;
-    transform: skew(20deg, 0deg) scale(1.1);
-}
-
-/*-----------boton rgb----------*/
-
-.btn-1::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-image: linear-gradient(90deg, rgb(255, 30, 143), rgb(19, 227, 255), rgb(251, 255, 20), rgb(255, 15, 15));
-    background-size: 300%;
-    border-radius: 5px;
-    z-index: -1;
-    transition: all 0.4s ease;
-}
-
-.btn-1:hover::after{
-    background-position: 100%;
-    filter: blur(15px);
-}
-
-.btn-1::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-image: linear-gradient(90deg, rgb(255, 30, 143), rgb(19, 227, 255), rgb(251, 255, 20), rgb(255, 15, 15));
-    background-size: 300%;
-    border-radius: 5px;
-    z-index: -1;
-}
-
-.btn-1:hover::before{
-    background-position: 100%;
-}
-
-/* ****** fin de botones ***********/
-
-@media screen and (max-width: 500px) {
-
-  .contenedor{
-      display: flex;
-      
-      gap: 20px; /* Ajusta el espacio vertical entre los botones */
-      flex-wrap: wrap;
-      justify-content: space-around;
-     
-      flex-direction: column;
-      
-  }
-
-  .precio-juego-pc{
-    display: none;
-  }
-  
-  
-  
-  
-  .btn{
-      position: relative;
-      padding: 20px 50px;
-      text-decoration: none;
-      color: #fff;
-      letter-spacing:10px;
-      text-indent: 1px;
-      z-index: 2;
-  }
-  .btn-1 {
-      width: 60%;
-      height: auto;
-      left: auto;
-      top: auto;
-      position: relative;
-      justify-content: center;
-     
-    }
-  .btn-2 {
-    width: 60%;
-      height: auto;
-      left: auto;
-      top: auto;
-      position: relative;
-      justify-content: baseline;
-    }
-    
-    .btn-3 {
-      width: 60%;
-      height: auto;
-      left: auto;
-      top: auto;
-      position: relative;
-      justify-content: baseline;
-    }
-    
-  
-  
-  
-  /*-----------boton de barido ----------*/
-  
-  .btn-2{
-      transition: all 0.6s ease;
-      
-  }
-  
-  .btn-2::after{
-      content: "";
-      position: absolute;
-      width: 20%;
-      height: 110%;
-      left: -10%;
-      top: 0;
-      transform: skew(20deg, 0deg);
-      background-color: #ffffff;
-      z-index: -1;
-      transition: all 0.4s ease;
-  }
-  
-  .btn-2::before{
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      transform: skew(20deg, 0deg);
-      border: 3px solid #03cc57;
-      transition: all 0.4s ease;
-      z-index: -1;
-  }
-  
-  .btn-2:hover::after{
-      background-color: #ffffff31;
-      transform: skew(20deg, 0deg) translateX(240px);
-  }
-  
-  .btn-2:hover::before{
-      background-color: #03cc57;
-      border: 3px solid #029740;
-      transform: skew(20deg, 0deg) scale(1.1);
-  }
-  /*****/
-  .btn-3{
-      transition: all 0.6s ease;
-  }
-  
-  .btn-3::after{
-      content: "";
-      position: absolute;
-      width: 20%;
-      height: 110%;
-      left: -10%;
-      top: 0;
-      transform: skew(20deg, 0deg);
-      background-color: #ffffff;
-      z-index: -1;
-      transition: all 0.4s ease;
-  }
-  
-  .btn-3::before{
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      transform: skew(20deg, 0deg);
-      border: 3px solid #ec0da5;
-      transition: all 0.4s ease;
-      z-index: -1;
-  }
-  
-  .btn-3:hover::after{
-      background-color: #ffffff31;
-      transform: skew(20deg, 0deg) translateX(240px);
-  }
-  
-  .btn-3:hover::before{
-      background-color: #ec0da5;
-      border: 3px solid #ec0da5;
-      transform: skew(20deg, 0deg) scale(1.1);
-  }
-  
-  /*-----------boton rgb----------*/
-  
-  .btn-1::after{
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      background-image: linear-gradient(90deg, rgb(255, 30, 143), rgb(19, 227, 255), rgb(251, 255, 20), rgb(255, 15, 15));
-      background-size: 300%;
-      border-radius: 5px;
-      z-index: -1;
-      transition: all 0.4s ease;
-  }
-  
-  .btn-1:hover::after{
-      background-position: 100%;
-      filter: blur(15px);
-  }
-  
-  .btn-1::before{
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      background-image: linear-gradient(90deg, rgb(255, 30, 143), rgb(19, 227, 255), rgb(251, 255, 20), rgb(255, 15, 15));
-      background-size: 300%;
-      border-radius: 5px;
-      z-index: -1;
-  }
-  
-  .btn-1:hover::before{
-      background-position: 100%;
-  }
-
-}
-/********* fin de botones *************************************/
-
-/**** descripcion ****************/
-
-
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: #333;
-  color: #fff;
-}
-
-.descripcion-juego {
-  max-width: 40%x;
-  margin: 0% auto;
+section {
   padding: 20px;
+  margin: auto;
 }
 
-.titulo-juego {
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  color: #ff9900;
+.imagenes {
+  width: 80%;
 }
 
-.subtitulo {
-  font-size: 26px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-ul {
-  list-style: disc;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-p {
+article {
   margin-bottom: 15px;
 }
 
-.subtitulo-preparado {
-  font-size: 24px;
-  text-align: center;
-  font-style: italic;
+.articulo {
+  padding: 10px;
+  border: solid 1px black;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.5s;
 }
 
-strong {
-  font-weight: bold;
+.articulo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.418)
 }
 
-:root {
-  --descripcion-width: 60%; /* Ancho predeterminado, 100% de la pantalla */
+.img1 {
+  width: 15vw;
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: #333;
-  color: #fff;
+.info-text {
+  margin: 10px;
+  font-size: 10px;
 }
 
-.descripcion-juego {
-  max-width: var(--descripcion-width);
-  margin: 10% auto;
-  padding: 20px;
+/* barra de producto */
+
+/*main*/
+
+h1 {
+  font-size: 4vw;
+  padding: 3vw;
 }
 
-.titulo-juego {
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  color: #ff9900;
+h4 {
+  margin: 0 65px;
+  font-size: 1vw;
 }
 
-/* Estilos para dispositivos móviles */
-@media screen and (max-width: 767px) {
-  .descripcion-juego {
-    --descripcion-width: 90%; /* Ancho del 90% para dispositivos móviles */
-      margin: 0% auto;
-      padding: 20px;
-    
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 
-  .titulo-juego {
-    font-size: 28px; /* Tamaño del título reducido para dispositivos móviles */
-  }
-
-  .subtitulo {
-    font-size: 18px; /* Tamaño del subtítulo reducido para dispositivos móviles */
-  }
-
-  ul {
-    margin-left: 10px; /* Margen reducido para dispositivos móviles */
-  }
-
-  p {
-    margin-bottom: 10px; /* Margen reducido para dispositivos móviles */
-  }
-
-  .subtitulo-preparado {
-    font-size: 20px; /* Tamaño del subtítulo reducido para dispositivos móviles */
+  60% {
+    -webkit-transform: translateX(calc(-200px * 7));
+    transform: translateX(calc(-200px * 7));
   }
 }
 
-/****** fin descripcion  ***************************/
+
+
+.conteiner img {
+  width: 40%;
+  background-color: rgb(0, 0, 0);
+  margin: 100px 100px 10px 100px;
+  border: 2px solid rgb(255, 0, 0);
+  /* Grosor, estilo y color del borde */
+  padding: 15px;
+  border-radius: 15px;
+  transform: scale(1.05);
+  /* Escala el contenedor al 105% en el hover */
+  box-shadow: 0 0 40px rgba(0, 81, 152, 0.3);
+
+
+}
+
+/* Estilos para la imagen */
+.container img {
+  max-width: 100%;
+  /* La imagen no será más ancha que el 100% del ancho del contenedor */
+  height: auto;
+  /* La altura de la imagen se ajustará automáticamente para mantener la proporción */
+  background-color: white;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  /* Agrega una transición suave al hacer hover */
+}
+
+/* Estilos para el hover de la imagen */
+.container img:hover {
+  transform: scale(1.05);
+  /* Escala la imagen al 105% en el hover */
+}
+
+.descripcion {
+  float: right;
+}
+
+.descripcion {
+
+
+  display: inline-block;
+  margin-top: 100px;
+  margin-right: 50px;
+
+}
+
+.boton-padre {
+  border: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.boton-agregar {
+
+  border-radius: 15px;
+  background-color: #1259c3;
+}
+.boton-editar {
+
+  border-radius: 15px;
+  background-color: #d2691e;
+}
+.boton-eliminar {
+
+  border-radius: 15px;
+  background-color: #f84525;
+}
+.boton-comprar {
+
+  border-radius: 15px;
+  background-color: #1259c3;
+}
+
+.btn {
+  font-size: 15px;
+}
+
+.btn1 {
+  font-size: 15px;
+}
+
+a {
+
+  text-decoration: none;
+  color: black;
+  font-size: 2vw;
+}
+
+@media (min-width: 361px) {
+
+
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .imagenes {
+    width: 200px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .barra-navegacion ul {
+    display: contents;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+}
+
+@media (min-width:769px) {
+
+
+
+  #logo {
+    display: inline;
+    font-size: 21px;
+    margin: 1vw 2vw;
+    text-decoration: none;
+    color: white;
+  }
+
+  #carrito {
+    width: 3vw;
+  }
+
+  .nav-principal {
+    margin: 0px 20px 0 0;
+  }
+
+  .fa-circle-user {
+    font-size: 3vw;
+  }
+
+
+  .articulos {
+    margin: 5px 5px;
+
+
+  }
+
+  .flex-container {
+    display: flex;
+
+  }
+
+  .barra-navegacion ul {
+    display: flex;
+  }
+
+  .desc {
+    font-size: 15px;
+
+  }
+}
 
 
 
 
+@media (max-width:730px) {
+
+
+  .conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .descripcion {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .producto h3 {
+    margin: 10px 0;
+  }
+
+  .boton-padre {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .boton-pa {
+    margin: 0 10px;
+  }
+
+
+  #logo {
+    display: inline;
+    font-size: 21px;
+    margin: 1vw 2vw;
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Estilos para imágenes responsivas */
+
+  .conteiner img {
+    width: 60%;
+    background-color: white;
+    margin: 67px 91px 28px 91px;
+    border: 2px solid grey;
+  }
+
+  .img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .desc {
+    font-size: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+}
+
+element.style {
+  width: 500px;
+  height: 50px;
+}
