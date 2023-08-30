@@ -63,7 +63,7 @@ body {
     margin-top: 20px;
   }
   .btn-logo img {
-    width: 15%; /* Ajusta el tamaño de la imagen según tus necesidades */
+    width: 10%; /* Ajusta el tamaño de la imagen según tus necesidades */
     height: auto;
   }
 }
@@ -169,7 +169,7 @@ body {
 }
 
 /* Estilos para el menú en pantallas de móviles */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   .menu {
       flex-direction: column;
       align-items: center;
@@ -177,19 +177,27 @@ body {
       font-family: 'Bauhaus 93', sans-serif;
       padding: 10px;
   }
+ 
   
   .menu ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0;
-      margin: 0;
+    flex-direction: file;
+    align-items: center;
+    padding: 0;
+    margin: 0;
   }
-  
   .menu li {
-      margin: 10px 0;
+    margin: 0.625rem 0;
+    font-size: 14px;
   }
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/*carrusel del productp*/
+
 }
 /*fin del barra menu*/
 
@@ -213,20 +221,26 @@ body {
   
 }
 /* Estilos para el encabezado h2 en dispositivos móviles */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   .titulo-del-juego {
-    text-align: center; /* Centra el texto horizontalmente */
-    font-size: 60px; /* Tamaño de fuente para dispositivos móviles */
-    margin: 50px auto; /* Margen superior e inferior de 50px, centrado horizontalmente */
-    width: 90%; /* Ancho del título al 90% de la pantalla */
+    text-align: center;
+    font-size: 23px;
+    margin: -131px auto;
+    width: 80%;
     font-family: 'Baskerville Old Face', sans-serif;
-  }
+}
 
   /* Estilos adicionales para cambiar el tamaño del texto en dispositivos móviles */
   .cambiar-tamano {
-    font-size: 50px; /* Tamaño de fuente para dispositivos móviles */
+    margin-top: 132px;
+    font-size: 35px;}
+    .carrusel-fotos img {
+      width: 415px;
+      height: 700px;
+      object-fit: contain;
   }
 }
+
 
 
 
@@ -259,13 +273,7 @@ height: 600px; /* Ajusta la altura de la caja para mantener la proporción */
 
 }
 
-.carrusel-fotos img {
-  /*background: black;            en fonde de las imgenes 
-  border: 4px solid black;   borde de la caja de images */
-  width: 800px;
-  height: 700px;
-  object-fit: contain;
-}
+
 
 .carrusel-menu {
   display: none;
@@ -276,7 +284,14 @@ height: 600px; /* Ajusta la altura de la caja para mantener la proporción */
   
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width:600px) {
+  .carrusel-fotos img {
+    /*background: black;            en fonde de las imgenes 
+    border: 4px solid black;   borde de la caja de images */
+    width: 800px;
+    height: 700px;
+    object-fit: contain;
+  }
   .carrusel-fotos {
     overflow: hidden;
   }
