@@ -34,6 +34,16 @@ body {
   
   /* Estilos para dispositivos móviles */
   @media screen and (max-width: 600px) {
+    .carousel-wrapper {
+      height: 200px;
+      position: relative;
+      width: 100%;
+      display: block;
+      margin: 50px auto ;
+      border: 2px solid black;
+      
+    }
+    
   .search-container {
     display: flex;
     flex-direction: column;
@@ -63,13 +73,21 @@ body {
     margin-top: 20px;
   }
   .btn-logo img {
-    width: 15%; /* Ajusta el tamaño de la imagen según tus necesidades */
+    width: 10%; /* Ajusta el tamaño de la imagen según tus necesidades */
     height: auto;
   }
   }
   
   /* Estilos para pantallas de PC */
   @media screen and (min-width: 600px) {
+    .carousel-wrapper {
+      height: 700px;
+      position: relative;
+      width: 80%;
+      display: block;
+      margin: 50px auto ;
+      border: 2px solid black;
+    }
   .search-container {
     display: flex;
     justify-content: flex-end;
@@ -166,6 +184,14 @@ body {
   
   /* Estilos para el menú en pantallas de móviles */
   @media screen and (max-width: 600px) {
+    
+    .menu li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 0.625rem;
+      font-size: 2rem;
+      font-size: 12px;
+  }
   .menu {
     flex-direction: column;
     align-items: center;
@@ -173,7 +199,7 @@ body {
   }
   
   .menu ul {
-    flex-direction: column;
+    flex-direction: file;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -181,6 +207,7 @@ body {
   
   .menu li {
     margin: 0.625rem 0;
+    font-size: 14px;
   }
   }
   
@@ -271,7 +298,8 @@ body {
   
   
   /* Media query para tablets (ancho mínimo 769px) */
-  @media screen and (min-width: 769px) and (max-width: 1023px) {
+  @media screen and (min-width: 600px) and (max-width: 1023px) {
+    
     .producto {
         flex-basis: 44%; /* Dos productos por fila en tablets */
         margin: 0 auto; 
@@ -290,9 +318,9 @@ body {
   }
   
   /* Media query para dispositivos móviles (ancho máximo 768px) */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 600px) {
     .producto {
-        flex-basis: 100%; /* Un producto por fila en dispositivos móviles */
+        flex-basis: 95%; /* Un producto por fila en dispositivos móviles */
     }
   
     .contenido-producto {
@@ -331,14 +359,7 @@ body {
     font-family: 'Odibee Sans', cursive;
   }
   
-  .carousel-wrapper {
-    height: 700px;
-    position: relative;
-    width: 80%;
-    display: block;
-    margin: 50px auto ;
-    border: 2px solid black;
-  }
+
   
   .carousel-item {
     position: absolute;

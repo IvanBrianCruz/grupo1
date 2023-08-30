@@ -166,6 +166,13 @@ body {
   
   /* Estilos para el menú en pantallas de móviles */
   @media screen and (max-width: 600px) {
+    .menu li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 0.625rem;
+      font-size: 2rem;
+      font-size: 14px;
+  }
   .menu {
     flex-direction: column;
     align-items: center;
@@ -173,7 +180,7 @@ body {
   }
   
   .menu ul {
-    flex-direction: column;
+    flex-direction: file;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -181,6 +188,7 @@ body {
   
   .menu li {
     margin: 0.625rem 0;
+    font-size: 12px;
   }
   }
   
