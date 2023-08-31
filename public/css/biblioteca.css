@@ -346,3 +346,10 @@ border: 10%;
     height: 100px;
     cursor: pointer;
   }
+  @media screen and (max-width: 480px){
+    .boton-imagen img {
+      width: 156px;
+      height: 45px;
+      cursor: pointer;
+  }
+  }

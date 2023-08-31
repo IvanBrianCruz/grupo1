@@ -13,56 +13,24 @@
 </head>
 
 <body>
-  <img class="img" src="\img\logo-tienda.png" alt="">
-  <h1>Registrarse</h1>
-  <form action="" method="post">
-    <span>
-      <label class="texto">Nombre:</label>
-      <input type="text">
-    </span>
-    <span>
-      <label class="texto">Apellidos</label>
-      <input type="text" placeholder="">
-    </span>
-    <p>
-      <label class="texto" for="email">Correo electrico</label>
-      <input type="email" placeholder="example@gmail.com">
-    </p>
-    <p>
-      <label class="texto">Crear contraseña</label>
-      <input type="password" placeholder="">
-    </p>
-    <p>
-      <label class="texto">Repita la contraseña</label>
-      <input type="password" placeholder="">
-    </p>
-    <p><input class="texto" type="checkbox"> Acepto los <a
-        href="https://store.steampowered.com/subscriber_agreement/spanish/">terminos y condiciones</a></p>
-  </form>
-  <div>
-    <a href="https://accounts.google.com/ServiceLogin">
-        <button class="buttonmail" type="submit">
-            <span>Registrarse con gmail</span>
-            <i class="fa-brands fa-google"></i>
-        </button>
-    </a>
-    <a href="https://www.facebook.com/">
-        <button type="submit" class="buttonface">
-            <span>Continua con Facebook</span>
-            <i class="fa-brands fa-facebook"></i>
-        </button>
-    </a>
+  <div class="container">
+    <img src="/img/logo-tienda.png" alt="Logo de la empresa" class="logo">
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+        
+        <button type="submit">Registrarse</button>
+        <a href="http://localhost:3060/inicioDeSesion">Ya tengo cuenta</a>
+    </form>
+    
 </div>
-
-  <div>
-    <p>
-      <a href="http://localhost:3060/inicioDeSesion">
-
-
-        <button class="contra" type="submit">Crear Cuenta</button>
-      </a>
-    </p>
-  </div>
+  
 </body>
 
 </html>
