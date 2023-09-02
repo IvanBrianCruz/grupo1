@@ -1,97 +1,100 @@
-[  {
-  "id": 1,
-  "name":"Mortal Kombat 1" ,
-  "price": 79 ,
-  "image": "producto01.png",
-  "categoria": "categoria",
-  "caracteristic": "las caracterisyicas del juego van aqui"
- },
- {
-   "id": 2,
-   "link": "producto",
-   "name":"Grand Theft Auto VI",
-   "price":99.98 ,
-   "image": "producto02.png",
-   "categoria": "accion/mundo abierto",
-   "caracteristic": "con una magnífica cámara de 200 MP para capturar todos los momentos de día Escribe, dibuja y crea con el S-pen integrado. Fabricado con materiales ecológicos y sostenibles y cuenta con un poderoso procesamiento, una pantalla adaptativa automática de 6.8 pulgadas y una batería que dura todo el día"
-  },
-
+[  
   {
-   "id": 3,
-   "name":"Minecraft",
-   "price": 24,
-   "image": "producto03.png",
-   "categoria": "categoria",
-   "caracteristic": "las caracterisyicas del juego van aqui"
-  },
-  {
-   "id": 4,
-   "name":"FIFA 23",
-   "price": 35,
-   "image": "producto04.png",
-   "categoria": "categoria",
-   "caracteristic": "las caracterisyicas del juego van aqui"
-  },
-  {
-   "id": 5,
-   "name":"Divil MayCry 5",
-   "price":55 ,
-   "image": "producto05.png",
-   "categoria": "categoria",
-   "caracteristic": "las caracterisyicas del juego van aqui"
-  },
-  {
-   "id":6,
-   "name":"Demons Slayers",
-   "price":58 ,
-   "image": "producto06.png"
-  },
-  {
-   "id": 7,
-   "name":"Serious Sam 4",
-   "price": 19.99,
-   "image": "producto07.png",
-   "categoria": "categoria",
-   "caracteristic": "las caracterisyicas del juego van aqui"
-  },
-  {
-   "id": 8,
-   "name":"Left 4 Dead 3",
-   "price": 99,
-   "image": "producto08.png",
-   "categoria": "categoria",
-   "caracteristic": "las caracterisyicas del juego van aqui"
-  },
-  {
-   "id": 9,
-   "name":"Half-Life 3",
-   "price": 150 ,
-   "image": "producto09.png",
-   "categoria": "categoria",
-   "caracteristic": "las caracterisyicas del juego van aqui"
-  },
-  {
-   "id": 10,
-   "name":"Madison",
-   "price": 39,
-   "image": "producto10.png",
-   "categoria": "categoria",
-   "caracteristic": "las caracterisyicas del juego van aqui"
-  },
-  {
-   "id": 11,
-   "name":"Rust",
-   "price": 9.99,
-   "image": "producto11.png",
-   "categoria": "categoria",
-   "caracteristic": "las caracterisyicas del juego van aqui"
-  },
-  {
-   "id": 12,
-   "name":"The Last of US",
-   "price": 59,
-   "image":  "producto12.png",
-   "categoria": "categoria",
-   "caracteristic": "las caracterisyicas del juego van aqui"
-  }
+    "id": 1,
+    "name":"Mortal Kombat 1" ,
+    "price": 79 ,
+    "image": "producto01.png",
+    "categoria": "lucha-versus",
+    "caracteristic": "Experimenta la brutalidad sin igual de Mortal Kombat 1, donde los Fatalities te dejarán sin aliento en cada combate"
+   },
+   {
+     "id": 2,
+     "link": "producto",
+     "name":"Grand Theft Auto VI",
+     "price":99.98 ,
+     "image": "producto02.png",
+     "categoria": "acción/mundo abierto",
+     "caracteristic": "Con una magnífica cámara de 200 MP para capturar todos los momentos de día Escribe, dibuja y crea con el S-pen integrado. Fabricado con materiales ecológicos y sostenibles y cuenta con un poderoso procesamiento, una pantalla adaptativa automática de 6.8 pulgadas y una batería que dura todo el día"
+    },
+ 
+    {
+     "id": 3,
+     "name":"Minecraft",
+     "price": 24,
+     "image": "producto03.png",
+     "categoria": "contrucción/mundo abierto",
+     "caracteristic": "Entra en Minecraft y desbloquea un mundo infinito de aventuras, donde la construcción y la imaginación son tus mejores herramientas. Explora paisajes mágicos, lucha contra monstruos y convierte tus sueños en realidad, un bloque a la vez."
+    },
+    {
+     "id": 4,
+     "name":"FIFA 23",
+     "price": 35,
+     "image": "producto04.png",
+     "categoria": "simulación de fútbol",
+     "caracteristic": "¡Experimenta la emoción del fútbol en su máxima expresión con FIFA 2023! Con gráficos de vanguardia, jugabilidad realista y la oportunidad de llevar a tu equipo favorito a la gloria, este es el juego que te sumerge en el corazón del deporte rey como nunca antes."
+    },
+    {
+     "id": 5,
+     "name":"Divil MayCry 5",
+     "price":55 ,
+     "image": "producto05.png",
+     "categoria": "acción/aventura",
+     "caracteristic": "Adéntrate en el caos estilizado y la acción frenética de Devil May Cry 5. Enfréntate a demonios poderosos con habilidades sobrenaturales, desata combos impresionantes y sigue la épica historia de venganza y redención. ¿Tienes lo que se necesita para ser un cazador de demonios legendario?"
+    },
+    {
+     "id":6,
+     "name":"Demons Slayers",
+     "price":58 ,
+     "image": "producto06.png",
+     "categoria": "lucha-versus",
+     "caracteristic": "Sigue las aventuras de Tanjiro Kamado, un joven que quiere convertirse en cazademonios para vengar la muerte de su familia a manos de una de estas criaturas"
+    },
+    {
+     "id": 7,
+     "name":"Serious Sam 4",
+     "price": 19.99,
+     "image": "producto07.png",
+     "categoria": "shooter en primera persona",
+     "caracteristic": "Serious Sam 4 es un trepidante y frenético juego de disparos en primera persona que te sumergirá en una épica batalla contra hordas de alienígenas invasores. Ambientado en un mundo postapocalíptico, te convertirás en el valiente Sam Serious Stone, un héroe sin igual que se enfrentará a enemigos de otro mundo en una lucha desesperada por la supervivencia de la humanidad. Con gráficos impresionantes y un vasto arsenal de armas devastadoras, Serious Sam 4 te llevará a través de paisajes impresionantes y variados, desde ciudades devastadas hasta desiertos desolados y campos de batalla épicos. Prepárate para enfrentarte a enemigos gigantescos y jefes desafiantes en una experiencia de juego cargada de acción y adrenalina. Además de la emocionante campaña para un jugador, el juego ofrece un modo multijugador cooperativo para hasta 4 jugadores, lo que te permitirá unir fuerzas con amigos para enfrentar a las hordas de enemigos en conjunto. Serious Sam 4 es un viaje alucinante y repleto de acción que desafiará tus habilidades de combate y te mantendrá al borde de tu asiento en todo momento. ¿Estás listo para salvar el mundo? ¡Prepárate para una batalla épica en Serious Sam 4!"
+    },
+    {
+     "id": 8,
+     "name":"Left 4 Dead 3",
+     "price": 99,
+     "image": "producto08.png",
+     "categoria": "shooter en primera persona/cooperativo/asimétrico",
+     "caracteristic": "Dos semanas después de la primera infección, cuatro sobrevivientes inmunes — William Bill Overbeck, un veterano de la guerra de Vietnam; Zoey, una estudiante universitaria; Louis, un gerente de cuentas del distrito; y Francis, un motero al margen de la ley — recorren la ciudad de Fairfield, solo para descubrir que la infección está creando mutaciones más peligrosas en algunos de sus huéspedes."
+    },
+     {
+     "id": 9,
+     "name":"Half-Life 3",
+     "price": 150 ,
+     "image": "producto09.png",
+     "categoria": "shooter en primera persona",
+     "caracteristic": "Durante el incidente la sala de pruebas donde estaba Freeman queda destruida por la secuencia de resonancias, pero él consigue escapar de allí gracias al traje de protección. Tras volver a su dimensión, después de haber sido atrapado en una tormenta de portales, tendrá que hacer frente a las consecuencias imprevistas del experimento al descubrir que una horda de extraterrestres ha invadido el complejo científico, atacando a su personal y destruyendo todo a su paso."
+    },
+    {
+     "id": 10,
+     "name":"Madison",
+     "price": 39,
+     "image": "producto10.png",
+     "categoria": "terror psicológico",
+     "caracteristic": "El jugador toma el control de Luca, un joven de 16 años que recibe una cámara instantánea por su cumpleaños número 16. Dicha cámara perteneció a una asesina serial 30 años antes, y a través de ella se contactará con el joven para darle fin a un macabro ritual."
+    },
+    {
+     "id": 11,
+     "name":"Rust",
+     "price": 9.99,
+     "image": "producto11.png",
+     "categoria": "supervivencia",
+     "caracteristic": "Debes recoger recursos para sobrevivir y fabricar objetos dentro del juego, a excepción del equipamiento inicial. ¡Hay muchos desafíos que enfentar!"
+    },
+    {
+     "id": 12,
+     "name":"The Last of US",
+     "price": 59,
+     "image":  "producto12.png",
+     "categoria": "historia/terror post-apocalíptico",
+     "caracteristic": "Sumérgete en una historia conmovedora y apasionante que te mantendrá en vivo desde el principio hasta el final, explorando temas profundos de supervivencia, amor y sacrificio en un mundo post-apocalíptico.  Experimenta un nivel de detalle visual impresionante con entornos realistas y personajes meticulosamente diseñados que te transportarán a un mundo devastado por la tragedia. Embárcate en un emocionante viaje de supervivencia en un mundo postapocalíptico desgarrador con The Last of Us. Acompaña a Joel y Ellie en un relato emotivo donde el peligro acecha en cada esquina y las decisiones que tomes determinarán su destino. ¿Podrás sobrevivir en un mundo donde la humanidad está al borde de la extinción?"
+    }
 ]
