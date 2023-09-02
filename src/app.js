@@ -5,6 +5,8 @@ const path = require('path');
 const app = express();
 
 app.use(express.static(path.join(__dirname, '../public')));  // Necesario para los archivos estáticos en el folder /publ
+app.use(express.urlencoded({extended:false}));//carga de producto y interprete 
+app.use(express.json());// se ve en formato de objeto 
 // Configuraciones y middlewares;
 
 app.set('view engine', 'ejs');
