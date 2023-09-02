@@ -59,8 +59,42 @@ const productsController = {
     },
 
     productoedicion: (req, res) => {
+        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+        const product = products.find(product => {
+            return product.id == req.params.id
+        });
         // comunicarse con el modelo, conseguir información
-        res.render("../views/edicionDeProducto")
+        res.render("../views/edicionDeProducto", {productTiEdit: product});
+    },
+    procesoDeEdicion: (req, res) =>{
+        const data = req.body;
+        //leer el archivo json y dejarlo en una variable (array)
+        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        // buscar el producto original para tomar su id
+        const oldProduct = products.find(product => {
+            return product.id == req.params.id
+            });
+        //crear un nuevo objeto literal con los datos ingresados por el usuario
+        const editadoJuego = {
+            id: oldProduct.id,
+            name: data.name,
+            price: parseInt(data.price),
+            categoria: data.categoria,
+            caracteristic: data.descripcion,
+            image: oldProduct.image,
+        }
+        //identificar el index 
+const index = products.findIndex(product =>{
+    return product.id == req.params.id
+})
+
+        //modificar el objeto en la posicion que coresponda 
+        products[index] = editadoJuego
+        //volver a escribir sobre el archivo json 
+        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "))
+        //devolverle alguna vista al usuario
+        res.redirect("/")
     },
 
 }

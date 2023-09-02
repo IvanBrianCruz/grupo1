@@ -15,23 +15,64 @@
     <script src="script.js"></script>
 
 </head>
+
 <body>
-    <%- include('partials/header') %>
-  <main>
-    <form action="upload.php" method="get" enctype="multipart/form-data">
-        <H1>Edicion del producto</H1>
-        <input class="formulario" type="text" name="name" placeholder="Nombre del producto">
-        <input class="formulario"type="text" name="description" placeholder="Descripción del producto">
-        <input class="formulario"type="text" name="history" placeholder="Historia del juego">
-        <input class="formulario"type="file" name="image[]" multiple max="5">
-        <input class="formulario"type="text" name="category" placeholder="Categoría del producto">
-        <input class="formulario"type="number" name="price" placeholder="Precio del producto">
-        <input class="enviar"type="submit" value="Actualizar Producto">
-      </form>
-      
-  </main>
-  <footer>
-    <p>Copyright &copy; 2023 My E-Commerce Website</p>
-  </footer>
+    <header>
+        <!-- header -->
+        <%- include('partials/header1') %>
+            <!-- /header -->
+
+    </header>
+    <main>
+        <div class="container-formulario">
+            <h1>Estas editando el juego: <%= productTiEdit.name %> </h1>
+            <form class="conteinerdedatos" action="http://localhost:3060/producto/edicionDeProducto/<%= productTiEdit.id %>" method="post">
+                <div class="nombre-producto">
+                    <div class="datos-formulario">
+                        <label for="nombre">Nombre del Juego</label>
+                        <input value="<%= productTiEdit.name %>" type="text" id="nombre" name="name" placeholder="EJ: Grand Theft Auto">
+                    </div>
+                    <div class="datos-formulario">
+                        <label for="precio">Precio</label>
+                        <input value="<%= productTiEdit.price %>" type="number" id="precio" name="price" placeholder="Ingrese el precio">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="datos-formulario">
+                        <label for="categoria">Categorías</label>
+                        <select id="categoria" name="categoria">
+                            <option value="acción">Acción</option>
+                            <option value="aventura">Aventura</option>
+                            <option value="deportes">Deportes</option>
+                            <option value="estrategia">Estrategia</option>
+                            <option value="lucha">Lucha</option>
+                            <option value="rol">Rol</option>
+                            <option value="simulación">Simulación</option>
+                            <option value="plataformas">Plataformas</option>
+                            <option value="puzle">Puzzle</option>
+                            <option value="casual">Casual</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="descripcion">Descripción del Juego</label>
+                        <textarea id="descripcion" name="descripcion" placeholder="Ingrese la descripción"><%= productTiEdit.caracteristic %></textarea>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <button class="guardar" type="submit">Guardar</button>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <!-- footer -->
+            <%- include('partials/footer') %>
+                <!-- /footer -->
+        </footer>
 </body>
+
 </html>

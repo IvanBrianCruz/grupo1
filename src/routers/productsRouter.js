@@ -18,8 +18,11 @@ router.get("/cargaDeProducto", productsController.productocarga);
 router.post("/cargaDeProducto",productsController.procesoDeCarga);
 
 
+//editar un producto:
 
-router.get("/edicionDeProducto", productsController.productoedicion); 
+router.get("/producto/edicionDeProducto/:id", productsController.productoedicion); 
+
+router.post("/producto/edicionDeProducto/:id", productsController.procesoDeEdicion); 
 
 // Exportamos la variable router ya con todas las rutas "guardadas", que se usará en app.js
 module.exports = router;
