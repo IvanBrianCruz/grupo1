@@ -22,11 +22,11 @@ const productsController = {
     },
     productocarga: (req, res) => {
         // comunicarse con el modelo, conseguir información
-        res.sendFile(path.resolve(__dirname, "../views/cargaDeProducto.html"))
+        res.render( "../views/cargaDeProducto")
     },
     productoedicion: (req, res) => {
         // comunicarse con el modelo, conseguir información
-        res.sendFile(path.resolve(__dirname, "../views/edicionDeProducto.html"))
+        res.render( "../views/edicionDeProducto")
     },
 
 }
