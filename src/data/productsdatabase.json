@@ -5,7 +5,7 @@
    "price": 79 ,
    "image": "producto01.png",
    "categoria": "categoria",
-   "caracteristic": "las caracterisyicas del juego van aqui"
+   "caracteristic": "Experimenta la brutalidad sin igual de Mortal Kombat 1, donde los Fatalities te dejarán sin aliento en cada combate"
   },
   {
     "id": 2,
@@ -14,7 +14,7 @@
     "price":99.98 ,
     "image": "producto02.png",
     "categoria": "accion/mundo abierto",
-    "caracteristic": "con una magnífica cámara de 200 MP para capturar todos los momentos de día Escribe, dibuja y crea con el S-pen integrado. Fabricado con materiales ecológicos y sostenibles y cuenta con un poderoso procesamiento, una pantalla adaptativa automática de 6.8 pulgadas y una batería que dura todo el día"
+    "caracteristic": "Con una magnífica cámara de 200 MP para capturar todos los momentos de día Escribe, dibuja y crea con el S-pen integrado. Fabricado con materiales ecológicos y sostenibles y cuenta con un poderoso procesamiento, una pantalla adaptativa automática de 6.8 pulgadas y una batería que dura todo el día"
    },
 
    {
@@ -23,7 +23,7 @@
     "price": 24,
     "image": "producto03.png",
     "categoria": "categoria",
-    "caracteristic": "las caracterisyicas del juego van aqui"
+    "caracteristic": "Entra en Minecraft y desbloquea un mundo infinito de aventuras, donde la construcción y la imaginación son tus mejores herramientas. Explora paisajes mágicos, lucha contra monstruos y convierte tus sueños en realidad, un bloque a la vez."
    },
    {
     "id": 4,
@@ -31,7 +31,7 @@
     "price": 35,
     "image": "producto04.png",
     "categoria": "categoria",
-    "caracteristic": "las caracterisyicas del juego van aqui"
+    "caracteristic": "¡Experimenta la emoción del fútbol en su máxima expresión con FIFA 2023! Con gráficos de vanguardia, jugabilidad realista y la oportunidad de llevar a tu equipo favorito a la gloria, este es el juego que te sumerge en el corazón del deporte rey como nunca antes."
    },
    {
     "id": 5,
@@ -39,7 +39,7 @@
     "price":55 ,
     "image": "producto05.png",
     "categoria": "categoria",
-    "caracteristic": "las caracterisyicas del juego van aqui"
+    "caracteristic": "Adéntrate en el caos estilizado y la acción frenética de Devil May Cry 5. Enfréntate a demonios poderosos con habilidades sobrenaturales, desata combos impresionantes y sigue la épica historia de venganza y redención. ¿Tienes lo que se necesita para ser un cazador de demonios legendario?"
    },
    {
     "id":6,
@@ -93,6 +93,6 @@
     "price": 59,
     "image":  "producto12.png",
     "categoria": "categoria",
-    "caracteristic": "las caracterisyicas del juego van aqui"
+    "caracteristic": "Umérgete en una historia conmovedora y apasionante que te mantendrá en vilo desde el principio hasta el final, explorando temas profundos de supervivencia, amor y sacrificio en un mundo postapocalíptico.  Experimenta un nivel de detalle visual impresionante con entornos realistas y personajes meticulosamente diseñados que te transportarán a un mundo devastado por la tragedia. Embárcate en un emocionante viaje de supervivencia en un mundo postapocalíptico desgarrador con The Last of Us. Acompaña a Joel y Ellie en un relato emotivo donde el peligro acecha en cada esquina y las decisiones que tomes determinarán su destino. ¿Podrás sobrevivir en un mundo donde la humanidad está al borde de la extinción?"
    }
 ]
