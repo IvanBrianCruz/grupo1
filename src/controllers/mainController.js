@@ -16,15 +16,15 @@ const mainController = {
     },
     bibloteca: (req, res) => {
         // comunicarse con el modelo, conseguir información
-        res.sendFile(path.resolve(__dirname, "../views/bibloteca.html"))
+        res.render( "../views/bibloteca")
     },
     listaDeDeseos: (req, res) => {
         // comunicarse con el modelo, conseguir información
-        res.sendFile(path.resolve(__dirname, "../views/listaDeDeseos.html"))
+        res.render("../views/listaDeDeseos")
     },
     carrito: (req, res) => {
         // comunicarse con el modelo, conseguir información
-        res.sendFile(path.resolve(__dirname, "../views/carrito.html"))
+        res.render( "../views/carrito")
     },
     
 

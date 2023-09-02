@@ -437,7 +437,7 @@ a {
   /* Estilos para imágenes responsivas */
 
   .conteiner img {
-    width: 60%;
+    width: 96%;
     background-color: white;
     margin: 67px 91px 28px 91px;
     border: 2px solid grey;
@@ -461,4 +461,8 @@ a {
 element.style {
   width: 500px;
   height: 50px;
+}
+
+footer{
+  margin-top: 100px;
 }

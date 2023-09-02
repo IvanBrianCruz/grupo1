@@ -7,11 +7,11 @@ const usuariosController = {
     // Manejo del pedido get con ruta
     inicioDeSesion: (req, res) => {
         // comunicarse con el modelo, conseguir información
-        res.sendFile(path.resolve(__dirname, "../views/iniciarSesion.html"))
+        res.render( "../views/iniciarSesion")
     },
     registro: (req, res) => {
         // comunicarse con el modelo, conseguir información
-        res.sendFile(path.resolve(__dirname, "../views/register.html"))
+        res.render( "../views/register")
     },
 }
 

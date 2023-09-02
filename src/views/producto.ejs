@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>炎ATLAS炎_producto</title>
   <link rel="stylesheet" href="/css/producto.css">
   <script src="https://kit.fontawesome.com/e666ffac4e.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,21 +23,18 @@
     <!-- detalle del producto -->
 
     <div class="conteiner">
-      <img src="/img/gta.png" alt="imgan1">
+      <img src="/img/imagenes-productos/<%= product.image %>"alt="imgan1">
 
       <div class="descripcion">
         <div class="producto">
           <h2 class="nombre-del-juego">
-            GRAND THEFT AUTO VI</h2>
-          <h3 class="categoria">CATEGORIA: accion/mundo abierto</h3>
+            <%= product.name %></h2>
+          <h3 class="categoria">CATEGORIA: <%= product.categoria %></h3>
         </div>
-        <h3 class="precio-juego">Precio: $99.99</h3>
+        <h3 class="precio-juego">Precio: $ <%= product.price %></h3>
         <br> </br>
         <h3>Descripcion:</h3>
-        <p class="descripcion-del-juego">con una magnífica cámara de 200 MP para capturar todos los momentos de día
-          Escribe, dibuja y crea con el S-pen integrado. Fabricado con materiales ecológicos y sostenibles
-          y cuenta con un poderoso procesamiento, una pantalla adaptativa automática de 6.8 pulgadas y una batería
-          que dura todo el día</p>
+        <p class="descripcion-del-juego"><%= product.caracteristic %></p>
         <br></br>
         <div class="boton-padre">
           <label>
