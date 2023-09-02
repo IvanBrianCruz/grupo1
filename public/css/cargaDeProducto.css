@@ -18,7 +18,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-form {
+.conteinerdedatos{
     display: flex;
     flex-direction: column;
 }
@@ -51,7 +51,7 @@ textarea {
     margin-bottom: 10px;
 }
 
-button {
+.guardar {
     background-color: #007BFF;
     color: #fff;
     border: none;
@@ -62,7 +62,7 @@ button {
     transition: background-color 0.3s;
 }
 
-button:hover {
+.guardar:hover {
     background-color: #0056b3;
 }
 

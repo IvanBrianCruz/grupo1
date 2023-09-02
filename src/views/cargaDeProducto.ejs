@@ -15,19 +15,18 @@
     <script src="script.js"></script>
 
 </head>
-<<<<<<< HEAD
 
 <body>
     <header>
         <!-- header -->
-        <%- include('partials/header') %>
+        <%- include('partials/header1') %>
             <!-- /header -->
 
     </header>
     <main>
         <div class="container-formulario">
             <h1>Cargar un Juego</h1>
-            <form action="" method="post">
+            <form class="conteinerdedatos" action="" method="post">
                 <div class="nombre-producto">
                     <div class="datos-formulario">
                         <label for="nombre">Nombre del Juego</label>
@@ -65,7 +64,7 @@
                 </div>
 
                 <div class="form-row">
-                    <button type="submit">Guardar</button>
+                    <button class="guardar" type="submit">Guardar</button>
                 </div>
             </form>
         </div>
@@ -77,64 +76,3 @@
 </body>
 
 </html>
-=======
-<body>
-  <header>
-    <a href="http://localhost:3060/">
-        <div class="logo01">
-            <img src="/img/logo-tienda.png" alt="logo-tienda">
-        </div>
-    </a>
-
-    <!-- barra de búsquedas -->
-    <div class="search-container">
-        <input type="text" placeholder="buscar juegos" style="font-size: 25px;"
-            style="font-family: 'Bauhaus 93', sans-serif;">
-        <button class="btn-icon">
-            <i class="fa-solid fa-magnifying-glass" style="font-size: 30px;"></i>
-        </button>
-
-        <div class="usuario">
-            <a href="http://localhost:3060/inicioDeSesion">
-                <button class="btn-logo">
-                    <img src="/img/logo-usuario.png" alt="logo-usuario">
-                </button>
-            </a>
-        </div>
-    </div>
-
-    <!-- menu de opciones -->
-
-    <nav class="menu">
-        <ul class="menu-opciones">
-           
-            <li><a href="http://localhost:3060/">INICIO</a></li>
-            <li><a href="http://localhost:3060/bibloteca">BIBLIOTECA</a></li>
-            <li><a href="http://localhost:3060/listaDeDeseos">LISTA DE DESEOS</a></li>
-            <li><a href="http://localhost:3060/carrito">CARRITO</a></li>
-            <li><a href="http://localhost:3060/cargaDeProducto">ADMIN</a></li>
-        </ul>
-    </nav>
-
-
-
-  </header>
-  <main>
-    <form action="upload.php" method="get" enctype="multipart/form-data">
-        <H1>Carga de un nuevo producto</H1>
-        <input class="formulario" type="text" name="name" placeholder="Nombre del producto">
-        <input class="formulario"type="text" name="description" placeholder="Descripción del producto">
-        <input class="formulario"type="text" name="history" placeholder="Historia del juego">
-        <input class="formulario"type="file" name="image[]" multiple max="5">
-        <input class="formulario"type="text" name="category" placeholder="Categoría del producto">
-        <input class="formulario"type="number" name="price" placeholder="Precio del producto">
-        <input class="enviar"type="submit" value="Crear Producto">
-      </form>
-      
-  </main>
-  <footer>
-    <p>Copyright &copy; 2023 My E-Commerce Website</p>
-  </footer>
-</body>
-</html>
->>>>>>> 72ad45232e371987c074272c3717795cbf5a152c
