@@ -14,44 +14,8 @@
 
 <body>
     
-    <header>
-        <a href="http://localhost:3060/">
-            <div class="logo01">
-                <img src="/img/logo-tienda.png" alt="logo-tienda">
-            </div>
-        </a>
-
-        <!-- barra de búsquedas -->
-        <div class="search-container">
-            <input type="text" placeholder="buscar juegos" style="font-size: 25px;"
-                style="font-family: 'Bauhaus 93', sans-serif;">
-            <button class="btn-icon">
-                <i class="fa-solid fa-magnifying-glass" style="font-size: 30px;"></i>
-            </button>
-
-            <div class="usuario">
-                <a href="http://localhost:3060/inicioDeSesion">
-                    <button class="btn-logo">
-                        <img src="/img/logo-usuario.png" alt="logo-usuario">
-                    </button>
-                </a>
-            </div>
-        </div>
-
-        <!-- menu de opciones -->
-
-        <nav class="menu">
-            <ul class="menu-opciones">
-                <li><a href="http://localhost:3060/">INICIO</a></li>
-                <li><a href="http://localhost:3060/bibloteca">BIBLIOTECA</a></li>
-                <li><a href="http://localhost:3060/listaDeDeseos">LISTA DE DESEOS</a></li>
-                <li><a href="http://localhost:3060/carrito">CARRITO</a></li>
-            </ul>
-        </nav>
-
-
-
-    </header>
+      <!--    HEADER  -->
+      <%- include("partials/header") %>
 
 
     <main>
@@ -143,37 +107,7 @@
 
 
     </main>
-    <footer>
-        <section>
-            <div class="icono-facebook">
-                <i class="fa-brands fa-facebook"></i>
-
-            </div>
-            <h3>Seguimos es Facebook </h3>
-
-            <p>🎁Entérate antes que nadie de nuestras ofertas y nuevos alzamiento y ofertas únicas que esperas 😎</p>
-        </section>
-        <section>
-            <div class="icono-de-youtube">
-                <i class="fa-brands fa-youtube"></i>
-
-            </div>
-            <h3>Mira nuestro canal </h3>
-
-            <p>👀Todo sobre el mundo de los video juegos gameplay, noticias, tutoriales, y más te esperamos 🎮</p>
-        </section>
-        <section>
-            <div class="icono-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i>
-
-            </div>
-            <h3>¿Necesitas ayuda?</h3>
-
-            <p>🤔No dudes y comunícate con nosotros 24/7 estamos para ayudarte en lo que necesites 📞</p>
-        </section>
-        <p class="derechos-autor">copyright &copy; 2023-2023 TIENDA S.A.</p>
-    </footer>
-
+    <%- include('./partials/footer.ejs') %>
 </body>
 
 </html>

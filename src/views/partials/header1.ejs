@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/css/header.css">
+<header>
+<!--header principal: logo, user, carito-->
+<div class="header-container">
+
+    <a href="http://localhost:3060/" id="logo">TIENDA</a>
+
+    <form class="search-flex" action="/buscar" method="POST">
+
+      <input class="search" type="text" name="buscar" placeholder="Buscar...">
+      <button class="boton" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+
+    <ul class="nav-principal">
+      <li>
+        <a href="http://localhost:3060/carrito"><img id="carrito" src="/img/carrito.png"><span class="micarrito">Mi
+            carrito</span></a>
+      </li>
+      <li>
+        <a href="http://localhost:3060/inicioDeSesion"><i class="fa-regular fa-circle-user"></i>
+          <p class="ingresar">Ingresar</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!--barra de navegacion-->
+  <nav class="barra-navegacion">
+    <ul class="barra-i">
+      <li><a href="http://localhost:3060/">INICIO</a></li>
+      <li><a href="http://localhost:3060/bibloteca">BIBLOTECA</a></li>
+      <li><a href="http://localhost:3060/listaDeDeseos">LISTA DE DESEOS</a></li>
+      <li><a href="http://localhost:3060/carrito">CARRITO</a></li>
+    </ul>
+    <a href="#" class="burger-menu">
+      <i class="fas fa-bars"></i>
+    </a>
+  </nav>
+
+</header>
