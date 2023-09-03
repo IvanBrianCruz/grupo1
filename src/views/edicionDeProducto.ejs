@@ -26,7 +26,7 @@
     <main>
         <div class="container-formulario">
             <h1>Estas editando el juego: <%= productTiEdit.name %> </h1>
-            <form class="conteinerdedatos" action="http://localhost:3060/producto/edicionDeProducto/<%= productTiEdit.id %>" method="post">
+            <form class="conteinerdedatos" action="http://localhost:3060/producto/edicionDeProducto/<%= productTiEdit.id %>?_method=PUT" method="post" enctype="multipart/form-data">
                 <div class="nombre-producto">
                     <div class="datos-formulario">
                         <label for="nombre">Nombre del Juego</label>
@@ -62,6 +62,11 @@
                         <textarea id="descripcion" name="descripcion" placeholder="Ingrese la descripción"><%= productTiEdit.caracteristic %></textarea>
                     </div>
                 </div>
+                <div class="datos-formulario">
+                  <label for="product-image">Imagen del Juego</label>
+                  <input type="file" id="product-image" name="product-image">
+              </div>
+              <br>
 
                 <div class="form-row">
                     <button class="guardar" type="submit">Guardar</button>

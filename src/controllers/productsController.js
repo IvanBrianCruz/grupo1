@@ -48,7 +48,7 @@ const productsController = {
             price: parseInt(data.price),
             categoria: data.categoria,
             caracteristic: data.descripcion,
-            image: "default-image.png"
+            image: req.file ? req.file.filename : "default-image.png",
         }
         //agregar ese objeto al array
         products.push(nuevojuego);
@@ -82,7 +82,7 @@ const productsController = {
             price: parseInt(data.price),
             categoria: data.categoria,
             caracteristic: data.descripcion,
-            image: oldProduct.image,
+            image: req.file ? req.file.filename : oldProduct.image,// if ternario si hay nuevo img usa eso / sino hay usa la vieja imagen 
         }
         //identificar el index 
 const index = products.findIndex(product =>{

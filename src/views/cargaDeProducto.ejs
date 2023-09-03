@@ -26,7 +26,7 @@
     <main>
         <div class="container-formulario">
             <h1>Cargar un Juego</h1>
-            <form class="conteinerdedatos" action="" method="post">
+            <form class="conteinerdedatos" action="" method="post" enctype="multipart/form-data">
                 <div class="nombre-producto">
                     <div class="datos-formulario">
                         <label for="nombre">Nombre del Juego</label>
@@ -63,6 +63,11 @@
                     </div>
                 </div>
 
+                <div class="datos-formulario">
+                    <label for="product-image">Imagen del Juego</label>
+                    <input type="file" id="product-image" name="product-image">
+                </div>
+                <br>
                 <div class="form-row">
                     <button class="guardar" type="submit">Guardar</button>
                 </div>

@@ -2,6 +2,22 @@
 const express = require("express");
 // Router con R mayuscula
 const router = express.Router();
+const multer = require('multer');
+const path = require('path')
+
+//********** MULTER CONFIGURACION */
+
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, "public/img/imagenes-productos")
+    },
+    filename: function (req, file, cb) {
+        cb(null, "product-" + Date.now() + path.extname(file.originalname))
+        //        product-542563573.jpg
+    },
+});
+
+const upload = multer({storage:storage});
 
 // Importamos el controlador de las rutas por defecto
 const productsController = require("../controllers/productsController.js")
@@ -15,14 +31,14 @@ router.get("/producto/:id", productsController.productoDetalle);
 
 router.get("/cargaDeProducto", productsController.productocarga);
 
-router.post("/cargaDeProducto",productsController.procesoDeCarga);
+router.post("/cargaDeProducto",upload.single("product-image"),productsController.procesoDeCarga);
 
 
 //editar un producto:
 
 router.get("/producto/edicionDeProducto/:id", productsController.productoedicion); 
 
-router.post("/producto/edicionDeProducto/:id", productsController.procesoDeEdicion); 
+router.put("/producto/edicionDeProducto/:id",upload.single("product-image"), productsController.procesoDeEdicion); 
 
 // Exportamos la variable router ya con todas las rutas "guardadas", que se usará en app.js
 module.exports = router;
