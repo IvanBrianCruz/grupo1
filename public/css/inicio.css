@@ -242,6 +242,7 @@ body {
   
   /* Estilos para el contenido de cada producto */
   .contenido-producto {
+    background-color: #1a181896;
     padding: 0%;
     box-shadow: 0 0 15px rgb(233, 9, 9);
     margin: 5%;

@@ -14,7 +14,7 @@ body {
 
 /*header pricipal*/
 .header-container {
-  background-color: #4300fb;
+  background-color: #381891;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -47,6 +47,7 @@ body {
 }
 
 .search-flex {
+  height: 40px;
   display: flex;
   align-self: center;
   background-color: #ffffff;
@@ -71,7 +72,7 @@ body {
 .barra-navegacion {
   display: flex;
   justify-content: center;
-  background-color: #4300fb;
+  background-color: #381891;
   padding: 1vw;
 }
 
@@ -107,6 +108,7 @@ li a:hover {
 }
 
 .search {
+  height: 18px;
   background-color: #ffffff;
   width: 30vw;
 }
@@ -217,10 +219,11 @@ li a {
   color: #a200ff; /* Cambio de color al pasar el mouse por encima (azul) */
 }
 button {
+  border-radius: 20px;
   background-color: white;
-  margin-top: -4px;
+  margin-top: -9px;
   font-size: 30px;
-} }
+}}
 
   .desc {
       font-size: 15px;
