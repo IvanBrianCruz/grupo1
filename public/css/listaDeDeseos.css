@@ -249,6 +249,7 @@ body {
 }
 
 .mover{
+  border-radius: 20px;
     background-color: #001aff;
     color: #ffffff;
     border: none;
@@ -291,6 +292,7 @@ p{
 
 /* Estilos adicionales para el botón de eliminar */
 .eliminar, .eliminar2 {
+  border-radius: 20px;
   cursor: pointer;
   color: rgb(255, 255, 255);
 }

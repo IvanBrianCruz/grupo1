@@ -258,6 +258,7 @@ h4 {
 }
 
 .descripcion {
+  color: white; 
   float: right;
 }
 
@@ -459,6 +460,8 @@ a {
 
 }
 
+
+/*ultimas modificaciones*/
 element.style {
   width: 500px;
   height: 50px;
@@ -466,4 +469,28 @@ element.style {
 
 footer{
   margin-top: 100px;
+}
+
+.btn:hover {
+  font-size: 16px;
+  color: #fff; /* Color de texto blanco */
+    text-shadow: 0 0 10px rgba(128, 0, 128, 0.8); 
+}
+
+.btn1:hover {
+  font-size: 16px;
+  color: #fff; /* Color de texto blanco */
+    text-shadow: 0 0 10px rgba(128, 0, 128, 0.8); 
+}
+
+.boton-eliminar:hover {
+  font-size: 16px;
+  color: #fff; /* Color de texto blanco */
+    text-shadow: 0 0 10px rgba(128, 0, 128, 0.8); 
+}
+.nombre-del-juego{
+  font-size: 30px;
+  color: #fff; /* Color de texto blanco */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Sombra de texto blanca */
+  transition: text-shadow 0.3s ease-in-out;
 }

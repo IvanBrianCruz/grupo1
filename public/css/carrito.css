@@ -237,6 +237,7 @@ body {
 
 /* Estilos para los botones de eliminar */
 .eliminar, .eliminar2 {
+  border-radius: 20px;
   background-color: #ff0000;
   color: #ffffff;
   border: none;
@@ -246,6 +247,7 @@ body {
   text-decoration: none;
 }
 .mover{
+  border-radius: 20px;
   background-color: #001aff;
   color: #ffffff;
   border: none;

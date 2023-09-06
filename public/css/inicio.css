@@ -525,3 +525,12 @@ h3{
 
 
 /*areglando el ipervivculo del titulo del productp*/
+.titulop {
+  color: #fff;
+  font-size: 20px;
+}
+
+.preciop {
+  font-size: 26px;
+  color: #fff;
+}
