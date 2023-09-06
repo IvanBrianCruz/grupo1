@@ -243,7 +243,7 @@ body {
   /* Estilos para el contenido de cada producto */
   .contenido-producto {
     padding: 0%;
-    box-shadow: 0 0 20px rgb(233, 9, 9);
+    box-shadow: 0 0 15px rgb(233, 9, 9);
     margin: 5%;
   }
   
@@ -291,6 +291,7 @@ body {
     margin: 5px 0;
   }
   .descripcion-producto {
+    border-radius: 27px;
     margin: 0% 0;
     background-color: #1a181896;
     padding: 5%;
@@ -305,6 +306,7 @@ body {
         margin: 0 auto; 
     }
     .contenido-producto {
+      border-radius: 27px;
       padding: 0%;
       margin: 5%;
     }
@@ -324,6 +326,7 @@ body {
     }
   
     .contenido-producto {
+      border-radius: 27px;
       padding: 0%;
       margin: 5%;
     }
@@ -342,11 +345,13 @@ body {
   
   /* Estilos iniciales de la imagen */
   .imagenes-ultimas-visitas img {
+    border-radius: 20px;
     transition: transform 0.3s ease-in-out; /* Transición suave de 0.3 segundos */
   }
   
   /* Estilos para aplicar el zoom en la imagen al pasar el ratón por encima */
   .imagenes-ultimas-visitas img:hover {
+    box-shadow: 0 0 15px rgb(233, 9, 9);
     transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
   }
   
@@ -534,3 +539,5 @@ h3{
   font-size: 26px;
   color: #fff;
 }
+.contenido-producto {
+  border-radius: 27px;}
