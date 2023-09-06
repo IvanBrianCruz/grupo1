@@ -81,9 +81,9 @@ body {
   /* Estilos para pantallas de PC */
   @media screen and (min-width: 600px) {
     .carousel-wrapper {
-      height: 700px;
+      height: 600px;
       position: relative;
-      width: 80%;
+      width: 90%;
       display: block;
       margin: 50px auto ;
       border: 2px solid black;
