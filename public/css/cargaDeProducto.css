@@ -66,7 +66,7 @@ textarea {
     background-color: #0056b3;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 490px) {
     .nombre-producto {
         flex-direction: column;
     }
@@ -81,4 +81,13 @@ textarea {
       padding: 20px;
       
   }
+}
+.search-flex {
+    height: 43px;
+    width: 453px;
+    display: flex;
+    align-self: center;
+    background-color: #ffffff;
+    padding: 1vw;
+    border-radius: 25px;
 }

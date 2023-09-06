@@ -224,7 +224,8 @@ h4 {
 
 
 .conteiner img {
-  width: 40%;
+  height: 400px;
+  width: 297px;
   background-color: rgb(0, 0, 0);
   margin: 100px 100px 10px 100px;
   border: 2px solid rgb(255, 0, 0);
