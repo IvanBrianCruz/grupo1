@@ -212,7 +212,7 @@ button:hover {
 /*********************************************************/
 .area {
     background: #381891;
-    background: -webkit-linear-gradient(to left, #000dff, #4e54c8);
+    background: -webkit-linear-gradient(to left, #d900ff, #6002f8);
     width: 100%;
     height: 100vh;
     position: relative;
@@ -234,7 +234,7 @@ button:hover {
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: #ff4aab;
     animation: animate 25s linear infinite;
     bottom: -150px;
 }

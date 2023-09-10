@@ -18,7 +18,6 @@ header {
 }
 
 body {
-    background: #0c192c;
     background-image: url('/img/fondo-login.png'); /* Ruta de la imagen de fondo */
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
