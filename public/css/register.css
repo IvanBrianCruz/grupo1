@@ -1,68 +1,330 @@
-body {
-  font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+* {
     margin: 0;
     padding: 0;
-  background-image: url('/img/fondo.png'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-    background-position: center; /* Centra la imagen de fondo */
-}
-.container {
- 
-  max-width: 400px;
-  margin: 100px auto;
-  padding: 20px;
-  
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 20px;
-  max-width: 100px;
+html,
+body {
+    height: 100%;
+    font-family: 'Exo', sans-serif;
+    overflow: hidden;
+    /* Evita la barra de desplazamiento vertical */
+}
+
+/*****************************************************/
+
+/*********************************************************/
+.content {
+    position: relative;
+    z-index: 9;
+    background-color: rgba(255, 255, 255, 0.95);
+    /* Fondo blanco semitransparente */
+    padding: 20px;
+    padding-right: 40px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    /* Sombra suave */
+    text-align: center;
+    max-width: 400px;
+    /* Ancho máximo del contenido */
+    margin: 0 auto;
+    /* Centrar horizontalmente */
+    margin-top: -50vh;
+    /* Centrar verticalmente usando la mitad de la altura de la ventana */
+    transform: translateY(-50%);
+    /* Ajustar para centrar verticalmente */
+    color: #333;
+    /* Color de texto */
+    left: 300px;
+    top: -850px;
+    box-shadow: 10px 10px 5px rgba(255, 0, 0, 0.649);
+}
+
+/* Establecer una clase para el contenedor */
+.checkbox-container {
+    display: flex;
+    /* Utilizar Flexbox */
+    align-items: center;
+    /* Centrar verticalmente */
+    margin-bottom: 10px;
+    /* Espacio opcional en la parte inferior */
+}
+
+/* Opcional: Añadir espacio entre el checkbox y la etiqueta */
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+    /* Espacio a la derecha del checkbox */
+}
+
+.genero {
+    padding-right: 12px;
+    width: 421px;
+}
+
+
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    color: #000000;
+    /* Color de título personalizado */
+    position: relative;
+    z-index: 9;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
+    text-align: left;
+    /* Alinear texto a la izquierda */
 }
 
 label {
-  font-weight: bold;
-  margin-bottom: 5px;
-    color: white;
+    display: block;
+    /* Mostrar etiquetas en una línea separada */
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
-input {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select {
+    appearance: none;
+    /* Eliminar el estilo predeterminado de select */
+    background-image: url('arrow.png');
+    /* Agregar una imagen de flecha personalizada */
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 30px;
 }
 
 button {
-  
-  margin: 10px;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    background-color: #e93d04;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
 }
 
 button:hover {
-  background-color: #0056b3;
+    background-color: #008cff;
+    /* Cambiar el color de fondo al pasar el mouse */
 }
-a{
-  text-decoration: none;
-  text-align: center;
-    margin: 10px;
-    padding: 10px;
-    background-color: #007bff;
+
+.registro {
+    width: 900px;
+    height: 600px;
+    left: 50px;
+    top: -650px;
+    position: relative;
+    z-index: 9;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px rgba(255, 0, 0, 0.649);
+    
+}
+
+.logotienda {
+    
+    left: 50px;
+    top: -1500px;
+    position: relative;
+    z-index: 9;
+    display: inline-block;
+}
+.logotipo{
+    width: 300px;
+    height: auto;
+    display: inline-block;
+    
+    
+}
+.titulo {
+    display: inline-block;
+    font-size: 100px;
+    font-family: 'Bauhaus 93', sans-serif;
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
- 
+}
+
+@media (max-width: 768px) {
+    /* Media query para pantallas de menos de 768px de ancho */
+    .content {
+        position: relative;
+        z-index: 9;
+        background-color: rgba(255, 255, 255, 0.95);
+        /* Fondo blanco semitransparente */
+        padding: 20px;
+        padding-right: 40px;
+        border-radius: 25px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        /* Sombra suave */
+        text-align: center;
+        width: 75%;
+        height: 100%;
+        /* Ancho máximo del contenido */
+        margin: 0 auto;
+       
+        /* Centrar verticalmente usando la mitad de la altura de la ventana */
+        transform: translateY(-50%);
+        /* Ajustar para centrar verticalmente */
+        color: #333;
+        /* Color de texto */
+        left: 00px;
+        top: -450px;
+        box-shadow: 10px 10px 5px rgba(255, 0, 0, 0.649);
+    }
+    .genero {
+        padding-right: 12px;
+        width: 108%;
+    }
+    
+    .logotienda {
+        display: none;
+      }
+      .registro {
+        display: none;
+      }
+  }
+  
+
+
+
+/*********************************************************/
+.area {
+    background: #381891;
+    background: -webkit-linear-gradient(to left, #000dff, #4e54c8);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
 }

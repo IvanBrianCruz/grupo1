@@ -2,35 +2,104 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/register.css">
-  <title>炎ATLAS炎_registrate</title>
-  <link rel="shortcut icon" href="/img/logo-tienda.png">
-  
-  <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>炎ATLAS炎_registro</title>
+    <link rel="shortcut icon" href="/img/logo-tienda.png">
+    <link rel="stylesheet" href="/css/register.css">
+
+    <!-- Link para cargar las fuentes de la página "Roboto" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Link para cargar los iconos -->
+    <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="container">
-    <img src="/img/logo-tienda.png" alt="Logo de la empresa" class="logo">
-    <form action="#" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="contrasena">Contraseña:</label>
-        <input type="password" id="contrasena" name="contrasena" required>
-        
-        <button type="submit">Registrarse</button>
-        <a href="http://localhost:3060/inicioDeSesion">Ya tengo cuenta</a>
-    </form>
     
-</div>
-  
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    
+    <div >
+        <img class="registro" src="/img/Registro.gif" alt="Texto alternativo de la imagen">
+    
+    </div>
+
+    <div class="logotienda">
+        <img class="logotipo" src="/img/logo-tienda.png" alt="Texto alternativo de la imagen" href="http://localhost:3000/" cursor="pointer">
+
+        <h1 class="titulo">炎TIENDA炎</h1>
+    </div>
+
+   
+
+    <div class="content">
+       
+        <h1>Registro</h1>
+        <p>¡Regístrate para acceder a nuestro sitio!</p>
+
+        <form action="http://localhost:3060/inicioDeSesion" method="get">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <label for="confirmar-contrasena">Confirmar Contraseña:</label>
+            <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+
+            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+            <div class="genero">
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            
+
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="aceptar-terminos" name="aceptar-terminos" required>
+                <label for="aceptar-terminos">Acepto los Términos y Condiciones:</label>
+            </div>
+            
+
+
+            <button type="submit" >Registrarse</button>
+            <button type="submit" style="margin-left: 20px;">ya tengo una cuenta</button>
+        </form>
+    </div>
+
+   
 </body>
 
 </html>
