@@ -359,117 +359,120 @@ body {
   
   
   /***********************fin de fin para main           *****************************************************************************/
-
   #css {
     color: yellow;
     font-family: 'Odibee Sans', cursive;
-  }
-  
+}
 
-  
-  .carousel-item {
+.carousel-item {
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
-    padding: 25px 50px;
     opacity: 0;
     transition: all 0.5s ease-in-out;
-  }
-  .arrow{
+}
+
+/* Elimina el padding superior e inferior */
+.carousel-item {
+    padding: 0; /* Elimina el padding superior e inferior */
+    height: 100%; /* Añade altura del 100% */
+    display: flex; /* Usa flexbox para centrar verticalmente */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+.arrow {
     border: solid black;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 12px;
-  }
-  .arrow-prev {
+}
+
+.arrow-prev {
     left: 30px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%) rotate(135deg);
-  
-  }
-  .arrow-next {
+}
+
+.arrow-next {
     right: 30px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
-  }
-  
-  [id^= "item"] {
+}
+
+[id^="item"] {
     display: none;
-  }
- /* Estilos para cada imagen del carusel */
+}
+
+/* Estilos para cada imagen del carrusel */
 .item-1 {
     z-index: 2;
     opacity: 1;
-   
     background: url('/img/carucel03.png');
     background-size: cover;
-  }
-  
-  .item-2 {
+}
+
+.item-2 {
     background: url('/img/carucel02.png');
     background-size: cover;
-  }
-  
-  .item-3 {
+}
+
+.item-3 {
     background: url('/img/gta.png');
     background-size: cover;
-  }
-  
-  .item-4 {
+   
+}
+
+.item-4 {
     background: url('/img/carucel04.png');
     background-size: cover;
-  }
-  
-  .item-5 {
+}
+
+.item-5 {
     background: url('/img/carucel05.png');
     background-size: cover;
-  }
-  
-  .item-6 {
+}
+
+.item-6 {
     background: url('/img/carucel06.png');
     background-size: cover;
-  }
-  
-  /* Cambios en la opacidad y z-index al hacer click */
-  *:target ~ .item-1 {
+}
+
+/* Cambios en la opacidad y z-index al hacer clic */
+*:target ~ .item-1 {
     opacity: 0;
-  }
-  
-  #item-1:target ~ .item-1 {
+}
+
+#item-1:target ~ .item-1 {
     opacity: 1;
-  }
-  
-  #item-2:target ~ .item-2,
-  #item-3:target ~ .item-3,
-  #item-4:target ~ .item-4,
-  #item-5:target ~ .item-5,
-  #item-6:target ~ .item-6 {
+}
+
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3,
+#item-4:target ~ .item-4,
+#item-5:target ~ .item-5,
+#item-6:target ~ .item-6 {
     z-index: 3;
     opacity: 1;
-  }
-  
-  /*****************************************/
+}
 
-
-
-
-  /* Estilos para el botón */
-  .boton-imagen {
+/* Estilos para el botón */
+.boton-imagen {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 9999;
     cursor: pointer;
 }
+
 .boton-imagen img {
     width: 400px;
     height: 100px;
     cursor: pointer;
-  }
+}
+
   /*********************************footer**********************/
 
   /* Estilos para cada sección */

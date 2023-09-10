@@ -1,4 +1,7 @@
   /*********************************footer**********************/
+  body {
+    overflow-x: hidden;
+  }
 
   /* Estilos para cada sección */
   section {
