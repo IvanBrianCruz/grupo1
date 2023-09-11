@@ -1,5 +1,6 @@
 
 // Requerimos path para poder enviar los archivos HTML
+const { log } = require('console');
 const fs = require('fs');
 const path = require("path");
 //vinculamos con el ejs.
@@ -96,6 +97,22 @@ const index = products.findIndex(product =>{
         //devolverle alguna vista al usuario
         res.redirect("/")
     },
+    eliminarProducto : (req, res) => {
+
+		// Leer el archivo JSON y dejarlo en una variable (array)
+		const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+		// Modificar el array para que se elimine el producto con ID que llega por parametro
+		const filteredProducts = products.filter(product => {
+			return product.id != req.params.id
+		})
+
+		// Escribir el archivo JSON
+		fs.writeFileSync(productsFilePath, JSON.stringify(filteredProducts, null, " "))
+
+		// Devolverle alguna vista al usuario
+		res.redirect("/");
+	}
 
 }
 

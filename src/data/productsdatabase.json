@@ -1,100 +1,99 @@
 [
-    {
-      "id": 1,
-      "name": "Mortal Kombat 1",
-      "price": 79,
-      "image": "producto01.png",
-      "categoria": "lucha-versus",
-      "caracteristic": "En Mortal Kombat 10, los jugadores controlan a un elenco de luchadores de la serie Mortal Kombat. El objetivo del juego es derrotar a todos los oponentes en un torneo mortal. El juego presenta un nuevo sistema de combate que permite a los jugadores realizar combos más complejos y movimientos especiales. También presenta un nuevo modo de historia que sigue los eventos de Mortal Kombat 9.Mortal Kombat 10 fue un éxito comercial y crítico, y fue elogiado por su violencia gráfica, su jugabilidad y su modo de historia. El juego fue seguido por Mortal Kombat 11 en 2019."
-    },
-    {
-      "id": 2,
-      "link": "producto",
-      "name": "Grand Theft Auto IV",
-      "price": 99.98,
-      "image": "producto02.png",
-      "categoria": "acción/mundo abierto",
-      "caracteristic": "¿Estás cansado de la vida monótona? ¿Quieres vivir la vida al límite? Entonces GTA IV es el juego para ti.En GTA IV, juegas como Niko Bellic, un inmigrante serbio que llega a Liberty City en busca del sueño americano. Sin embargo, pronto descubre que la realidad es muy diferente.Liberty City es una ciudad corrupta y violenta, y Niko se verá obligado a involucrarse en el crimen para sobrevivir.A medida que avances en la historia, conocerás a una variedad de personajes memorables, incluyendo a tu primo Roman, un estafador; a la policía corrupta; y a los mafiosos.GTA IV es un juego de mundo abierto que te permite explorar Liberty City a tu antojo. Puedes conducir, robar, disparar, y hacer cualquier cosa que se te ocurra.Si estás buscando un juego emocionante y desafiante, GTA IV es el juego para ti."
-    },
-    {
-      "id": 3,
-      "name": "Minecraft",
-      "price": 24,
-      "image": "producto03.png",
-      "categoria": "contrucción/mundo abierto",
-      "caracteristic": "Entra en Minecraft y desbloquea un mundo infinito de aventuras, donde la construcción y la imaginación son tus mejores herramientas.En Minecraft, eres libre de hacer lo que quieras. Puedes construir cualquier cosa que puedas imaginar, desde una simple casa hasta un castillo imponente. Puedes explorar mundos generados aleatoriamente, llenos de paisajes mágicos y criaturas extrañas. Y puedes luchar contra monstruos para proteger tu creación.Minecraft es un juego para todas las edades. Los niños pueden usar su imaginación para crear mundos fantásticos, mientras que los adultos pueden usar sus habilidades de construcción para crear obras maestras."
-    },
-    {
-      "id": 4,
-      "name": "FIFA 23",
-      "price": 35,
-      "image": "producto04.png",
-      "categoria": "simulación de fútbol",
-      "caracteristic": "Sumérgete en la máxima expresión del fútbol con FIFA 2023 y experimenta la emoción en su forma más pura. Este juego te ofrece gráficos de vanguardia, una jugabilidad increíblemente realista y la oportunidad de llevar a tu equipo favorito a la gloria. Prepárate para adentrarte en el corazón del deporte rey como nunca antes lo habías hecho.Cada partido se convierte en una epopeya, con jugadores que cobran vida en la pantalla y una atmósfera de estadio que te hace sentir como si estuvieras en el campo. Los movimientos fluidos, los detalles impresionantes y la física precisa hacen que cada acción sea auténtica y emocionante.Pero FIFA 2023 es más que solo partidos. Tienes la oportunidad de gestionar tu propio equipo, tomar decisiones estratégicas y construir una dinastía futbolística. Los desafíos y competiciones están en constante evolución, lo que significa que siempre hay algo nuevo que conquistar.Así que prepárate para la emoción, la competencia feroz y la gloria en FIFA 2023. Este es el juego que te sumerge completamente en el mundo del fútbol, dándote la oportunidad de vivir el deporte rey en su esplendor absoluto."
-    },
-    {
-      "id": 5,
-      "name": "Divil MayCry 5",
-      "price": 55,
-      "image": "producto05.png",
-      "categoria": "acción/aventura",
-      "caracteristic": "Sumérgete en el vertiginoso caos y la acción trepidante de Devil May Cry 5, un mundo donde la estilizada extravagancia se combina con la lucha contra demonios de otro nivel. Prepárate para enfrentarte a criaturas infernales imbuidas de habilidades sobrenaturales, desata combos impactantes y adéntrate en una épica travesía de venganza y redención.Encarna a tres cazadores de demonios excepcionales, cada uno con su propio estilo y habilidades únicas, mientras persiguen la verdad detrás de una invasión demoníaca devastadora. Conviértete en un maestro de la espada, la magia y las armas de fuego mientras te abres paso a través de hordas de enemigos desafiantes y enfrentas a demonios colosales en una batalla que definirá tu legado.¿Posees la destreza y el coraje necesarios para convertirte en un cazador de demonios legendario? Enfréntate a la oscuridad y descubre tu poder interior en Devil May Cry 5, donde la supervivencia de la humanidad está en juego y solo los más valientes pueden esperar sobrevivir."
-    },
-    {
-      "id": 6,
-      "name": "Demons Slayers",
-      "price": 58,
-      "image": "producto06.png",
-      "categoria": "lucha-versus",
-      "caracteristic": "Adéntrate en un mundo de oscuridad y venganza con la emocionante historia de Tanjiro Kamado, un joven cuya vida da un giro devastador cuando su familia es masacrada por demonios. Determinado a vengarlos y restaurar la paz, Tanjiro se convierte en un cazademonios. Acompañado por su hermana Nezuko, quien también fue convertida en demonio, emprende un viaje lleno de peligros y desafíos. En su búsqueda, Tanjiro se encuentra con otros cazademonios, cada uno con habilidades únicas y pasados misteriosos. Juntos, enfrentan criaturas terroríficas y descubren la existencia de un demonio poderoso y enigmático que amenaza con sumir al mundo en la oscuridad eterna. A medida que luchan contra demonios y desentrañan los secretos de su enemigo, Tanjiro y sus compañeros cazadores de demonios se embarcan en una emocionante odisea llena de amistad, sacrificio y redención. ¿Lograrán poner fin a la amenaza demoníaca y encontrar respuestas sobre la verdadera naturaleza de los demonios? Descúbrelo en esta épica historia llena de acción, emoción y giros inesperados."
-    },
-    {
-      "id": 7,
-      "name": "Serious Sam 4",
-      "price": 19.99,
-      "image": "producto07.png",
-      "categoria": "shooter en primera persona",
-      "caracteristic": "Serious Sam 4 es un trepidante y frenético juego de disparos en primera persona que te sumergirá en una épica batalla contra hordas de alienígenas invasores. Ambientado en un mundo postapocalíptico, te convertirás en el valiente Sam Serious Stone, un héroe sin igual que se enfrentará a enemigos de otro mundo en una lucha desesperada por la supervivencia de la humanidad. Con gráficos impresionantes y un vasto arsenal de armas devastadoras, Serious Sam 4 te llevará a través de paisajes impresionantes y variados, desde ciudades devastadas hasta desiertos desolados y campos de batalla épicos. Prepárate para enfrentarte a enemigos gigantescos y jefes desafiantes en una experiencia de juego cargada de acción y adrenalina. Además de la emocionante campaña para un jugador, el juego ofrece un modo multijugador cooperativo para hasta 4 jugadores, lo que te permitirá unir fuerzas con amigos para enfrentar a las hordas de enemigos en conjunto. Serious Sam 4 es un viaje alucinante y repleto de acción que desafiará tus habilidades de combate y te mantendrá al borde de tu asiento en todo momento. ¿Estás listo para salvar el mundo? ¡Prepárate para una batalla épica en Serious Sam 4!"
-    },
-    {
-      "id": 8,
-      "name": "Left 4 Dead 3",
-      "price": 99,
-      "image": "producto08.png",
-      "categoria": "shooter en primera persona/cooperativo/asimétrico",
-      "caracteristic": "Dos semanas después de la primera infección, cuatro sobrevivientes inmunes — William Bill Overbeck, un veterano de la guerra de Vietnam; Zoey, una estudiante universitaria; Louis, un gerente de cuentas del distrito; y Francis, un motero al margen de la ley — recorren la ciudad de Fairfield, solo para descubrir que la infección está creando mutaciones más peligrosas en algunos de sus huéspedes."
-    },
-    {
-      "id": 9,
-      "name": "Half-Life 3",
-      "price": 150,
-      "image": "producto09.png",
-      "categoria": "shooter en primera persona",
-      "caracteristic": "Durante el incidente la sala de pruebas donde estaba Freeman queda destruida por la secuencia de resonancias, pero él consigue escapar de allí gracias al traje de protección. Tras volver a su dimensión, después de haber sido atrapado en una tormenta de portales, tendrá que hacer frente a las consecuencias imprevistas del experimento al descubrir que una horda de extraterrestres ha invadido el complejo científico, atacando a su personal y destruyendo todo a su paso."
-    },
-    {
-      "id": 10,
-      "name": "Madison",
-      "price": 39,
-      "image": "producto10.png",
-      "categoria": "terror psicológico",
-      "caracteristic": "Sumérgete en la intrigante historia de 'Obscura', donde asumirás el papel de Luca, un adolescente de 16 años que, en su decimosexto cumpleaños, recibe un inusual regalo: una cámara instantánea que, en otro tiempo, perteneció a una infame asesina serial que aterrorizó a la sociedad hace tres décadas.Este singular obsequio desencadena una serie de eventos siniestros cuando Luca, sin darse cuenta, se convierte en el objetivo de una entidad macabra que opera desde más allá de la tumba. A través de las fotografías que toma con la cámara, Luca se ve inmerso en un peligroso juego de supervivencia, obligado a desentrañar el oscuro misterio que rodea a esta heredera tecnológica de un legado siniestro.Con cada instantánea, el vínculo entre el pasado y el presente se estrecha, y Luca debe enfrentarse a sus miedos más profundos para poner fin a un ritual macabro que amenaza con consumirlo. ¿Tendrá el coraje y la astucia necesarios para sobrevivir a esta pesadilla en 'Obscura'?"
-    },
-    {
-      "id": 11,
-      "name": "Rust",
-      "price": 9.99,
-      "image": "producto11.png",
-      "categoria": "supervivencia",
-      "caracteristic": 
-      "En 'Rush', te embarcarás en una emocionante odisea de supervivencia en la que la recolección de recursos es clave para tu existencia. Tendrás que aprovechar al máximo tu entorno y habilidades, ya que, a excepción de tu equipamiento inicial, deberás recopilar los recursos necesarios y poner tu ingenio a trabajar para fabricar objetos esenciales para tu supervivencia.El mundo de 'Rush' está lleno de desafíos intrigantes y peligrosos que te pondrán a prueba en todo momento. Desde la búsqueda de alimentos y agua hasta la creación de refugios seguros y la defensa contra amenazas desconocidas, cada paso que des será crucial para tu supervivencia.Así que, prepárate para una experiencia trepidante en la que la toma de decisiones inteligentes y la gestión eficiente de recursos serán tus aliados en esta lucha constante por la supervivencia en 'Rush'."
-    },
-    {
-      "id": 12,
-      "name": "The Last of US",
-      "price": 59,
-      "image": "producto12.png",
-      "categoria": "historia/terror post-apocalíptico",
-      "caracteristic": "Sumérgete en una historia conmovedora y apasionante que te mantendrá en vivo desde el principio hasta el final, explorando temas profundos de supervivencia, amor y sacrificio en un mundo post-apocalíptico.  Experimenta un nivel de detalle visual impresionante con entornos realistas y personajes meticulosamente diseñados que te transportarán a un mundo devastado por la tragedia. Embárcate en un emocionante viaje de supervivencia en un mundo postapocalíptico desgarrador con The Last of Us. Acompaña a Joel y Ellie en un relato emotivo donde el peligro acecha en cada esquina y las decisiones que tomes determinarán su destino. ¿Podrás sobrevivir en un mundo donde la humanidad está al borde de la extinción?"
-    }
-  ]
+ {
+  "id": 1,
+  "name": "Mortal Kombat 1",
+  "price": 79,
+  "image": "producto01.png",
+  "categoria": "lucha-versus",
+  "caracteristic": "En Mortal Kombat 10, los jugadores controlan a un elenco de luchadores de la serie Mortal Kombat. El objetivo del juego es derrotar a todos los oponentes en un torneo mortal. El juego presenta un nuevo sistema de combate que permite a los jugadores realizar combos más complejos y movimientos especiales. También presenta un nuevo modo de historia que sigue los eventos de Mortal Kombat 9.Mortal Kombat 10 fue un éxito comercial y crítico, y fue elogiado por su violencia gráfica, su jugabilidad y su modo de historia. El juego fue seguido por Mortal Kombat 11 en 2019."
+ },
+ {
+  "id": 2,
+  "link": "producto",
+  "name": "Grand Theft Auto IV",
+  "price": 99.98,
+  "image": "producto02.png",
+  "categoria": "acción/mundo abierto",
+  "caracteristic": "¿Estás cansado de la vida monótona? ¿Quieres vivir la vida al límite? Entonces GTA IV es el juego para ti.En GTA IV, juegas como Niko Bellic, un inmigrante serbio que llega a Liberty City en busca del sueño americano. Sin embargo, pronto descubre que la realidad es muy diferente.Liberty City es una ciudad corrupta y violenta, y Niko se verá obligado a involucrarse en el crimen para sobrevivir.A medida que avances en la historia, conocerás a una variedad de personajes memorables, incluyendo a tu primo Roman, un estafador; a la policía corrupta; y a los mafiosos.GTA IV es un juego de mundo abierto que te permite explorar Liberty City a tu antojo. Puedes conducir, robar, disparar, y hacer cualquier cosa que se te ocurra.Si estás buscando un juego emocionante y desafiante, GTA IV es el juego para ti."
+ },
+ {
+  "id": 3,
+  "name": "Minecraft",
+  "price": 24,
+  "image": "producto03.png",
+  "categoria": "contrucción/mundo abierto",
+  "caracteristic": "Entra en Minecraft y desbloquea un mundo infinito de aventuras, donde la construcción y la imaginación son tus mejores herramientas.En Minecraft, eres libre de hacer lo que quieras. Puedes construir cualquier cosa que puedas imaginar, desde una simple casa hasta un castillo imponente. Puedes explorar mundos generados aleatoriamente, llenos de paisajes mágicos y criaturas extrañas. Y puedes luchar contra monstruos para proteger tu creación.Minecraft es un juego para todas las edades. Los niños pueden usar su imaginación para crear mundos fantásticos, mientras que los adultos pueden usar sus habilidades de construcción para crear obras maestras."
+ },
+ {
+  "id": 4,
+  "name": "FIFA 23",
+  "price": 35,
+  "image": "producto04.png",
+  "categoria": "simulación de fútbol",
+  "caracteristic": "Sumérgete en la máxima expresión del fútbol con FIFA 2023 y experimenta la emoción en su forma más pura. Este juego te ofrece gráficos de vanguardia, una jugabilidad increíblemente realista y la oportunidad de llevar a tu equipo favorito a la gloria. Prepárate para adentrarte en el corazón del deporte rey como nunca antes lo habías hecho.Cada partido se convierte en una epopeya, con jugadores que cobran vida en la pantalla y una atmósfera de estadio que te hace sentir como si estuvieras en el campo. Los movimientos fluidos, los detalles impresionantes y la física precisa hacen que cada acción sea auténtica y emocionante.Pero FIFA 2023 es más que solo partidos. Tienes la oportunidad de gestionar tu propio equipo, tomar decisiones estratégicas y construir una dinastía futbolística. Los desafíos y competiciones están en constante evolución, lo que significa que siempre hay algo nuevo que conquistar.Así que prepárate para la emoción, la competencia feroz y la gloria en FIFA 2023. Este es el juego que te sumerge completamente en el mundo del fútbol, dándote la oportunidad de vivir el deporte rey en su esplendor absoluto."
+ },
+ {
+  "id": 5,
+  "name": "Divil MayCry 5",
+  "price": 55,
+  "image": "producto05.png",
+  "categoria": "acción/aventura",
+  "caracteristic": "Sumérgete en el vertiginoso caos y la acción trepidante de Devil May Cry 5, un mundo donde la estilizada extravagancia se combina con la lucha contra demonios de otro nivel. Prepárate para enfrentarte a criaturas infernales imbuidas de habilidades sobrenaturales, desata combos impactantes y adéntrate en una épica travesía de venganza y redención.Encarna a tres cazadores de demonios excepcionales, cada uno con su propio estilo y habilidades únicas, mientras persiguen la verdad detrás de una invasión demoníaca devastadora. Conviértete en un maestro de la espada, la magia y las armas de fuego mientras te abres paso a través de hordas de enemigos desafiantes y enfrentas a demonios colosales en una batalla que definirá tu legado.¿Posees la destreza y el coraje necesarios para convertirte en un cazador de demonios legendario? Enfréntate a la oscuridad y descubre tu poder interior en Devil May Cry 5, donde la supervivencia de la humanidad está en juego y solo los más valientes pueden esperar sobrevivir."
+ },
+ {
+  "id": 6,
+  "name": "Demons Slayers",
+  "price": 58,
+  "image": "producto06.png",
+  "categoria": "lucha-versus",
+  "caracteristic": "Adéntrate en un mundo de oscuridad y venganza con la emocionante historia de Tanjiro Kamado, un joven cuya vida da un giro devastador cuando su familia es masacrada por demonios. Determinado a vengarlos y restaurar la paz, Tanjiro se convierte en un cazademonios. Acompañado por su hermana Nezuko, quien también fue convertida en demonio, emprende un viaje lleno de peligros y desafíos. En su búsqueda, Tanjiro se encuentra con otros cazademonios, cada uno con habilidades únicas y pasados misteriosos. Juntos, enfrentan criaturas terroríficas y descubren la existencia de un demonio poderoso y enigmático que amenaza con sumir al mundo en la oscuridad eterna. A medida que luchan contra demonios y desentrañan los secretos de su enemigo, Tanjiro y sus compañeros cazadores de demonios se embarcan en una emocionante odisea llena de amistad, sacrificio y redención. ¿Lograrán poner fin a la amenaza demoníaca y encontrar respuestas sobre la verdadera naturaleza de los demonios? Descúbrelo en esta épica historia llena de acción, emoción y giros inesperados."
+ },
+ {
+  "id": 7,
+  "name": "Serious Sam 4",
+  "price": 19.99,
+  "image": "producto07.png",
+  "categoria": "shooter en primera persona",
+  "caracteristic": "Serious Sam 4 es un trepidante y frenético juego de disparos en primera persona que te sumergirá en una épica batalla contra hordas de alienígenas invasores. Ambientado en un mundo postapocalíptico, te convertirás en el valiente Sam Serious Stone, un héroe sin igual que se enfrentará a enemigos de otro mundo en una lucha desesperada por la supervivencia de la humanidad. Con gráficos impresionantes y un vasto arsenal de armas devastadoras, Serious Sam 4 te llevará a través de paisajes impresionantes y variados, desde ciudades devastadas hasta desiertos desolados y campos de batalla épicos. Prepárate para enfrentarte a enemigos gigantescos y jefes desafiantes en una experiencia de juego cargada de acción y adrenalina. Además de la emocionante campaña para un jugador, el juego ofrece un modo multijugador cooperativo para hasta 4 jugadores, lo que te permitirá unir fuerzas con amigos para enfrentar a las hordas de enemigos en conjunto. Serious Sam 4 es un viaje alucinante y repleto de acción que desafiará tus habilidades de combate y te mantendrá al borde de tu asiento en todo momento. ¿Estás listo para salvar el mundo? ¡Prepárate para una batalla épica en Serious Sam 4!"
+ },
+ {
+  "id": 8,
+  "name": "Left 4 Dead 3",
+  "price": 99,
+  "image": "producto08.png",
+  "categoria": "shooter en primera persona/cooperativo/asimétrico",
+  "caracteristic": "Dos semanas después de la primera infección, cuatro sobrevivientes inmunes — William Bill Overbeck, un veterano de la guerra de Vietnam; Zoey, una estudiante universitaria; Louis, un gerente de cuentas del distrito; y Francis, un motero al margen de la ley — recorren la ciudad de Fairfield, solo para descubrir que la infección está creando mutaciones más peligrosas en algunos de sus huéspedes."
+ },
+ {
+  "id": 9,
+  "name": "Half-Life 3",
+  "price": 150,
+  "image": "producto09.png",
+  "categoria": "shooter en primera persona",
+  "caracteristic": "Durante el incidente la sala de pruebas donde estaba Freeman queda destruida por la secuencia de resonancias, pero él consigue escapar de allí gracias al traje de protección. Tras volver a su dimensión, después de haber sido atrapado en una tormenta de portales, tendrá que hacer frente a las consecuencias imprevistas del experimento al descubrir que una horda de extraterrestres ha invadido el complejo científico, atacando a su personal y destruyendo todo a su paso."
+ },
+ {
+  "id": 10,
+  "name": "Madison",
+  "price": 39,
+  "image": "producto10.png",
+  "categoria": "terror psicológico",
+  "caracteristic": "Sumérgete en la intrigante historia de 'Obscura', donde asumirás el papel de Luca, un adolescente de 16 años que, en su decimosexto cumpleaños, recibe un inusual regalo: una cámara instantánea que, en otro tiempo, perteneció a una infame asesina serial que aterrorizó a la sociedad hace tres décadas.Este singular obsequio desencadena una serie de eventos siniestros cuando Luca, sin darse cuenta, se convierte en el objetivo de una entidad macabra que opera desde más allá de la tumba. A través de las fotografías que toma con la cámara, Luca se ve inmerso en un peligroso juego de supervivencia, obligado a desentrañar el oscuro misterio que rodea a esta heredera tecnológica de un legado siniestro.Con cada instantánea, el vínculo entre el pasado y el presente se estrecha, y Luca debe enfrentarse a sus miedos más profundos para poner fin a un ritual macabro que amenaza con consumirlo. ¿Tendrá el coraje y la astucia necesarios para sobrevivir a esta pesadilla en 'Obscura'?"
+ },
+ {
+  "id": 11,
+  "name": "Rust",
+  "price": 9.99,
+  "image": "producto11.png",
+  "categoria": "supervivencia",
+  "caracteristic": "En 'Rush', te embarcarás en una emocionante odisea de supervivencia en la que la recolección de recursos es clave para tu existencia. Tendrás que aprovechar al máximo tu entorno y habilidades, ya que, a excepción de tu equipamiento inicial, deberás recopilar los recursos necesarios y poner tu ingenio a trabajar para fabricar objetos esenciales para tu supervivencia.El mundo de 'Rush' está lleno de desafíos intrigantes y peligrosos que te pondrán a prueba en todo momento. Desde la búsqueda de alimentos y agua hasta la creación de refugios seguros y la defensa contra amenazas desconocidas, cada paso que des será crucial para tu supervivencia.Así que, prepárate para una experiencia trepidante en la que la toma de decisiones inteligentes y la gestión eficiente de recursos serán tus aliados en esta lucha constante por la supervivencia en 'Rush'."
+ },
+ {
+  "id": 12,
+  "name": "The Last of US",
+  "price": 59,
+  "image": "producto12.png",
+  "categoria": "historia/terror post-apocalíptico",
+  "caracteristic": "Sumérgete en una historia conmovedora y apasionante que te mantendrá en vivo desde el principio hasta el final, explorando temas profundos de supervivencia, amor y sacrificio en un mundo post-apocalíptico.  Experimenta un nivel de detalle visual impresionante con entornos realistas y personajes meticulosamente diseñados que te transportarán a un mundo devastado por la tragedia. Embárcate en un emocionante viaje de supervivencia en un mundo postapocalíptico desgarrador con The Last of Us. Acompaña a Joel y Ellie en un relato emotivo donde el peligro acecha en cada esquina y las decisiones que tomes determinarán su destino. ¿Podrás sobrevivir en un mundo donde la humanidad está al borde de la extinción?"
+ }
+]

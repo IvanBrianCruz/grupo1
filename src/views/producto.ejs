@@ -54,8 +54,10 @@
             <button class="boton-comprar" type="submit"><a href="http://localhost:3060/carrito"
                 class="btn">COMPRAR</a></button>
           </label>
-          <button class="boton-eliminar" type="submit"><a href="@" class="btn1">ELIMINAR</a></button>
-          </label>
+
+          <form action="http://localhost:3060/producto/eliminar/<%= product.id %>?_method=DELETE" method="POST">
+            <button type="submit" class="boton-eliminar"> <a class="btn1"> ELIMINAR</a></button>
+          </form>
 
 
 

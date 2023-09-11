@@ -40,5 +40,7 @@ router.get("/producto/edicionDeProducto/:id", productsController.productoedicion
 
 router.put("/producto/edicionDeProducto/:id",upload.single("product-image"), productsController.procesoDeEdicion); 
 
+router.delete('/producto/eliminar/:id', productsController.eliminarProducto);
+
 // Exportamos la variable router ya con todas las rutas "guardadas", que se usará en app.js
 module.exports = router;
