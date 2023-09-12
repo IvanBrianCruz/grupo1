@@ -9,6 +9,10 @@ footer{
     color: white;
     background-image: linear-gradient(to right, #28073b, #000000);
 }
+.fa-solid, .fas {
+    margin-right: 4px;
+    font-weight: 900;
+}
 
 .copyright-container{
     width: 100%;
