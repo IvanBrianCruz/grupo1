@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "firstName": "Juan",
+      "lastName": "Perez",
+      "email": "juan.perez@example.com",
+      "password": "123456",
+      "category": "usuario",
+      "image": "https://example.com/images/juan.jpg"
+    },
+    {
+      "id": 2,
+      "firstName": "Maria",
+      "lastName": "Garcia",
+      "email": "maria.garcia@example.com",
+      "password": "123456",
+      "category": "usuario",
+      "image": "https://example.com/images/maria.jpg"
+    },
+    {
+      "id": 3,
+      "firstName": "Pedro",
+      "lastName": "Lopez",
+      "email": "pedro.lopez@example.com",
+      "password": "123456",
+      "category": "Administrador",
+      "image": "https://example.com/images/pedro.jpg"
+    },
+    {
+      "id": 4,
+      "firstName": "Ana",
+      "lastName": "Martinez",
+      "email": "ana.martinez@example.com",
+      "password": "123456",
+      "category": "Administrador",
+      "image": "https://example.com/images/ana.jpg"
+    },
+    {
+      "id": 5,
+      "firstName": "Luis",
+      "lastName": "Sanchez",
+      "email": "luis.sanchez@example.com",
+      "password": "123456",
+      "category": "usuario",
+      "image": "https://example.com/images/luis.jpg"
+    },
+    {
+      "id": 6,
+      "firstName": "Carlos",
+      "lastName": "Gomez",
+      "email": "carlos.gomez@example.com",
+      "password": "123456",
+      "category": "Administrador",
+      "image": "https://example.com/images/carlos.jpg"
+    },
+    {
+      "id": 7,
+      "firstName": "Laura",
+      "lastName": "Rodriguez",
+      "email": "laura.rodriguez@example.com",
+      "password": "123456",
+      "category": "usuario",
+      "image": "https://example.com/images/laura.jpg"
+    },
+    {
+      "id": 8,
+      "firstName": "David",
+      "lastName": "Torres",
+      "email": "david.torres@example.com",
+      "password": "123456",
+      "category": "usuario",
+      "image": "https://example.com/images/david.jpg"
+    },
+    {
+      "id": 9,
+      "firstName": "Daniela",
+      "lastName": "Gonzalez",
+      "email": "daniela.gonzalez@example.com",
+      "password": "123456",
+      "category": "Administrador",
+      "image": "https://example.com/images/daniela.jpg"
+    }
+  ]
