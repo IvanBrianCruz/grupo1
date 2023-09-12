@@ -1,81 +1,138 @@
-  /*********************************footer**********************/
-  body {
-    overflow-x: hidden;
-  }
+footer{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--dark);
+    color: white;
+    background-image: linear-gradient(to right, #28073b, #000000);
+}
 
-  /* Estilos para cada sección */
-  section {
-    text-align: center; /* Centra el contenido de cada sección horizontalmente */
-    padding: 2%;
-  
-  }
-  
-  /* Estilos para el icono en cada sección */
-  section i {
-    font-size: 50px;
-  }
-  .texto{
-    color: #fff;
-    font-size: 20px;
-  }
-  .titulo{
-    color: #fff;
-    font-size: 40px;
-  }
-  
-  .icono-whatsapp i,
-  .icono-de-youtube i,
-  .icono-facebook i {
-    font-size: 100px;
-  }
-  /* Estilos iniciales */
-  .icono-de-youtube,  
-  .icono-whatsapp,
-  .icono-facebook {
-    font-size: 40px;
-    color:  #ffffff;
-    transition: color 0.3s, transform 0.3s; /* Agrega una transición suave para el cambio de color y el zoom */
-  }
-  
-  /* Efecto al pasar el ratón */
-  
-  .icono-de-youtube:hover {
-    color: #ff0000; /* Cambia el color al rojo al pasar el ratón */
-    transform: scale(1.3); /* Hace un zoom del 20% al pasar el ratón */
-  }
-  .icono-whatsapp:hover {
-    color: #3fdb51; /* Cambia el color al rojo al pasar el ratón */
-    transform: scale(1.3); /* Hace un zoom del 20% al pasar el ratón */
-  }
-  .icono-facebook:hover {
-    color: #003cff; /* Cambia el color al rojo al pasar el ratón */
-    transform: scale(1.3); /* Hace un zoom del 20% al pasar el ratón */
-  }
-  
-  @media (max-width:730px) {
-    section i {
-      font-size: 30px;
-    }
-    .texto{
-      color: #fff;
-      font-size: 15px;
-    }
-    .titulo{
-      color: #fff;
-      font-size: 25px;
-    }
+.copyright-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.copyright{
+    font-size: 12px;
+    opacity: 0.7;
+    font-weight: 400;
+    padding: 10px 0;
+    margin: 12px;
+}
+
+.footer-opciones{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 40%;
+}
+
+.footer-conteiner-principal{
+    height: fit-content;
+    width: 100%;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0px 0px 10px #fdfbff;
+}
+
+.footer-content-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+footer .website-logo{
+    margin-bottom: 1.2rem;
+    font-size: calc(1vw + 20px);
+}
+
+.footer-info, .items-footer{
+    margin: 0.2rem 0;
+    opacity: 0.7;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.items-footer:hover{
+    opacity: 1;
+}
+
+.menu-titulo{
+    font-size: var(--medium-text-font);
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+}
+
+.footer-content-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+}
+
+.social-footer{
+    height: 100%;
+    width: 30px;
+    background-size: 70%;
+    background-position: center;
+    margin-right: 1rem;
+    background-repeat: no-repeat;
+}
+
+.social-footer:hover{
+    opacity: 0.1;
+}
+a {
+    margin: 5px;
+}
+
+/*MEDIA QUERY*/
+@media (max-width: 760px){
     
-    .icono-whatsapp i,
-    .icono-de-youtube i,
-    .icono-facebook i {
-      font-size: 75px;
+    .footer-conteiner-principal{
+        flex-direction: column;
     }
-    /* Estilos iniciales */
-    .icono-de-youtube,
-    .icono-whatsapp,
-    .icono-facebook {
-      font-size: 25px;
-      color:  #ffffff;
-      transition: color 0.3s, transform 0.3s; /* Agrega una transición suave para el cambio de color y el zoom */
+
+    .footer-content-container{
+        width: 100%;
+        padding: 2rem 0;
+        border-bottom: 1px solid #2A2A2A;
+        justify-content: center;
     }
-  }
+
+    .footer-content-container{
+        align-items: flex-start;
+    }
+    .footer-content-container:nth-of-type(3){
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .footer-opciones{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom: 1px solid #2A2A2A;
+    }
+
+    .footer-opciones .footer-content-container{
+        width: 45%;
+        align-items: flex-start;
+        border-bottom: none;
+    }
+}
