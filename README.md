@@ -1,2 +1,0 @@
-# grupo_1_proyectointegrador
-Proyector integrador digitalhouse
