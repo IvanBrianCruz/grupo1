@@ -232,3 +232,36 @@ button {
   }
 
 
+
+
+/* Tu CSS existente para la barra de navegación */
+/* ... */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  margin-left: -90px;
+  display: none;
+  position: absolute;
+  background-color: #381891;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #4622a7;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
