@@ -179,10 +179,14 @@ h4 {
 @media screen and (max-width: 490px)
  {
 
+  .dropdown-content {
+    margin-left: -131px;}
   #carrito {
+    margin-left: -25px;
     width: 6vw;
   }
   .fa-circle-user {
+    margin-left: -14px;
     font-size: 5vw;
   }
 button {
@@ -234,34 +238,45 @@ button {
 
 
 
-/* Tu CSS existente para la barra de navegación */
-/* ... */
-
+/* Estilos para todas las pantallas */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-.dropdown-content {
-  margin-left: -90px;
-  display: none;
-  position: absolute;
-  background-color: #381891;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
 
-.dropdown-content a {
-  padding: 12px 16px;
-  text-decoration: none;
+#dropdown.active .dropdown-content {
   display: block;
 }
+  .dropdown-content {
+   
+      margin-left: -105px;
+    margin-top: -5px; /* Ajusta la distancia desde arriba */
+    display: none;
+    position: absolute;
+    background-color: #381891;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
 
-.dropdown-content a:hover {
-  background-color: #4622a7;
-}
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+  .dropdown-content a:hover {
+    background-color: #4622a7;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+
+
+   
+  
