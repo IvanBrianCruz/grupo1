@@ -20,192 +20,73 @@ body {
     position: relative;
     z-index: 9;
     background-color: rgba(255, 255, 255, 0.95);
-    /* Fondo blanco semitransparente */
     padding: 20px;
     padding-right: 40px;
     border-radius: 25px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    /* Sombra suave */
     text-align: center;
-    max-width: 400px;
-    /* Ancho máximo del contenido */
+    max-width: 410px;
     margin: 0 auto;
-    /* Centrar horizontalmente */
-    margin-top: -50vh;
-    /* Centrar verticalmente usando la mitad de la altura de la ventana */
+    margin-top: -12vh;
     transform: translateY(-50%);
-    /* Ajustar para centrar verticalmente */
     color: #333;
-    /* Color de texto */
-    left: 300px;
-    top: -850px;
+    left: 28px;
+    top: -277px;
     box-shadow: 10px 10px 5px rgba(255, 0, 0, 0.649);
 }
 
-/* Establecer una clase para el contenedor */
-.checkbox-container {
-    display: flex;
-    /* Utilizar Flexbox */
-    align-items: center;
-    /* Centrar verticalmente */
-    margin-bottom: 10px;
-    /* Espacio opcional en la parte inferior */
+h2 {
+    text-align: center;
+    color: #333;
 }
 
-/* Opcional: Añadir espacio entre el checkbox y la etiqueta */
-.checkbox-container input[type="checkbox"] {
-    margin-right: 10px;
-    /* Espacio a la derecha del checkbox */
-}
-
-.genero {
-    padding-right: 12px;
-    width: 421px;
-}
-
-
-
-h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    /* Texto en mayúsculas */
-    color: #000000;
-    /* Color de título personalizado */
-    position: relative;
-    z-index: 9;
-}
-
-p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-form {
-    text-align: left;
-    /* Alinear texto a la izquierda */
+.form-group {
+    margin-bottom: 15px;
 }
 
 label {
     display: block;
-    /* Mostrar etiquetas en una línea separada */
-    font-size: 16px;
-    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"],
-select {
+input[type="file"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-select {
-    appearance: none;
-    /* Eliminar el estilo predeterminado de select */
-    background-image: url('arrow.png');
-    /* Agregar una imagen de flecha personalizada */
-    background-position: right center;
-    background-repeat: no-repeat;
-    padding-right: 30px;
+    border-radius: 3px;
 }
 
 button {
-    background-color: #e93d04;
+    background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 15px;
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 3px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    
+    font-size: 16px;
+    width: 100%;
 }
 
 button:hover {
-    background-color: #008cff;
-    /* Cambiar el color de fondo al pasar el mouse */
+    background-color: #0056b3;
 }
 
-.registro {
-    width: 900px;
-    height: 600px;
-    left: 50px;
-    top: -650px;
-    position: relative;
-    z-index: 9;
-    border-radius: 25px;
-    box-shadow: 10px 10px 5px rgba(255, 0, 0, 0.649);
-    
+input[type="text"], input[type="email"], input[type="password"], input[type="file"] {
+    width: 92%;
+    padding: 7px
+px
+;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
-.logotienda {
-    
-    left: 50px;
-    top: -1500px;
-    position: relative;
-    z-index: 9;
-    display: inline-block;
-}
-.logotipo{
-    width: 300px;
-    height: auto;
-    display: inline-block;
-    
-    
-}
-.titulo {
-    display: inline-block;
-    font-size: 100px;
-    font-family: 'Bauhaus 93', sans-serif;
-    color: #fff;
-}
-
-@media (max-width: 768px) {
-    /* Media query para pantallas de menos de 768px de ancho */
-    .content {
-        position: relative;
-        z-index: 9;
-        background-color: rgba(255, 255, 255, 0.95);
-        /* Fondo blanco semitransparente */
-        padding: 20px;
-        padding-right: 40px;
-        border-radius: 25px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-        /* Sombra suave */
-        text-align: center;
-        width: 75%;
-        height: 100%;
-        /* Ancho máximo del contenido */
-        margin: 0 auto;
-       
-        /* Centrar verticalmente usando la mitad de la altura de la ventana */
-        transform: translateY(-50%);
-        /* Ajustar para centrar verticalmente */
-        color: #333;
-        /* Color de texto */
-        left: 00px;
-        top: -450px;
-        box-shadow: 10px 10px 5px rgba(255, 0, 0, 0.649);
-    }
-    .genero {
-        padding-right: 12px;
-        width: 108%;
-    }
-    
-    .logotienda {
-        display: none;
-      }
-      .registro {
-        display: none;
-      }
-  }
-  
 
 
 
