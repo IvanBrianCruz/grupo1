@@ -48,8 +48,23 @@ const usuariosController = {
         console.log(nuevousuario)
     },
     loginpross: (req, res) => {
+        //leer el archivo json y dejarlo en una variable (array)
+        const usuario = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
 
-    }
+        let userToLogin = usuario.findByField("email", req.body.email);
+        if (userToLogin) {
+            // ... Lógica para el inicio de sesión exitoso si es necesario ...
+            return res.send(userToLogin)
+        } else {
+            return res.render("../views/iniciarSesion", {
+                errors: {
+                    email: {
+                        msg: "No se encuentra en la base de datos"
+                    }
+                }
+            });
+        }
+    },
 
 }
 

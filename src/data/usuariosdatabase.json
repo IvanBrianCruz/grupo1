@@ -3,7 +3,7 @@
   "id": 1,
   "name": "Nahuel Alex",
   "apell": "Torres",
-  "correo": "nahuel240701@gmail.com",
+  "email": "nahuel240701@gmail.com",
   "password": "123456",
   "imagen": "usuario-1695236638472.jpg",
   "categoria": "admin"
@@ -12,7 +12,7 @@
   "id": 2,
   "name": "ivan brian",
   "apell": "cruz",
-  "correo": "ivan4912134@gmail.com",
+  "email": "ivan4912134@gmail.com",
   "password": "$2a$10$RKzUvxelaBr.0P8pH73ugO5myc0.vvuKDykvFh0SZ2jC3rPn77Vke",
   "imagen": "usuario-1695394519201.png",
   "categoria": "usuario"

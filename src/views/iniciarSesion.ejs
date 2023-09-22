@@ -17,10 +17,14 @@
             <h1>Nombre Pagina</h1>
         </header>
 
-        <form class="login" action="/bibloteca" method="get">
+        <form class="login"  method="get">
             <h2>E-mail</h2>
             <input class="email" type="email" name="email" id="email" placeholder="Ingrese su email" required>
-           
+            <% if (locals.errors && errors.email) { %>
+                <div class="text-danger">
+                    <p><%= errors.email.msg %>erorr</p>
+                </div>
+            <% } %>
                 
             <h2>Contraseña</h2>
             <input class="password" type="password" name="password" id="password" placeholder="Ingrese su contraseña"
