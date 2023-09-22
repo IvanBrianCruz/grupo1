@@ -1,92 +1,20 @@
-[
+[ 
  {
   "id": 1,
-  "name": "Juan",
-  "apell": "Perez",
-  "correo": "juan.perez@example.com",
-  "password": "123456",
-  "imagen": "https://example.com/imagens/juan.jpg",
-  "categoria": "usuario"
- },
- {
-  "id": 2,
-  "name": "Maria",
-  "apell": "Garcia",
-  "correo": "maria.garcia@example.com",
-  "password": "123456",
-  "imagen": "https://example.com/imagens/maria.jpg",
-  "categoria": "usuario"
- },
- {
-  "id": 3,
-  "name": "Pedro",
-  "apell": "Lopez",
-  "correo": "pedro.lopez@example.com",
-  "password": "123456",
-  "imagen": "https://example.com/imagens/pedro.jpg",
-  "categoria": "usuario"
- },
- {
-  "id": 4,
-  "name": "Ana",
-  "apell": "Martinez",
-  "correo": "ana.martinez@example.com",
-  "password": "123456",
-  "imagen": "https://example.com/imagens/ana.jpg",
-  "categoria": "usuario"
- },
- {
-  "id": 5,
-  "name": "Luis",
-  "apell": "Sanchez",
-  "correo": "luis.sanchez@example.com",
-  "password": "123456",
-  "imagen": "https://example.com/imagens/luis.jpg",
-  "categoria": "usuario"
- },
- {
-  "id": 6,
-  "name": "Carlos",
-  "apell": "Gomez",
-  "correo": "carlos.gomez@example.com",
-  "password": "123456",
-  "imagen": "https://example.com/imagens/carlos.jpg",
-  "categoria": "usuario"
- },
- {
-  "id": 7,
-  "name": "Laura",
-  "apell": "Rodriguez",
-  "correo": "laura.rodriguez@example.com",
-  "password": "123456",
-  "imagen": "https://example.com/imagens/laura.jpg",
-  "categoria": "usuario"
- },
- {
-  "id": 8,
-  "name": "David",
-  "apell": "Torres",
-  "correo": "david.torres@example.com",
-  "password": "123456",
-  "imagen": "https://example.com/imagens/david.jpg",
-  "categoria": "usuario"
- },
- {
-  "id": 9,
-  "name": "Daniela",
-  "apell": "Gonzalez",
-  "correo": "daniela.gonzalez@example.com",
-  "password": "123456",
-  "imagen": "https://example.com/imagens/daniela.jpg",
-  "categoria": "usuario"
- },
- {
-  "id": 10,
   "name": "Nahuel Alex",
   "apell": "Torres",
   "correo": "nahuel240701@gmail.com",
   "password": "123456",
   "imagen": "usuario-1695236638472.jpg",
   "categoria": "admin"
+ },
+ {
+  "id": 2,
+  "name": "ivan brian",
+  "apell": "cruz",
+  "correo": "ivan4912134@gmail.com",
+  "password": "$2a$10$RKzUvxelaBr.0P8pH73ugO5myc0.vvuKDykvFh0SZ2jC3rPn77Vke",
+  "imagen": "usuario-1695394519201.png",
+  "categoria": "usuario"
  }
 ]

@@ -5,6 +5,7 @@
 const { log } = require('console');
 const fs = require('fs');
 const path = require("path");
+const bcryptjs = require("bcryptjs");
 //vinculamos con el ejs.
 
 
@@ -17,12 +18,12 @@ const usuariosController = {
 
     // Manejo del pedido get con ruta
     inicioDeSesion: (req, res) => {
-        // comunicarse con el modelo, conseguir información
-        res.render( "../views/iniciarSesion")
+        // comunicarse con el modelo, conseguir informacións
+        res.render("../views/iniciarSesion")
     },
     registro: (req, res) => {
         // comunicarse con el modelo, conseguir información
-        res.render( "../views/register")
+        res.render("../views/register")
     },
     prossregistro: (req, res) => {
         const data = req.body;
@@ -33,20 +34,23 @@ const usuariosController = {
             id: usuario[usuario.length - 1].id + 1,
             name: data.name,
             apell: data.apell,
-           correo: data.correo,
-           password: data.password,
+            correo: data.correo,
+            password: bcryptjs.hashSync(data.password, 10),
             imagen: req.file ? req.file.filename : "default-imagen.png",
             categoria: data.categoria
         }
         //agregar ese objeto al array
-       usuario.push(nuevousuario);
+        usuario.push(nuevousuario);
         //volver a escribir sobre el archivo json 
         fs.writeFileSync(usuariosFilePath, JSON.stringify(usuario, null, " "))
         //devolverle alguna vista al usuario
         res.redirect("/")
         console.log(nuevousuario)
     },
-  
+    loginpross: (req, res) => {
+
+    }
+
 }
 
 // Exportamos el objeto literal con los distintos métodos, que se usará en el enrutador por defecto

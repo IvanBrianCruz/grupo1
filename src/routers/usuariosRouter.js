@@ -23,9 +23,13 @@ const storage = multer.diskStorage({
 const upload = multer({storage:storage});
 // Procesa el pedido get con ruta /
 
-
+// ruta y proceso de inicio de sesion
+// render de vista
 router.get("/inicioDeSesion",  usuariosController.inicioDeSesion);
+// proceso de validacion 
+router.post("/inicioDeSesion",  usuariosController.loginpross);
 
+// ruta y proceso de registo de sesion
 router.get("/registro",  usuariosController.registro);
 router.post("/registro", upload.single("imagen"), usuariosController.prossregistro);
 
