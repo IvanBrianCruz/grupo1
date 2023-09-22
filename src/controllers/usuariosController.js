@@ -48,23 +48,19 @@ const usuariosController = {
         console.log(nuevousuario)
     },
     loginpross: (req, res) => {
-        //leer el archivo json y dejarlo en una variable (array)
-        const usuario = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
-
-        let userToLogin = usuario.findByField("email", req.body.email);
-        if (userToLogin) {
-            // ... Lógica para el inicio de sesión exitoso si es necesario ...
-            return res.send(userToLogin)
-        } else {
-            return res.render("../views/iniciarSesion", {
-                errors: {
-                    email: {
-                        msg: "No se encuentra en la base de datos"
-                    }
-                }
-            });
-        }
-    },
+        console.log("Controlador loginpross llamado");
+        // Obtén el email del cuerpo de la solicitud
+        const email = req.body.email;
+    
+        // Ahora puedes usar el valor de 'email' como necesites
+        // Por ejemplo, puedes imprimirlo en la consola
+        console.log("Email:", email);
+    
+        // Luego, puedes enviar una respuesta o realizar otras operaciones con el email
+        res.json({ email });
+    }
+    
+    
 
 }
 

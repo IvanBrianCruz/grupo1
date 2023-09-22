@@ -27,7 +27,7 @@ const upload = multer({storage:storage});
 // render de vista
 router.get("/inicioDeSesion",  usuariosController.inicioDeSesion);
 // proceso de validacion 
-router.post("/inicioDeSesion",  usuariosController.loginpross);
+router.post("/inicioDeSesion", usuariosController.loginpross);
 
 // ruta y proceso de registo de sesion
 router.get("/registro",  usuariosController.registro);

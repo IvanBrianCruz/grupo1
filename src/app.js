@@ -28,7 +28,7 @@ const usuariosController = require("./routers/usuariosRouter.js")
 
 
 // Usando recursos estáticos.
-app.use(express.static("public"));
+//app.use(express.static("public"));
 
 // Usando los enrutadores importados
 app.use("/", mainRouter);
