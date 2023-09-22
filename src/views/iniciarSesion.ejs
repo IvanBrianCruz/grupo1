@@ -17,18 +17,24 @@
             <h1>Nombre Pagina</h1>
         </header>
 
-        <form class="login"  method="get">
+        <form class="login"  method="post">
             <h2>E-mail</h2>
             <input class="email" type="email" name="email" id="email" placeholder="Ingrese su email" required>
+            
             <% if (locals.errors && errors.email) { %>
                 <div class="text-danger">
-                    <p><%= errors.email.msg %>erorr</p>
+                    <p><%= errors.email.msg %></p>
                 </div>
             <% } %>
                 
             <h2>Contraseña</h2>
             <input class="password" type="password" name="password" id="password" placeholder="Ingrese su contraseña"
                 required>
+                <% if (locals.errors && errors.password) { %>
+                    <div class="text-danger">
+                        <p><%= errors.password.msg %></p>
+                    </div>
+                <% } %>
             <div class="caja1">
                 <div class="recordar">
                     <label for="recordar">recordar</label>

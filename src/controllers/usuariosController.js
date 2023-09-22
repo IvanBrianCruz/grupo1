@@ -17,10 +17,7 @@ const usuariosFilePath = path.join(__dirname, '../data/usuariosdatabase.json');
 const usuariosController = {
 
     // Manejo del pedido get con ruta
-    inicioDeSesion: (req, res) => {
-        // comunicarse con el modelo, conseguir informacións
-        res.render("../views/iniciarSesion")
-    },
+
     registro: (req, res) => {
         // comunicarse con el modelo, conseguir información
         res.render("../views/register")
@@ -47,20 +44,53 @@ const usuariosController = {
         res.redirect("/")
         console.log(nuevousuario)
     },
+    inicioDeSesion: (req, res) => {
+        // comunicarse con el modelo, conseguir informacións
+        res.render("../views/iniciarSesion")
+    },
     loginpross: (req, res) => {
-        console.log("Controlador loginpross llamado");
-        // Obtén el email del cuerpo de la solicitud
-        const email = req.body.email;
+        console.log('Controlador loginpross llamado');
+console.log('Email:', req.body.email);
+console.log('Contraseña:', req.body.password);
+
+        // Leer el archivo JSON y dejarlo en una variable (array)
+        const usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
     
-        // Ahora puedes usar el valor de 'email' como necesites
-        // Por ejemplo, puedes imprimirlo en la consola
-        console.log("Email:", email);
+        // Buscar al usuario por su correo en el array
+        const userToLogin = usuarios.find(user => user.email === req.body.email);
     
-        // Luego, puedes enviar una respuesta o realizar otras operaciones con el email
-        res.json({ email });
-    }
+        if (userToLogin) {
+            // Verificar la contraseña utilizando bcrypt
+            const isPasswordValid = bcryptjs.compareSync(req.body.password, userToLogin.password);
     
+            if (isPasswordValid) {
+                // Redireccionar al usuario a la página de inicio
+                return res.render('../views/bibloteca');
+            } else {
+                // Contraseña incorrecta
+                return res.render('../views/iniciarSesion', {
+                    errors: {
+                        password: {
+                            msg: 'La contraseña es incorrecta'
+                        }
+                    }
+                });
+            }
+        } else {
+            // El correo no se encuentra en la base de datos
+            return res.render('../views/iniciarSesion', {
+                errors: {
+                    email: {
+                        msg: 'El correo no se encuentra en la base de datos'
+                    }
+                }
+            });
+        }
+    },
     
+
+
+
 
 }
 
