@@ -6,7 +6,14 @@ const multer = require('multer');
 const path = require('path')
 
 // Importamos el controlador de las rutas por defecto
-const usuariosController = require("../controllers/usuariosController.js")
+const usuariosController = require("../controllers/usuariosController.js");
+const loginconfig = require("../../middlewares/loginconfig.js");
+ // Asegúrate de que el nombre sea correcto
+
+
+
+
+// const loginconfing = require('../middlewares/loginconfing.js')
 
 // En vez de app.get, utilizamos router.get. Esto va "guardando" en router las distintas rutas, que luego exportamos
 //********** MULTER CONFIGURACION */
@@ -25,13 +32,16 @@ const upload = multer({storage:storage});
 
 // ruta y proceso de inicio de sesion
 // render de vista
-router.get("/inicioDeSesion",  usuariosController.inicioDeSesion);
+router.get("/inicioDeSesion", loginconfig,    usuariosController.inicioDeSesion);
 // proceso de validacion 
 router.post("/inicioDeSesion", usuariosController.loginpross);
 
 // ruta y proceso de registo de sesion
-router.get("/registro",  usuariosController.registro);
+router.get("/registro", loginconfig, usuariosController.registro);  
 router.post("/registro", upload.single("imagen"), usuariosController.prossregistro);
+
+//cerrar sesion 
+router.get("/cerrarSession", usuariosController.cerrarSession);
 
 
 

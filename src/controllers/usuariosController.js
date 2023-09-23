@@ -31,7 +31,7 @@ const usuariosController = {
             id: usuario[usuario.length - 1].id + 1,
             name: data.name,
             apell: data.apell,
-            correo: data.correo,
+            email: data.email,
             password: bcryptjs.hashSync(data.password, 10),
             imagen: req.file ? req.file.filename : "default-imagen.png",
             categoria: data.categoria
@@ -45,27 +45,32 @@ const usuariosController = {
         console.log(nuevousuario)
     },
     inicioDeSesion: (req, res) => {
+       // console.log(req.session);
         // comunicarse con el modelo, conseguir informacións
         res.render("../views/iniciarSesion")
     },
     loginpross: (req, res) => {
-        console.log('Controlador loginpross llamado');
-console.log('Email:', req.body.email);
-console.log('Contraseña:', req.body.password);
+        //console.log('Controlador loginpross llamado');
+        //console.log('Email:', req.body.email);
+        //console.log('Contraseña:', req.body.password);
 
         // Leer el archivo JSON y dejarlo en una variable (array)
         const usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
-    
+
         // Buscar al usuario por su correo en el array
         const userToLogin = usuarios.find(user => user.email === req.body.email);
-    
+
         if (userToLogin) {
             // Verificar la contraseña utilizando bcrypt
             const isPasswordValid = bcryptjs.compareSync(req.body.password, userToLogin.password);
-    
+
             if (isPasswordValid) {
                 // Redireccionar al usuario a la página de inicio
+                delete userToLogin.password;
+                req.session.userlogiado = userToLogin;
+                console.log(req.session)
                 return res.render('../views/bibloteca');
+                
             } else {
                 // Contraseña incorrecta
                 return res.render('../views/iniciarSesion', {
@@ -87,7 +92,10 @@ console.log('Contraseña:', req.body.password);
             });
         }
     },
-    
+    cerrarSession: (req, res) => {
+            req.session.destroy();
+            return res.redirect("/");
+    }
 
 
 

@@ -18,20 +18,24 @@
               <span class="micarrito">Mi carrito</span>
           </a>
       </li>
+      <% if (locals.islogget) { %>
+       
+  
       <li class="dropdown">
           <a href="javascript:void(0);" class="dropbtn">
-            <img src="/img/imagenes-usuario/pordefecto.png" alt="imagen1" style="border-radius: 50%; width: 45px; height: 45px;">
+            <img src="/img/imagenes-usuario/<%= locals.userlogged.imagen %>" alt="imagen1" style="border-radius: 50%; width: 45px; height: 45px;">
 
-              <p class="ingresar">Ingresar</p>
+              <p class="ingresar">Ingresar</p> 
           </a>
           <div class="dropdown-content">
               <a href="para la edicion de usuario">Edicion de Perfil</a>
-              <a href="para cerrar sesion">Cerrar Sesión</a>
+              <a href="/cerrarSession">Cerrar Sesión</a>
           </div>
       </li>
+      <% } else { %>
       <a href="http://localhost:3060/inicioDeSesion" style="color: white; text-decoration: none; font-size: 16px;">Iniciar Sesión </a>
       <a href="http://localhost:3060/registro" style="color: white; text-decoration: none; font-size: 16px;">- Registrarse</a>
-      
+      <% } %>
 
   </ul>
   </div>

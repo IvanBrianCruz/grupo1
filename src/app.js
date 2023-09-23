@@ -1,11 +1,23 @@
 const express = require('express');
+const session = require('express-session');
+
 const methodOverride = require('method-override');
 const path = require('path');
 
+const esconderregistro = require("../middlewares/esconderregistro");
 //express
 const app = express();
 
 //middlewares
+// Usa el middleware loginconfig en todas las rutas
+
+app.use(session({
+    secret:'esto es muy secreto no mires ',
+    resave: false,
+    saveUninitialized: false,
+
+}));
+app.use(esconderregistro);  
 app.use(express.static(path.join(__dirname, '../public')));  // Necesario para los archivos estáticos en el folder /publ
 app.use(express.urlencoded({ extended: false }));//carga de producto y interprete 
 app.use(express.json());// se ve en formato de objeto 
@@ -24,11 +36,13 @@ const mainRouter = require("./routers/mainRouter.js")
 
 const productsController = require("./routers/productsRouter.js")
 
-const usuariosController = require("./routers/usuariosRouter.js")
+const usuariosController = require("./routers/usuariosRouter.js");
+const { Session } = require('inspector');
 
 
 // Usando recursos estáticos.
 //app.use(express.static("public"));
+// Usa el middleware esconderregistro antes de cargar las rutas
 
 // Usando los enrutadores importados
 app.use("/", mainRouter);
@@ -50,3 +64,4 @@ app.listen(3060, () => {
 
 
 
+ 

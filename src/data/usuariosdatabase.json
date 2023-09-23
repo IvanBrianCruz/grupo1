@@ -1,20 +1,29 @@
-[ 
+[
  {
   "id": 1,
   "name": "Nahuel Alex",
   "apell": "Torres",
-  "email": "nahuel240701@gmail.com",
+  "correo": "nahuel240701@gmail.com",
   "password": "123456",
   "imagen": "usuario-1695236638472.jpg",
   "categoria": "admin"
  },
  {
   "id": 2,
+  "name": "Nahuel Alex",
+  "apell": "Torres",
+  "email": "nahuel240701@gmail.com",
+  "password": "$2a$10$V4qF55MZ/jqLtsEpxpkWZuT6iwjBEc7eS173nNqWP7uQYmujcLxsy",
+  "imagen": "usuario-1695430217997.jpg",
+  "categoria": "admin"
+ },
+ {
+  "id": 3,
   "name": "ivan brian",
-  "apell": "cruz",
+  "apell": "cruz ",
   "email": "ivan4912134@gmail.com",
-  "password": "$2a$10$RKzUvxelaBr.0P8pH73ugO5myc0.vvuKDykvFh0SZ2jC3rPn77Vke",
-  "imagen": "usuario-1695394519201.png",
-  "categoria": "usuario"
+  "password": "$2a$10$NGMTCd0PfNztwn0q.e0EfebWojp9jkunUM0q4vOJGJZAPLb3bbieS",
+  "imagen": "usuario-1695430271329.png",
+  "categoria": "admin"
  }
 ]
