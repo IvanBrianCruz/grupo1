@@ -42,8 +42,14 @@
             <button class="boton-agregar" type="submit"><a href="http://localhost:3060/carrito" class="btn">AGREGAR AL
                 CARRITO</a></button>
           </label>
-          <button class="boton-editar" type="submit"><a href="http://localhost:3060/producto/edicionDeProducto/<%= product.id %>" class="btn1">EDITAR PRODUCTO</a></button>
-          </label>
+          
+          <% if (locals.userlogged.categoria == "admin") { %>
+            <button class="boton-editar" type="submit"><a href="http://localhost:3060/producto/edicionDeProducto/<%= product.id %>" class="btn1">EDITAR PRODUCTO</a></button>
+
+        <% } else { %>
+         
+          <% } %>
+          
 
 
 
@@ -55,10 +61,13 @@
                 class="btn">COMPRAR</a></button>
           </label>
 
+          <% if (locals.userlogged.categoria == "admin") { %>
           <form action="http://localhost:3060/producto/eliminar/<%= product.id %>?_method=DELETE" method="POST">
             <button type="submit" class="boton-eliminar"> <a class="btn1"> ELIMINAR</a></button>
           </form>
-
+          <% } else { %>
+         
+            <% } %>
 
 
         </div>

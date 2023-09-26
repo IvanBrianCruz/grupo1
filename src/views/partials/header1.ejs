@@ -46,7 +46,14 @@
       <li><a href="http://localhost:3060/bibloteca">BIBLOTECA</a></li>
       <li><a href="http://localhost:3060/listaDeDeseos">LISTA DE DESEOS</a></li>
       <li><a href="http://localhost:3060/carrito">CARRITO</a></li>
-      <li><a href="http://localhost:3060/cargaDeProducto">ADMIN</a></li>
+      
+        <% if ( locals.userlogged && locals.userlogged.categoria == "admin") { %>
+          <li><a href="http://localhost:3060/cargaDeProducto">ADMIN</a></li>
+          <% } else { %>
+             
+            <% } %>
+       
+          
     </ul>
     <a href="#" class="burger-menu">
       <i class="fas fa-bars"></i>
