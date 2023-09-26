@@ -68,7 +68,7 @@ const usuariosController = {
                 // Redireccionar al usuario a la página de inicio
                 delete userToLogin.password;
                 req.session.userlogiado = userToLogin;
-                console.log(req.session)
+                console.log(req.session) 
                 return res.render('../views/bibloteca');
                 
             } else {
