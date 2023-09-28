@@ -42,6 +42,8 @@ router.post("/registro", upload.single("imagen"), usuariosController.prossregist
 
 //cerrar sesion 
 router.get("/cerrarSession", usuariosController.cerrarSession);
+//edicion de usuario
+router.get('/edicionUsuario' ,usuariosController.editUsser);
 
 
 

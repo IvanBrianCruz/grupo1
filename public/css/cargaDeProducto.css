@@ -15,7 +15,7 @@
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .conteinerdedatos{
@@ -90,4 +90,10 @@ textarea {
     background-color: #ffffff;
     padding: 1vw;
     border-radius: 25px;
+}
+/*foto de perfil*/
+.imagendeperfil{
+    display: flex;
+    align-self: center;
+   
 }

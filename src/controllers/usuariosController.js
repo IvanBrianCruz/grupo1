@@ -95,7 +95,11 @@ const usuariosController = {
     cerrarSession: (req, res) => {
             req.session.destroy();
             return res.redirect("/");
-    }
+    },
+    editUsser: (req, res) => {
+        // comunicarse con el modelo, conseguir información
+        res.render("../views/edicionDeUsuario")
+    },
 
 
 
