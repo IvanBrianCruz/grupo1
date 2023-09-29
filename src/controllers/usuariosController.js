@@ -45,7 +45,7 @@ const usuariosController = {
         console.log(nuevousuario)
     },
     inicioDeSesion: (req, res) => {
-       // console.log(req.session);
+        // console.log(req.session);
         // comunicarse con el modelo, conseguir informacións
         res.render("../views/iniciarSesion")
     },
@@ -68,9 +68,9 @@ const usuariosController = {
                 // Redireccionar al usuario a la página de inicio
                 delete userToLogin.password;
                 req.session.userlogiado = userToLogin;
-                console.log(req.session) 
+                console.log(req.session)
                 return res.render('../views/bibloteca');
-                
+
             } else {
                 // Contraseña incorrecta
                 return res.render('../views/iniciarSesion', {
@@ -93,15 +93,49 @@ const usuariosController = {
         }
     },
     cerrarSession: (req, res) => {
-            req.session.destroy();
-            return res.redirect("/");
+        req.session.destroy();
+        return res.redirect("/");
     },
     editUsser: (req, res) => {
         // comunicarse con el modelo, conseguir información
         res.render("../views/edicionDeUsuario")
     },
+   // En tu controlador
+prosseditUsser: (req, res) => {
+    const data = req.body;
+    const id = req.params.id; // Obtén el id del parámetro de la URL
 
+    // Leer el archivo JSON y almacenarlo en una variable (array)
+    const usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
 
+    // Buscar el usuario original para tomar su id
+    const oldUsuario = usuarios.find(usuario => usuario.id == id);
+
+    // Crear un nuevo objeto literal con los datos ingresados por el usuario
+    const editadoUsuario = {
+        id: oldUsuario.id,
+        name: data.name,
+        apell: data.apell,
+        email: data.email,
+        password: data.password,
+        image: req.file ? req.file.filename : oldUsuario.imagem,
+        categoria: data.categoria,
+    }
+
+    // Identificar el índice
+    const index = usuarios.findIndex(usuario => usuario.id == id);
+
+    // Modificar el objeto en la posición correspondiente
+    usuarios[index] = editadoUsuario;
+
+    // Volver a escribir sobre el archivo JSON
+    fs.writeFileSync(usuariosFilePath, JSON.stringify(usuarios, null, " "));
+
+    // Redirigir al usuario a alguna vista
+    res.redirect("/");
+},
+
+    
 
 
 }

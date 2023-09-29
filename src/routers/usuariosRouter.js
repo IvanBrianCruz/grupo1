@@ -45,6 +45,10 @@ router.get("/cerrarSession", usuariosController.cerrarSession);
 //edicion de usuario
 router.get('/edicionUsuario' ,usuariosController.editUsser);
 
+//router.post('/edicionUsuario' ,usuariosController.prosseditUsser);
+router.post("/edicionUsuario/:id", upload.single("product-image"), usuariosController.prosseditUsser);
+
+
 
 
 // Exportamos la variable router ya con todas las rutas "guardadas", que se usará en app.js
