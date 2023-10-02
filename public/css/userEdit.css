@@ -1,0 +1,133 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.formulario-conteiner {
+    display: flex;
+    box-shadow: 5px, 5px, 10px rgba(0, 0, 0, .212);
+    margin: 50px;
+}
+   
+.form-image {
+   width: 50%;
+   display: flex;
+   justify-content: space-around;
+   align-items: flex-start;
+   background-color: blueviolet;
+   padding: 1rem;
+   flex-direction: column;
+}
+.form-image img{
+    width: 20rem;
+}
+  
+.form  {
+    font-family: Arial, sans-serif;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ccc;
+}
+.form-header{
+    display: flex;
+    justify-content:space-between;
+}
+.form-header-H2::after {
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: blueviolet;
+    margin: 0 auto ;
+    position: absolute;
+    border-radius: 10px;
+
+}
+.form-box{
+   display: flex; 
+   flex-direction: column;
+   margin-bottom: 1.1rem;
+}
+.form-box input {
+ margin: 0.5rem 0;
+ padding: 0.8rem 1.2rem;
+ border: none;
+ border-radius: 10px;
+ box-shadow: 1px 1px 6px #000001;
+}
+.form-box input:hover{
+    background-color: #eeeeee;
+}
+.form-box input:focus-visible{
+    outline: 1px solid #6c63ff;
+}
+/*---------bot0nes-----------*/
+/* Estilos para el botón de descartar cambios */
+#discard-button {
+    background-color: red; /* Fondo rojo */
+    color: white; /* Texto en blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interior */
+    margin: 10px; /* Margen exterior */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 12px;
+}
+  
+  /* Estilos para el botón de guardar cambios */
+#save-button {
+    background-color: green; /* Fondo verde */
+    color: white; /* Texto en blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interior */
+    margin: 10px; /* Margen exterior */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 15px;
+}
+
+/*-------MEDIDAS---*/
+  /* Ocultar la imagen cuando el ancho de la pantalla sea menor a 600px */
+@media screen and (max-width: 1300px) {
+    .formulario-conteiner{
+        margin: 1rem;
+        padding: 20px;
+    }
+    .form-image  {
+      display: none;
+    }
+    .form-header{
+        margin: 10px;
+    }
+    .form-box {
+        width: 100%;
+        margin: 2rem;
+    }
+    
+    .form{
+     display: flex;
+     align-items: flex-start;
+     width: 50rem;
+    }
+    
+}
+
+@media (min-width: 361px){
+     
+    .form-group {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+    }
+    .form{
+        font-size: small;
+    }
+    .form-box input {
+        margin: 0.5rem 0;
+        padding: 0.5rem 1.2rem;
+    }
+
+}
+

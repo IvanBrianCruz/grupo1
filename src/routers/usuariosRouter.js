@@ -39,11 +39,9 @@ router.post("/inicioDeSesion", usuariosController.loginpross);
 // ruta y proceso de registo de sesion
 router.get("/registro", loginconfig, usuariosController.registro);  
 router.post("/registro", upload.single("imagen"), usuariosController.prossregistro);
-
+//Edit perfil
+router.get("/userEdit", usuariosController.EdicionPerfil);
 //cerrar sesion 
 router.get("/cerrarSession", usuariosController.cerrarSession);
-
-
-
 // Exportamos la variable router ya con todas las rutas "guardadas", que se usará en app.js
 module.exports = router;
