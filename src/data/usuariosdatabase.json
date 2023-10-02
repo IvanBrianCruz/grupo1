@@ -25,5 +25,14 @@
   "password": "$2a$10$NGMTCd0PfNztwn0q.e0EfebWojp9jkunUM0q4vOJGJZAPLb3bbieS",
   "imagen": "usuario-1695430271329.png",
   "categoria": "admin"
+ },
+ {
+  "id": 4,
+  "name": "brian",
+  "apell": "cruz",
+  "email": "kingworldpro@gmail.com",
+  "password": "$2a$10$skWScEw2KMLgZo4sgziP..HPVDc1wEYCmAnrd/TrWUqYxN7wzKlKC",
+  "imagen": "usuario-1695734895167.png",
+  "categoria": "usuario"
  }
 ]

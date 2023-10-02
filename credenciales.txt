@@ -1,0 +1,8 @@
+ADMIN
+ivan4912134@gmail.com
+contrasena: 123456789
+
+
+USUARIO
+kingworldpro@gmail.com
+contrasena: 123456

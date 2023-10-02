@@ -28,7 +28,11 @@
               <p class="ingresar">Ingresar</p> 
           </a>
           <div class="dropdown-content">
+<<<<<<< HEAD
               <a href="http://localhost:3060/userEdit">Edicion de Perfil</a>
+=======
+              <a href="/edicionUsuario">Edicion de Perfil</a>
+>>>>>>> e9bc641ec06f13a37c29b9921d9a81ffabd64bec
               <a href="/cerrarSession">Cerrar Sesión</a>
           </div>
       </li>
@@ -46,7 +50,14 @@
       <li><a href="http://localhost:3060/bibloteca">BIBLOTECA</a></li>
       <li><a href="http://localhost:3060/listaDeDeseos">LISTA DE DESEOS</a></li>
       <li><a href="http://localhost:3060/carrito">CARRITO</a></li>
-      <li><a href="http://localhost:3060/cargaDeProducto">ADMIN</a></li>
+      
+        <% if ( locals.userlogged && locals.userlogged.categoria == "admin") { %>
+          <li><a href="http://localhost:3060/cargaDeProducto">ADMIN</a></li>
+          <% } else { %>
+             
+            <% } %>
+       
+          
     </ul>
     <a href="#" class="burger-menu">
       <i class="fas fa-bars"></i>
