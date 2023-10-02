@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/cargaDeProducto.css">
+    <link rel="stylesheet" href="/css/userEdit.css">
     <title>炎ATLAS炎</title>
     <link rel="shortcut icon" href="/img/logo-tienda.png">
     <!-- link para cargar los iconos  -->
@@ -24,61 +24,67 @@
 
     </header>
     <main>
-        <div class="container-formulario">
-            <h1>Hola <%= userlogged.name %> <%= userlogged.apell %></h1> 
-            <img class="imagendeperfil" src="/img/imagenes-usuario/<%= locals.userlogged.imagen %>" alt="imagen1" style="border-radius: 5%; width: 40%; height: auto; margin: 0 auto;">
-<br>
-
-
-            <form class="conteinerdedatos"  method="post" >
-                <div class="nombre-producto">
-                    <div class="datos-formulario">
-                        <label for="nombre">Nombres</label>
-                        <input value="<%= userlogged.name %>" type="text" id="name" name="name" placeholder="Ingrese sus nombres">
+        <div class="formulario-conteiner">
+            <div class="form-image">
+                <h1>Hola <%= userlogged.name %> <%= userlogged.apell %></h1> 
+                <img class="imagendeperfil" src="/img/imagenes-usuario/<%= locals.userlogged.imagen %>" alt="imagen1" style="border-radius: 5%">
+                <br> 
+            </div>
+            <div class="form">
+                <form class="conteinerdedatos"  method="post" >
+                    <div class="form-header">
+                        <h2 class="form-header-H2">Editar Perfil</h2>
                     </div>
-                    <div class="datos-formulario">
-                        <label for="precio">Apellido</label>
-                        <input value="<%= userlogged.apell %>" type="text" id="apell" name="apell" placeholder="Ingrese los apellidos">
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="datos-formulario">
-                        <label for="categoria">Categorías</label>
-                        <select id="categoria" name="categoria">
-                            <option value="acción">usuario</option>
-                           
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="descripcion">Correo Electronico</label>
-                        <input value="<%= userlogged.email %>" type="text" id="email" name="email" placeholder="Email">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="descripcion">Contraseña</label>
-                        <input value="" type="text" id="password" name="password" placeholder="password">
-                    </div>
-                </div>
-                <div class="datos-formulario">
-                  <label for="product-image">Imagen de Perfil</label>
-                  <br>
-                  <input type="file" id="product-image" name="product-image">
-              </div>
-              <br>
-
-                <div class="form-row">
                     <br>
-                    <button class="guardar" type="submit">Guardar</button>
-                </div>
-            </form>
+                    <div class="form-row">
+                        <div class="datos-formulario">
+                            <label for="nombre">Nombres</label>
+                            <input value="<%= userlogged.name %>" type="text" id="name" name="name" placeholder="Ingrese sus nombres">
+                        </div>
+                        <div class="datos-formulario">
+                            <label for="precio">Apellido</label>
+                            <input value="<%= userlogged.apell %>" type="text" id="apell" name="apell" placeholder="Ingrese los apellidos">
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <div class="datos-formulario">
+                            <label for="categoria">Categorías</label>
+                            <select id="categoria" name="categoria">
+                                <option value="acción">usuario</option>
+                               
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="descripcion">Correo Electronico</label>
+                            <input value="<%= userlogged.email %>" type="text" id="email" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="descripcion">Contraseña</label>
+                            <input value="" type="text" id="password" name="password" placeholder="password">
+                        </div>
+                    </div>
+                    <div class="datos-formulario">
+                      <label for="product-image">Cambiar Imagen de Perfil</label>
+                      <br>
+                      <input type="file" id="product-image" name="product-image">
+                  </div>
+                  <br>
+    
+                    <div class="form-row">
+                        <br>
+                        <button class="guardar" type="submit">Guardar</button>
+                    </div>
+                </form>
+
+            </div>
             
         </div>
-        <br>
         <footer>
             <!-- footer -->
             <%- include('partials/footer') %>

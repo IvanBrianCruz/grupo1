@@ -93,11 +93,6 @@ const usuariosController = {
         }
     },
 
-    EdicionPerfil: (req, res) => {
-        // console.log(req.session);
-         // comunicarse con el modelo, conseguir informacións
-         res.render("../views/userEdit.ejs")
-     },
     cerrarSession: (req, res) => {
         req.session.destroy();
         return res.redirect("/");

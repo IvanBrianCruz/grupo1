@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 .formulario-conteiner {
     display: flex;
     box-shadow: 5px, 5px, 10px rgba(0, 0, 0, .212);
@@ -14,13 +15,12 @@
    width: 50%;
    display: flex;
    justify-content: space-around;
-   align-items: flex-start;
+   align-items: center;
    background-color: blueviolet;
-   padding: 1rem;
    flex-direction: column;
 }
 .form-image img{
-    width: 20rem;
+    width: 17rem;
 }
   
 .form  {
@@ -47,38 +47,27 @@
     border-radius: 10px;
 
 }
-.form-box{
+.form-row{
    display: flex; 
    flex-direction: column;
    margin-bottom: 1.1rem;
 }
-.form-box input {
+.form-row input {
  margin: 0.5rem 0;
  padding: 0.8rem 1.2rem;
  border: none;
  border-radius: 10px;
  box-shadow: 1px 1px 6px #000001;
 }
-.form-box input:hover{
+.form-row input:hover{
     background-color: #eeeeee;
 }
-.form-box input:focus-visible{
+.form-row input:focus-visible{
     outline: 1px solid #6c63ff;
 }
 /*---------bot0nes-----------*/
-/* Estilos para el botón de descartar cambios */
-#discard-button {
-    background-color: red; /* Fondo rojo */
-    color: white; /* Texto en blanco */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Espaciado interior */
-    margin: 10px; /* Margen exterior */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-    font-size: 12px;
-}
-  
-  /* Estilos para el botón de guardar cambios */
-#save-button {
+/* Estilos para el botón de guardar cambios */
+.guardar {
     background-color: green; /* Fondo verde */
     color: white; /* Texto en blanco */
     border: none; /* Sin borde */
@@ -101,7 +90,7 @@
     .form-header{
         margin: 10px;
     }
-    .form-box {
+    .form-row {
         width: 100%;
         margin: 2rem;
     }
@@ -116,7 +105,7 @@
 
 @media (min-width: 361px){
      
-    .form-group {
+    .datos-formulario {
         flex-direction: column;
         flex-wrap: nowrap;
         max-height: 10rem;
@@ -124,7 +113,7 @@
     .form{
         font-size: small;
     }
-    .form-box input {
+    .form-row input {
         margin: 0.5rem 0;
         padding: 0.5rem 1.2rem;
     }
