@@ -1,118 +1,110 @@
-
-// Requerimos path para poder enviar los archivos HTML
-const { log } = require('console');
 const fs = require('fs');
-const path = require("path");
-//vinculamos con el ejs.
 
+const db = require('../data/models');
+const Game = db.Game;
 
-
-/* En la constante "products" ya tienen los productos que están 
-guardados en la carpeta Data como Json (un array de objetos literales) */
-const productsFilePath = path.join(__dirname, '../data/productsdatabase.json');
-
-// Creamos el objeto literal con los métodos a exportar
 const productsController = {
-    index: (req, res) => {
-        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-        // comunicarse con el modelo, conseguir información
-        res.render('../views/inicio', { products: products })
-    },
-
+  index: function (req, res) {
+    Game.findAll()
+    .then(function (products) {  // Cambié 'productos' a 'products' aquí
+        res.render('inicio', { products: products });  // Cambié 'productos' a 'products' aquí
+      })
+      .catch(function (error) {
+        console.error(error);
+        res.status(500).send('Error al obtener los productos desde la base de datos');
+      });
+  },
     // Manejo del pedido get con ruta
-    productoDetalle: (req, res) => {
-        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-
-        const product = products.find(product => {
-            return product.id == req.params.id
-        });
-
-        // comunicarse con el modelo, conseguir información
-        res.render('../views/producto', { product })
-    },
-    productocarga: (req, res) => {
-        // comunicarse con el modelo, conseguir información
-
-        res.render("../views/cargaDeProducto");
-
-
-    },
-
-    procesoDeCarga: (req, res) => {
+    productoDetalle: async (req, res) => {
+        try {
+          const product = await Game.findByPk(req.params.id);
+          if (product) {
+            res.render('../views/producto', { product });
+          } else {
+            res.status(404).send('Producto no encontrado');
+          }
+        } catch (error) {
+          console.error(error);
+          res.status(500).send('Error al obtener el producto desde la base de datos');
+        }
+      },
+      productocarga: (req, res) => {
+        res.render('../views/cargaDeProducto');
+      },
+      procesoDeCarga: async (req, res) => {
         const data = req.body;
-        //leer el archivo json y dejarlo en una variable (array)
-        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-        //crear un nuevo objeto literal con los datos ingresados por el usuario
-        const nuevojuego = {
-            id: products[products.length - 1].id + 1,
+        try {
+          const nuevoJuego = await Game.create({
             name: data.name,
             price: parseInt(data.price),
-            categoria: data.categoria,
-            caracteristic: data.descripcion,
-            image: req.file ? req.file.filename : "default-image.png",
+            category: data.categoria,
+            features: data.descripcion,
+            image: req.file ? req.file.filename : 'default-image.png',
+          });
+          res.redirect('/');
+        } catch (error) {
+          console.error(error);
+          res.status(500).send('Error al agregar el producto a la base de datos');
         }
-        //agregar ese objeto al array
-        products.push(nuevojuego);
-        //volver a escribir sobre el archivo json 
-        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "))
-        //devolverle alguna vista al usuario
-        res.redirect("/")
-    },
+      },
+//******************anda asta aqui */
+productoedicion: async (req, res) => {
+    try {
+      const product = await Game.findByPk(req.params.id);
+      if (product) {
+        res.render('../views/edicionDeProducto', { productToEdit: product });
+      } else {
+        res.status(404).send('Producto no encontrado');
+      }
+    } catch (error) {
+      console.error(error);
+      res.status(500).send('Error al obtener el producto desde la base de datos');
+    }
+  },
 
-    productoedicion: (req, res) => {
-        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-
-        const product = products.find(product => {
-            return product.id == req.params.id
-        });
-        // comunicarse con el modelo, conseguir información
-        res.render("../views/edicionDeProducto", {productTiEdit: product});
-    },
-    procesoDeEdicion: (req, res) =>{
-        const data = req.body;
-        //leer el archivo json y dejarlo en una variable (array)
-        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-        // buscar el producto original para tomar su id
-        const oldProduct = products.find(product => {
-            return product.id == req.params.id
-            });
-        //crear un nuevo objeto literal con los datos ingresados por el usuario
+  procesoDeEdicion: async (req, res) => {
+    const data = req.body;
+    try {
+      const oldProduct = await Game.findByPk(req.params.id);
+      if (oldProduct) {
         const editadoJuego = {
-            id: oldProduct.id,
-            name: data.name,
-            price: parseInt(data.price),
-            categoria: data.categoria,
-            caracteristic: data.descripcion,
-            image: req.file ? req.file.filename : oldProduct.image,// if ternario si hay nuevo img usa eso / sino hay usa la vieja imagen 
-        }
-        //identificar el index 
-const index = products.findIndex(product =>{
-    return product.id == req.params.id
-})
+          name: data.name,
+          price: parseInt(data.price),
+          category: data.categoria,
+          features: data.descripcion,
+          image: req.file ? req.file.filename : oldProduct.image,
+        };
 
-        //modificar el objeto en la posicion que coresponda 
-        products[index] = editadoJuego
-        //volver a escribir sobre el archivo json 
-        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "))
-        //devolverle alguna vista al usuario
-        res.redirect("/")
-    },
-    eliminarProducto : (req, res) => {
+        await Game.update(editadoJuego, {
+          where: { id: req.params.id },
+        });
 
-		// Leer el archivo JSON y dejarlo en una variable (array)
-		const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        res.redirect('/');
+      } else {
+        res.status(404).send('Producto no encontrado');
+      }
+    } catch (error) {
+      console.error(error);
+      res.status(500).send('Error al editar el producto en la base de datos');
+    }
+  },
 
-		// Modificar el array para que se elimine el producto con ID que llega por parametro
-		const filteredProducts = products.filter(product => {
-			return product.id != req.params.id
-		})
-
-		// Escribir el archivo JSON
-		fs.writeFileSync(productsFilePath, JSON.stringify(filteredProducts, null, " "))
-
-		// Devolverle alguna vista al usuario
-		res.redirect("/");
-	}
+  eliminarProducto: async (req, res) => {
+    try {
+      const product = await Game.findByPk(req.params.id);
+      if (product) {
+        await Game.destroy({
+          where: { id: req.params.id },
+        });
+        res.redirect('/');
+      } else {
+        res.status(404).send('Producto no encontrado');
+      }
+    } catch (error) {
+      console.error(error);
+      res.status(500).send('Error al eliminar el producto de la base de datos');
+    }
+  },
 
 }
 
