@@ -25,16 +25,18 @@
     </header>
     <main>
         <div class="container-formulario">
-            <h1>Estas editando el juego: <%= productTiEdit.name %> </h1>
-            <form class="conteinerdedatos" action="http://localhost:3060/producto/edicionDeProducto/<%= productTiEdit.id %>?_method=PUT" method="post" enctype="multipart/form-data">
+          
+            <h1>Estás editando el juego: <%= productToEdit.name %> </h1>
+
+            <form class="conteinerdedatos" action="http://localhost:3060/producto/edicionDeProducto/<%= productToEdit.id %>?_method=PUT" method="post" enctype="multipart/form-data">
                 <div class="nombre-producto">
                     <div class="datos-formulario">
                         <label for="nombre">Nombre del Juego</label>
-                        <input value="<%= productTiEdit.name %>" type="text" id="nombre" name="name" placeholder="EJ: Grand Theft Auto">
+                        <input value="<%= productToEdit.name %>" type="text" id="nombre" name="name" placeholder="EJ: Grand Theft Auto">
                     </div>
                     <div class="datos-formulario">
                         <label for="precio">Precio</label>
-                        <input value="<%= productTiEdit.price %>" type="number" id="precio" name="price" placeholder="Ingrese el precio">
+                        <input value="<%= productToEdit.price %>" type="number" id="precio" name="price" placeholder="Ingrese el precio">
                     </div>
                 </div>
 
@@ -59,7 +61,7 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="descripcion">Descripción del Juego</label>
-                        <textarea id="descripcion" name="descripcion" placeholder="Ingrese la descripción"><%= productTiEdit.caracteristic %></textarea>
+                        <textarea id="descripcion" name="descripcion" placeholder="Ingrese la descripción"><%= productToEdit. features %></textarea>
                     </div>
                 </div>
                 <div class="datos-formulario">
