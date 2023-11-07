@@ -1,97 +1,77 @@
-// Requerimos path para poder enviar los archivos HTM
+const bcryptjs = require('bcryptjs');
 
+const db = require('../data/models');
+const User = db.User; // Asumiendo que has definido el modelo User correctamente
 
-
-const { log } = require('console');
-const fs = require('fs');
-const path = require("path");
-const bcryptjs = require("bcryptjs");
-//vinculamos con el ejs.
-
-
-
-/* En la constante "products" ya tienen los productos que están 
-guardados en la carpeta date como Json (un array de objetos literales) */
-const usuariosFilePath = path.join(__dirname, '../data/usuariosdatabase.json');
-// Creamos el objeto literal con los métodos a exportar
 const usuariosController = {
-
-    // Manejo del pedido get con ruta
-
-    registro: (req, res) => {
-        // comunicarse con el modelo, conseguir información
-        res.render("../views/register")
-    },
-    prossregistro: (req, res) => {
-        const data = req.body;
-        //leer el archivo json y dejarlo en una variable (array)
-        const usuario = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
-        //crear un nuevo objeto literal con los datos ingresados por el usuario
-        const nuevousuario = {
-            id: usuario[usuario.length - 1].id + 1,
-            name: data.name,
-            apell: data.apell,
-            email: data.email,
-            password: bcryptjs.hashSync(data.password, 10),
-            imagen: req.file ? req.file.filename : "default-imagen.png",
-            categoria: data.categoria
-        }
-        //agregar ese objeto al array
-        usuario.push(nuevousuario);
-        //volver a escribir sobre el archivo json 
-        fs.writeFileSync(usuariosFilePath, JSON.stringify(usuario, null, " "))
-        //devolverle alguna vista al usuario
-        res.redirect("/")
-        console.log(nuevousuario)
-    },
+  registro: (req, res) => {
+    res.render('../views/register');
+  },
+  prossregistro: async (req, res) => {
+    try {
+      const data = req.body;
+      const newUser = {
+        first_name: data.name,
+        last_name: data.apell,
+        email: data.email,
+        password: bcryptjs.hashSync(data.password, 10),
+        image: req.file ? req.file.filename : 'default-imagen.png',
+        category: data.categoria,
+      };
+      const createdUser = await User.create(newUser);
+      res.redirect('/');
+      console.log(createdUser);
+    } catch (error) {
+      console.error(error);
+      res.status(500).send('Error al crear un nuevo usuario');
+    }
+  },
     inicioDeSesion: (req, res) => {
         // console.log(req.session);
         // comunicarse con el modelo, conseguir informacións
         res.render("../views/iniciarSesion")
     },
-    loginpross: (req, res) => {
-        //console.log('Controlador loginpross llamado');
-        //console.log('Email:', req.body.email);
-        //console.log('Contraseña:', req.body.password);
-
-        // Leer el archivo JSON y dejarlo en una variable (array)
-        const usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
-
-        // Buscar al usuario por su correo en el array
-        const userToLogin = usuarios.find(user => user.email === req.body.email);
-
-        if (userToLogin) {
+    loginpross: async (req, res) => {
+        try {
+          const { email, password } = req.body;
+          // Buscar al usuario por su correo electrónico en la base de datos
+          const userToLogin = await User.findOne({ where: { email } });
+    
+          if (userToLogin) {
             // Verificar la contraseña utilizando bcrypt
-            const isPasswordValid = bcryptjs.compareSync(req.body.password, userToLogin.password);
-
+            const isPasswordValid = bcryptjs.compareSync(password, userToLogin.password);
+    
             if (isPasswordValid) {
-                // Redireccionar al usuario a la página de inicio
-                delete userToLogin.password;
-                req.session.userlogiado = userToLogin;
-                console.log(req.session)
-                return res.render('../views/bibloteca');
-
+              // Redireccionar al usuario a la página de inicio
+              delete userToLogin.password;
+              req.session.userlogiado = userToLogin;
+              console.log(req.session);
+              return res.render('../views/bibloteca');
             } else {
-                // Contraseña incorrecta
-                return res.render('../views/iniciarSesion', {
-                    errors: {
-                        password: {
-                            msg: 'La contraseña es incorrecta'
-                        }
-                    }
-                });
+              // Contraseña incorrecta
+              return res.render('../views/iniciarSesion', {
+                errors: {
+                  password: {
+                    msg: 'La contraseña es incorrecta',
+                  },
+                },
+              });
             }
-        } else {
+          } else {
             // El correo no se encuentra en la base de datos
             return res.render('../views/iniciarSesion', {
-                errors: {
-                    email: {
-                        msg: 'El correo no se encuentra en la base de datos'
-                    }
-                }
+              errors: {
+                email: {
+                  msg: 'El correo no se encuentra en la base de datos',
+                },
+              },
             });
+          }
+        } catch (error) {
+          console.error(error);
+          res.status(500).send('Error en el inicio de sesión');
         }
-    },
+      },
 
     cerrarSession: (req, res) => {
         req.session.destroy();
@@ -102,40 +82,37 @@ const usuariosController = {
         res.render("../views/edicionDeUsuario")
     },
    // En tu controlador
-prosseditUsser: (req, res) => {
+
+prosseditUsser: async (req, res) => {
     const data = req.body;
-    const id = req.params.id; // Obtén el id del parámetro de la URL
+    const id = req.params.id; // Obtén el ID del parámetro de la URL
 
-    // Leer el archivo JSON y almacenarlo en una variable (array)
-    const usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
+    try {
+      // Buscar el usuario original en la base de datos
+      const oldUsuario = await User.findByPk(id);
 
-    // Buscar el usuario original para tomar su id
-    const oldUsuario = usuarios.find(usuario => usuario.id == id);
+      if (oldUsuario) {
+        // Actualizar los datos del usuario con los datos ingresados por el usuario
+        oldUsuario.first_name = data.first_name;
+        oldUsuario.last_name = data.last_name;
+        oldUsuario.email = data.email;
+        oldUsuario.password = data.password ? bcryptjs.hashSync(data.password, 10) : oldUsuario.password;
+        oldUsuario.image = req.file ? req.file.filename : oldUsuario.image;
+        oldUsuario.category = data.category;
 
-    // Crear un nuevo objeto literal con los datos ingresados por el usuario
-    const editadoUsuario = {
-        id: oldUsuario.id,
-        name: data.name,
-        apell: data.apell,
-        email: data.email,
-        password: data.password,
-        image: req.file ? req.file.filename : oldUsuario.imagem,
-        categoria: data.categoria,
+        // Guardar los cambios en la base de datos
+        await oldUsuario.save();
+
+        // Redirigir al usuario a alguna vista
+        return res.redirect('/');
+      } else {
+        return res.status(404).send('Usuario no encontrado');
+      }
+    } catch (error) {
+      console.error(error);
+      return res.status(500).send('Error al editar el usuario');
     }
-
-    // Identificar el índice
-    const index = usuarios.findIndex(usuario => usuario.id == id);
-
-    // Modificar el objeto en la posición correspondiente
-    usuarios[index] = editadoUsuario;
-
-    // Volver a escribir sobre el archivo JSON
-    fs.writeFileSync(usuariosFilePath, JSON.stringify(usuarios, null, " "));
-
-    // Redirigir al usuario a alguna vista
-    res.redirect("/");
-},
-
+  },
     
 
 
