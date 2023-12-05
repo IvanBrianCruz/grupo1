@@ -4,60 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="/css/iniciarSesion.css">
     <title>炎ATLAS炎_iniciarsesion</title>
     <link rel="shortcut icon" href="/img/logo-tienda.png">
 </head>
 
 <body>
-    <main>
+    <main class="manclass">
         <header>
-            <img class="logo" src="img/logo-tienda.png" alt="Logo" href="http://localhost:3000/">
-            <h1>Nombre Pagina</h1>
+            <div class="logocontenedor">
+                <a href="http://localhost:3060/" id="logo">
+                    <img class="logo" src="/img/logotiendanuevo2.png" alt="Logo" href="http://localhost:3000/">
+                </a>
+            </div>
         </header>
 
-        <form class="login"  method="post">
-            <h2>E-mail</h2>
-            <input class="email" type="email" name="email" id="email" placeholder="Ingrese su email" required>
-            
-            <% if (locals.errors && errors.email) { %>
-                <div class="text-danger">
-                    <p><%= errors.email.msg %></p>
-                </div>
-            <% } %>
-                
-            <h2>Contraseña</h2>
-            <input class="password" type="password" name="password" id="password" placeholder="Ingrese su contraseña"
-                required>
+        <form id="loginFormulario" class="login" method="post">
+            <div class="form-group">
+                <h2>E-mail</h2>
+                <input type="email" name="email" id="email" placeholder="Ingrese su email">
+                <small>Error message</small>
+                <% if (locals.errors && errors.email) { %>
+                    <div class="text-danger">
+                        <p>
+                            <%= errors.email.msg %>
+                        </p>
+                    </div>
+                    <% } %>
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                <h2>Contraseña</h2>
+                <input class="password" type="password" name="password" id="password"
+                    placeholder="Ingrese su contraseña">
+                <small>Error message</small>
                 <% if (locals.errors && errors.password) { %>
                     <div class="text-danger">
-                        <p><%= errors.password.msg %></p>
+                        <p>
+                            <%= errors.password.msg %>
+                        </p>
                     </div>
-                <% } %>
-            <div class="caja1">
-                <div class="recordar">
-                    <label for="recordar">recordar</label>
-                    <input type="checkbox" name="recordar" id="recordar">
-                </div>
-                <a href="/recuperarContraseña">Olvidé mi contraseña</a>
+                    <% } %>
             </div>
-            <button class="iniciar-sesion" type="submit">Iniciar Sesión</button>
-        </form>
-        <form class="redes" action="/login" method="post">
-            <img class="icon" src="img/facebook-icon.png" alt="facebook">
-            <button class="facebook" type="button">Continuar con facebook</button>
-            <img class="icon" src="img/gmail-icon.png" alt="gmail">
-            <button class="gmail" type="button">Continuar con gmail</button>
+            <br>
+            <br>
+            <div class="form-group2">
+                <div class="caja1">
+                    <div class="recordar">
+                        <label for="recordar">recordar</label>
+                        <input type="checkbox" name="recordar" id="recordar">
+                    </div>
+                    <a href="/recuperarContraseña">Olvidé mi contraseña</a>
+                </div>
+                <button class="iniciar-sesion" type="submit" id="submitButton">Iniciar Sesión</button>
+            </div>
         </form>
 
+        <div class="form-group2">
+            <form class="redes" action="/login" method="post">
+                <img class="icon" src="img/facebook-icon.png" alt="facebook">
+                <button class="facebook" type="button">Continuar con facebook</button>
+                <img class="icon" src="img/gmail-icon.png" alt="gmail">
+                <button class="gmail" type="button">Continuar con gmail</button>
+            </form>
+        </div>
 
         <footer>
-            <span>¿No tienes una cuenta? →</span>
-            <a href="http://localhost:3060/registro">Registrate</a>
-
+            <div class="footerfinal">
+                <span>¿No tienes una cuenta? →</span>
+                <a href="http://localhost:3060/registro">Registrate</a>
+            </div>
         </footer>
     </main>
+    <script src="/js/logincheck.js"></script>
 </body>
 
 </html>

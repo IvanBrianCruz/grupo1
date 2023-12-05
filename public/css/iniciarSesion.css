@@ -32,12 +32,34 @@ body {
     right: 5vw;
 }
 
-.logo {
-    width: 30vw;
-    
+.logocontenedor {
+    display: flex; /* Utilizar flexbox */
+    justify-content: space-between; /* Espaciado uniforme entre los elementos hijos */
+    align-items: center; /* Alinear verticalmente los elementos al centro */
 }
 
-
+.logo {
+    width: 25vw;
+    filter: drop-shadow(0 0 15px red); /* Sombra personalizada */
+    animation: cambioColores 5s infinite; /* Se repite infinitamente durante 5 segundos */
+}
+@keyframes cambioColores {
+    0% {
+        filter: drop-shadow(0 0 15px red); /* Color inicial */
+    }
+    25% {
+        filter: drop-shadow(0 0 15px blue); /* Cambio de color */
+    }
+    50% {
+        filter: drop-shadow(0 0 15px green); /* Cambio de color */
+    }
+    75% {
+        filter: drop-shadow(0 0 15px yellow); /* Cambio de color */
+    }
+    100% {
+        filter: drop-shadow(0 0 15px red); /* Color final, igual al inicial */
+    }
+}
 
 a {
     text-decoration: none;
@@ -74,7 +96,7 @@ button{
 
 .email, .password{
     width: 70%;
-    color: black;
+    /*color: black;*/
 }
 
 .redes{
@@ -98,4 +120,46 @@ button{
 footer{
     display: flex;
     justify-content: center;
+}
+
+.form-group{
+    width: 80%;
+    height:25px;
+    margin: 20px;
+}
+
+.form-group2{
+    width: 80%;
+    height:25px;
+    margin: 20px;
+}
+
+
+/* validacion de frond end */
+.form-group.error input,
+.form-group.error select {
+    border-color: #e74c3c; /* Color del borde del campo con error */
+}
+
+.form-group small {
+    color: #e74c3c; /* Color del mensaje de error */
+    display: none; /* Ocultar el mensaje de error por defecto */
+}
+
+.form-group.error small {
+    display: block; /* Mostrar el mensaje de error cuando hay un error */
+}
+
+/* Estilos para los campos con éxito */
+.form-group.success input,
+.form-group.success select {
+    border-color: #2ecc71; /* Color del borde del campo con éxito */
+}
+
+.footerfinal{
+    margin-right: 25vw;
+}
+
+.manclass{
+    margin-right: 10vw;
 }

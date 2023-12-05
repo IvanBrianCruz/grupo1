@@ -1,9 +1,13 @@
 <link rel="stylesheet" href="/css/header.css">
 <header>
-<!--header principal: logo, user, carito-->
-<div class="header-container">
+  <!--header principal: logo, user, carito-->
+  <div class="header-container">
 
-    <a href="http://localhost:3060/" id="logo">TIENDA</a>
+    <a href="http://localhost:3060/" id="logo">
+      <img src="/img/logotiendanuevo2.png" alt="" class="logo123" style=" width: 170px; height: 210px;">
+    </a>
+
+
 
     <form class="search-flex" action="/buscar" method="POST">
 
@@ -13,31 +17,34 @@
 
     <ul class="nav-principal">
       <li>
-          <a href="http://localhost:3060/carrito">
-              <img id="carrito" src="/img/carrito.png">
-              <span class="micarrito">Mi carrito</span>
-          </a>
+        <a href="http://localhost:3060/carrito">
+          <img id="carrito" src="/img/carrito.png">
+          <span class="micarrito">Mi carrito</span>
+        </a>
       </li>
       <% if (locals.islogget) { %>
-       
-  
-      <li class="dropdown">
-          <a href="javascript:void(0);" class="dropbtn">
-            <img src="/img/imagenes-usuario/<%= locals.userlogged.imagen %>" alt="imagen1" style="border-radius: 50%; width: 45px; height: 45px;">
 
-              <p class="ingresar">Ingresar</p> 
+
+        <li class="dropdown">
+          <a href="javascript:void(0);" class="dropbtn">
+            <img src="/img/imagenes-usuario/<%= locals.userlogged.image %>" alt="imagen1"
+              style="border-radius: 50%; width: 45px; height: 45px;">
+
+            <p class="ingresar">Ingresar</p>
           </a>
           <div class="dropdown-content">
-              <a href="/edicionUsuario">Edicion de Perfil</a>
-              <a href="/cerrarSession">Cerrar Sesión</a>
+            <a href="/edicionUsuario">Edicion de Perfil</a>
+            <a href="/cerrarSession">Cerrar Sesión</a>
           </div>
-      </li>
-      <% } else { %>
-      <a href="http://localhost:3060/inicioDeSesion" style="color: white; text-decoration: none; font-size: 16px;">Iniciar Sesión </a>
-      <a href="http://localhost:3060/registro" style="color: white; text-decoration: none; font-size: 16px;">- Registrarse</a>
-      <% } %>
+        </li>
+        <% } else { %>
+          <a href="http://localhost:3060/inicioDeSesion"
+            style="color: white; text-decoration: none; font-size: 16px;">Iniciar Sesión </a>
+          <a href="http://localhost:3060/registro" style="color: white; text-decoration: none; font-size: 16px;">-
+            Registrarse</a>
+          <% } %>
 
-  </ul>
+    </ul>
   </div>
   <!--barra de navegacion-->
   <nav class="barra-navegacion">
@@ -46,14 +53,14 @@
       <li><a href="http://localhost:3060/bibloteca">BIBLOTECA</a></li>
       <li><a href="http://localhost:3060/listaDeDeseos">LISTA DE DESEOS</a></li>
       <li><a href="http://localhost:3060/carrito">CARRITO</a></li>
-      
-        <% if ( locals.userlogged && locals.userlogged.categoria == "admin") { %>
-          <li><a href="http://localhost:3060/cargaDeProducto">ADMIN</a></li>
-          <% } else { %>
-             
-            <% } %>
-       
-          
+
+      <% if ( locals.userlogged && locals.userlogged.category==="admin" ) { %>
+        <li><a href="http://localhost:3060/cargaDeProducto">ADMIN</a></li>
+        <% } else { %>
+
+          <% } %>
+
+
     </ul>
     <a href="#" class="burger-menu">
       <i class="fas fa-bars"></i>

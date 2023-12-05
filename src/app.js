@@ -3,10 +3,11 @@ const session = require('express-session');
 
 const methodOverride = require('method-override');
 const path = require('path');
-
+//const routes = require('./routes');
 const esconderregistro = require("../middlewares/esconderregistro");
 //express
 const app = express();
+const cors = require('cors'); // Importa cors
 
 //middlewares
 // Usa el middleware loginconfig en todas las rutas
@@ -17,6 +18,12 @@ app.use(session({
     saveUninitialized: false,
 
 }));
+app.use(cors({
+    origin: 'http://localhost:5173',
+    methods: 'GET,POST',
+    allowedHeaders: 'Content-Type,Authorization'
+  }));
+
 app.use(esconderregistro);  
 app.use(express.static(path.join(__dirname, '../public')));  // Necesario para los archivos estáticos en el folder /publ
 app.use(express.urlencoded({ extended: false }));//carga de producto y interprete 
@@ -37,6 +44,11 @@ const mainRouter = require("./routers/mainRouter.js")
 const productsController = require("./routers/productsRouter.js")
 
 const usuariosController = require("./routers/usuariosRouter.js");
+
+const productsControllerAPI = require("./routers/api/productosRuterAPI.js")
+
+const usuariosControllerAPI = require("./routers/api/usuariosRouterAPI.js")
+
 const { Session } = require('inspector');
 
 
@@ -51,6 +63,9 @@ app.use("/", productsController);
 
 app.use("/", usuariosController);
 
+app.use("/", productsControllerAPI);
+
+app.use("/", usuariosControllerAPI)
 
 
 // Ponemos a escuchar el servidor

@@ -43,7 +43,7 @@
                 CARRITO</a></button>
           </label>
           
-          <% if ( locals.userlogged && locals.userlogged.categoria == "admin") { %>
+          <% if ( locals.userlogged && locals.userlogged.category == "admin") { %>
             <button class="boton-editar" type="submit"><a href="http://localhost:3060/producto/edicionDeProducto/<%= product.id %>" class="btn1">EDITAR PRODUCTO</a></button>
 
         <% } else { %>
@@ -61,7 +61,7 @@
                 class="btn">COMPRAR</a></button>
           </label>
 
-          <% if ( locals.userlogged && locals.userlogged.categoria == "admin") { %>
+          <% if ( locals.userlogged && locals.userlogged.category == "admin") { %>
           <form action="http://localhost:3060/producto/eliminar/<%= product.id %>?_method=DELETE" method="POST">
             <button type="submit" class="boton-eliminar"> <a class="btn1"> ELIMINAR</a></button>
           </form>
@@ -71,11 +71,16 @@
 
 
         </div>
+        
       </div>
 
     </div>
 
   </main>
+       <!-- Botón con la imagen -->
+       <a href="https://chat.whatsapp.com/Bg7AfwgEvoiFvSxENXjvJT" class="boton-imagen">
+        <img src="/img/whasapp.png" alt="Botón con Imagen">
+    </a>
   <!-- footer -->
   <%- include('partials/footer') %>
     <!-- /footer -->

@@ -97,3 +97,45 @@ textarea {
     align-self: center;
    
 }
+
+.boton-imagen{
+    filter: drop-shadow(0 0 15px red); /* Sombra personalizada */
+    animation: cambioColores 5s infinite; /* Se repite infinitamente durante 5 segundos */
+  }
+  @keyframes cambioColores {
+    0% {
+        filter: drop-shadow(0 0 15px red); /* Color inicial */
+    }
+    25% {
+        filter: drop-shadow(0 0 15px blue); /* Cambio de color */
+    }
+    50% {
+        filter: drop-shadow(0 0 15px green); /* Cambio de color */
+    }
+    75% {
+        filter: drop-shadow(0 0 15px yellow); /* Cambio de color */
+    }
+    100% {
+        filter: drop-shadow(0 0 15px red); /* Color final, igual al inicial */
+    }
+  }
+  .boton-imagen {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    cursor: pointer;
+}
+.boton-imagen img {
+    width: 400px;
+    height: 100px;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 480px){
+    .boton-imagen img {
+      width: 156px;
+      height: 45px;
+      cursor: pointer;
+  }
+  
+  }

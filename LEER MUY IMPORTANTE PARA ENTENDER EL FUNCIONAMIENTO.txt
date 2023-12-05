@@ -1,0 +1,28 @@
+atencion es muy inportante para usar este proyecto 
+
+1) debe crear la base de datos em mysql para ello el docuemento txt con el nombre "db,txt" tiene lo necesario para crear la db 
+2) debe instalar las dependencias con la consola de comando entroduciendo "npm i" o " npm install" lo dejo a tu preferencia 
+3) verificara el archivo de confinguracion de la db tenga los credenciales corectas de su mysql "\src\data\config\config.js"
+"development": {
+      "username": "root",        ------> debe tener el nombre que usa en su mysql
+      "password": '', ------> debe tener la contraseña que usa en su mysql de no usar contraseña dejarlo en blanco 
+      "database": "dbtienda",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+
+4) finalmente puede correr el proyecto con el comando "npm start" en su terminal 
+
+
+5) si desea iniciar sesecion con una cuenta admin o usurio dejo las credenciales:
+
+ADMIN
+ivan4912134@gmail.com
+contrasena: 123456789
+
+
+USUARIO
+kingworldpro@gmail.com
+contrasena: 123456
+
+

@@ -26,8 +26,8 @@
     <main>
         <div class="formulario-conteiner">
             <div class="form-image">
-                <h1>Hola <%= userlogged.name %> <%= userlogged.apell %></h1> 
-                <img class="imagendeperfil" src="/img/imagenes-usuario/<%= locals.userlogged.imagen %>" alt="imagen1" style="border-radius: 5%">
+                <h1>Hola <%= userlogged.first_name %> <%= userlogged.last_name %></h1> 
+                <img class="imagendeperfil" src="/img/imagenes-usuario/<%= locals.userlogged.image %>" alt="imagen1" style="border-radius: 5%">
                 <br> 
             </div>
             <div class="form">
@@ -39,11 +39,11 @@
                     <div class="form-row">
                         <div class="datos-formulario">
                             <label for="nombre">Nombres</label>
-                            <input value="<%= userlogged.name %>" type="text" id="name" name="name" placeholder="Ingrese sus nombres">
+                            <input value="<%= userlogged.first_name %>" type="text" id="name" name="name" placeholder="Ingrese sus nombres">
                         </div>
                         <div class="datos-formulario">
                             <label for="precio">Apellido</label>
-                            <input value="<%= userlogged.apell %>" type="text" id="apell" name="apell" placeholder="Ingrese los apellidos">
+                            <input value="<%= userlogged.last_name %>" type="text" id="apell" name="apell" placeholder="Ingrese los apellidos">
                         </div>
                     </div>
     
