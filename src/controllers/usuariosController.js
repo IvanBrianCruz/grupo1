@@ -31,8 +31,8 @@ const usuariosController = {
           return res.status(400).send('La contraseña debe tener al menos 8 caracteres');
         case data.password !== data.password2:
           return res.status(400).send('Las contraseñas no coinciden');
-        case !isImageValid(req.file):
-          return res.status(400).send('El formato de la imagen no es válido');
+          case req.file && !isImageValid(req.file):
+          return res.status(400).send('Formato de imagen no válido');
         default:
           const newUser = {
             first_name: data.name,

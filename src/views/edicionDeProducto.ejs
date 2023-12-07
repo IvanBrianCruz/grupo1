@@ -25,18 +25,24 @@
     </header>
     <main>
         <div class="container-formulario">
-          
-            <h1>Estás editando el juego: <%= productToEdit.name %> </h1>
 
-            <form class="conteinerdedatos" action="http://localhost:3060/producto/edicionDeProducto/<%= productToEdit.id %>?_method=PUT" method="post" enctype="multipart/form-data">
+            <h1>Estás editando el juego: <%= productToEdit.name %>
+            </h1>
+
+            <form class="conteinerdedatos" id="gameForm"action="http://localhost:3060/producto/edicionDeProducto/<%= productToEdit.id %>?_method=PUT" method="post" enctype="multipart/form-data">
                 <div class="nombre-producto">
                     <div class="datos-formulario">
-                        <label for="nombre">Nombre del Juego</label>
-                        <input value="<%= productToEdit.name %>" type="text" id="nombre" name="name" placeholder="EJ: Grand Theft Auto">
+                        <div class="form-group">
+                            <label for="nombre">Nombre del Juego</label>
+                            <input value="<%= productToEdit.name %>" type="text" id="nombre" name="name"
+                                placeholder="EJ: Grand Theft Auto">
+                            <small>Error message</small>
+                        </div>
                     </div>
                     <div class="datos-formulario">
                         <label for="precio">Precio</label>
-                        <input value="<%= productToEdit.price %>" type="number" id="precio" name="price" placeholder="Ingrese el precio">
+                        <input value="<%= productToEdit.price %>" type="number" id="precio" name="price"
+                            placeholder="Ingrese el precio">
                     </div>
                 </div>
 
@@ -61,21 +67,31 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="descripcion">Descripción del Juego</label>
-                        <textarea id="descripcion" name="descripcion" placeholder="Ingrese la descripción"><%= productToEdit. features %></textarea>
+                        <textarea id="descripcion" name="descripcion"
+                            placeholder="Ingrese la descripción"><%= productToEdit. features %></textarea>
+                        <small>Error message</small>
                     </div>
                 </div>
                 <div class="datos-formulario">
-                  <label for="product-image">Imagen del Juego</label>
-                  <input type="file" id="product-image" name="product-image">
-              </div>
-              <br>
+                    <div class="form-group">
+                        <label for="product-image">Imagen del Juego</label>
+                        <input type="file" id="product-image" name="product-image">
+                        <small>Error message</small>
+                    </div>
+                </div>
+                <br>
 
                 <div class="form-row">
                     <button class="guardar" type="submit">Guardar</button>
                 </div>
+                <script src="/js/formProductCheck.js"></script>
             </form>
+            
         </div>
+        <br>
+        <br>
         <footer>
+         
             <!-- footer -->
             <%- include('partials/footer') %>
                 <!-- /footer -->

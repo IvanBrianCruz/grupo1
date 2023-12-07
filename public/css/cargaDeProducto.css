@@ -1,16 +1,15 @@
+/********************************************** fin de heard la parte superior ***************************************************************************/
 
-  /********************************************** fin de heard la parte superior ***************************************************************************/
- 
 
 .container-formulario {
     max-width: 800px;
-    margin: auto ;
+    margin: auto;
     margin-top: 60px;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    
+
 }
 
 h1 {
@@ -18,7 +17,7 @@ h1 {
     margin-bottom: 0px;
 }
 
-.conteinerdedatos{
+.conteinerdedatos {
     display: flex;
     flex-direction: column;
 }
@@ -29,7 +28,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.datos-formulario{
+.datos-formulario {
     flex: 1;
     margin-right: 10px;
 }
@@ -74,14 +73,16 @@ textarea {
     .datos-formulario {
         margin-right: 0;
     }
+
     .container-formulario {
-      
-      margin: 3% ;
-      margin-top: 60px;
-      padding: 20px;
-      
-  }
+
+        margin: 3%;
+        margin-top: 60px;
+        padding: 20px;
+
+    }
 }
+
 .search-flex {
     height: 43px;
     width: 453px;
@@ -91,51 +92,94 @@ textarea {
     padding: 1vw;
     border-radius: 25px;
 }
+
 /*foto de perfil*/
-.imagendeperfil{
+.imagendeperfil {
     display: flex;
     align-self: center;
-   
+
 }
 
-.boton-imagen{
-    filter: drop-shadow(0 0 15px red); /* Sombra personalizada */
-    animation: cambioColores 5s infinite; /* Se repite infinitamente durante 5 segundos */
-  }
-  @keyframes cambioColores {
+.boton-imagen {
+    filter: drop-shadow(0 0 15px red);
+    /* Sombra personalizada */
+    animation: cambioColores 5s infinite;
+    /* Se repite infinitamente durante 5 segundos */
+}
+
+@keyframes cambioColores {
     0% {
-        filter: drop-shadow(0 0 15px red); /* Color inicial */
+        filter: drop-shadow(0 0 15px red);
+        /* Color inicial */
     }
+
     25% {
-        filter: drop-shadow(0 0 15px blue); /* Cambio de color */
+        filter: drop-shadow(0 0 15px blue);
+        /* Cambio de color */
     }
+
     50% {
-        filter: drop-shadow(0 0 15px green); /* Cambio de color */
+        filter: drop-shadow(0 0 15px green);
+        /* Cambio de color */
     }
+
     75% {
-        filter: drop-shadow(0 0 15px yellow); /* Cambio de color */
+        filter: drop-shadow(0 0 15px yellow);
+        /* Cambio de color */
     }
+
     100% {
-        filter: drop-shadow(0 0 15px red); /* Color final, igual al inicial */
+        filter: drop-shadow(0 0 15px red);
+        /* Color final, igual al inicial */
     }
-  }
-  .boton-imagen {
+}
+
+.boton-imagen {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 9999;
     cursor: pointer;
 }
+
 .boton-imagen img {
     width: 400px;
     height: 100px;
     cursor: pointer;
-  }
-  @media screen and (max-width: 480px){
+}
+
+@media screen and (max-width: 480px) {
     .boton-imagen img {
-      width: 156px;
-      height: 45px;
-      cursor: pointer;
-  }
-  
-  }
+        width: 156px;
+        height: 45px;
+        cursor: pointer;
+    }
+
+}
+
+.form-group.error input,
+.form-group.error textarea,
+.form-group.error select {
+    border-color: #e74c3c;
+    /* Color del borde del campo con error */
+}
+
+.form-group small {
+    color: #e74c3c;
+    /* Color del mensaje de error */
+    display: none;
+    /* Ocultar el mensaje de error por defecto */
+}
+
+.form-group.error small {
+    display: block;
+    /* Mostrar el mensaje de error cuando hay un error */
+}
+
+/* Estilos para los campos con éxito */
+.form-group.success input,
+.form-group.success textarea,
+.form-group.success select {
+    border-color: #2ecc71;
+    /* Color del borde del campo con éxito */
+}
