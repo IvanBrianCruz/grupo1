@@ -44,7 +44,8 @@ router.post("/registro", upload.single("imagen"), usuariosController.prossregist
 router.get("/cerrarSession", usuariosController.cerrarSession);
 
 //edicion de usuario
-router.get('/edicionUsuario' ,usuariosController.editUsser);
+router.get('/edicionUsuario/:id', usuariosController.editUsser);
+
 
 //router.post('/edicionUsuario' ,usuariosController.prosseditUsser);
 router.post("/edicionUsuario/:id", upload.single("product-image"), usuariosController.prosseditUsser);

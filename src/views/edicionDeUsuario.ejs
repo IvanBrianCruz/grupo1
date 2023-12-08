@@ -31,26 +31,26 @@
                 <br> 
             </div>
             <div class="form">
-                <form class="conteinerdedatos"  method="post" >
+                <form class="conteinerdedatos"  action="http://localhost:3060/edicionUsuario/<%= userlogged.id %>" method="post" enctype="multipart/form-data">
                     <div class="form-header">
                         <h2 class="form-header-H2">Editar Perfil</h2>
                     </div>
                     <br>
                     <div class="form-row">
                         <div class="datos-formulario">
-                            <label for="nombre">Nombres</label>
-                            <input value="<%= userlogged.first_name %>" type="text" id="name" name="name" placeholder="Ingrese sus nombres">
+                            <label for="first_name">Nombres</label>
+                            <input value="<%= userlogged.first_name %>" type="text" id="first_name" name="first_name" placeholder="Ingrese sus nombres">
                         </div>
                         <div class="datos-formulario">
-                            <label for="precio">Apellido</label>
-                            <input value="<%= userlogged.last_name %>" type="text" id="apell" name="apell" placeholder="Ingrese los apellidos">
+                            <label for="last_name">Apellido</label>
+                            <input value="<%= userlogged.last_name %>" type="text" id="last_name" name="last_name" placeholder="Ingrese los apellidos">
                         </div>
                     </div>
     
                     <div class="form-row">
                         <div class="datos-formulario">
                             <label for="categoria">Categorías</label>
-                            <select id="categoria" name="categoria">
+                            <select id="category" name="categoria">
                                 <option value="acción">usuario</option>
                                
                             </select>
@@ -72,7 +72,7 @@
                     <div class="datos-formulario">
                       <label for="product-image">Cambiar Imagen de Perfil</label>
                       <br>
-                      <input type="file" id="product-image" name="product-image">
+                      <input type="file" id="filename" name="product-image">
                   </div>
                   <br>
     

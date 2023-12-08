@@ -16,5 +16,24 @@ router.get("/listaDeDeseos", mainController.listaDeDeseos);
 
 router.get("/carrito", mainController.carrito);
 
+
+
+
+router.get("/equipo", mainController.equipo);
+
+router.get("/sucursal", mainController.sucursal);
+
+router.get("/testimonios", mainController.testimonios);
+
+router.get("/eventos", mainController.eventos);
+
+router.get("/terminosYCondiciones", mainController.condiciones);
+
+router.get("/politicasDePrivaciodad", mainController.privacidad);
+
+router.get("/sprints", mainController.sprints);
+
+router.get("/Presentacion", mainController.presentacion);
+
 // Exportamos la variable router ya con todas las rutas "guardadas", que se usará en app.js
 module.exports = router;

@@ -86,6 +86,7 @@ const usuariosController = {
           req.session.userlogiado = userToLogin;
           console.log(req.session);
           return res.render('../views/bibloteca');
+          
         } else {
           // Contraseña incorrecta
           return res.render('../views/iniciarSesion', {
@@ -116,20 +117,40 @@ const usuariosController = {
     req.session.destroy();
     return res.redirect("/");
   },
-  editUsser: (req, res) => {
-    // comunicarse con el modelo, conseguir información
-    res.render("../views/edicionDeUsuario")
+  editUsser: async (req, res) => {
+    
+    const id = req.params.id; // Obtén el ID del parámetro de la URL
+  
+    try {
+      // Buscar el usuario actualizado en la base de datos
+      const updatedUsuario = await User.findByPk(id);
+  
+      if (updatedUsuario) {
+        // Renderizar la vista de edición de usuario con los datos actualizados
+        return res.render("../views/edicionDeUsuario", { usuario: updatedUsuario });
+      } else {
+        return res.status(404).send('Usuario no encontrado');
+      }
+    } catch (error) {
+      console.error(error);
+      return res.status(500).send('Error al obtener los datos del usuario');
+    }
   },
+  
+
+
+
+ 
   // En tu controlador
 
   prosseditUsser: async (req, res) => {
     const data = req.body;
     const id = req.params.id; // Obtén el ID del parámetro de la URL
-
+  
     try {
       // Buscar el usuario original en la base de datos
       const oldUsuario = await User.findByPk(id);
-
+  
       if (oldUsuario) {
         // Actualizar los datos del usuario con los datos ingresados por el usuario
         oldUsuario.first_name = data.first_name;
@@ -138,12 +159,19 @@ const usuariosController = {
         oldUsuario.password = data.password ? bcryptjs.hashSync(data.password, 10) : oldUsuario.password;
         oldUsuario.image = req.file ? req.file.filename : oldUsuario.image;
         oldUsuario.category = data.category;
-
+  
         // Guardar los cambios en la base de datos
         await oldUsuario.save();
-
-        // Redirigir al usuario a alguna vista
-        return res.redirect('/');
+  
+        // Cerrar la sesión del usuario después de la edición
+        req.session.destroy((err) => {
+          if (err) {
+            console.error(err);
+            return res.status(500).send('Error al cerrar sesión después de editar el usuario');
+          }
+          // Redirigir al usuario a alguna vista o página de inicio de sesión
+          return res.redirect('/inicioDeSesion');
+        });
       } else {
         return res.status(404).send('Usuario no encontrado');
       }

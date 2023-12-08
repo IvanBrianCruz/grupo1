@@ -4,8 +4,9 @@
   <div class="header-container">
 
     <a href="http://localhost:3060/" id="logo">
-      <img src="/img/logotiendanuevo2.png" alt="" class="logo123" style=" width: 170px; height: 210px;">
+      <img src="/img/logotiendanuevo2.png" alt="" class="logo123" style="width: 50%; max-width: 470px; height: auto;">
     </a>
+    
 
 
 
@@ -33,7 +34,7 @@
             <p class="ingresar">Ingresar</p>
           </a>
           <div class="dropdown-content">
-            <a href="/edicionUsuario">Edicion de Perfil</a>
+            <a href="/edicionUsuario/<%= locals.userlogged.id %>">Edicion de Perfil</a>
             <a href="/cerrarSession">Cerrar Sesión</a>
           </div>
         </li>

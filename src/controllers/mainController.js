@@ -19,6 +19,44 @@ const mainController = {
         // comunicarse con el modelo, conseguir información
         res.render( "../views/carrito")
     },
+
+
+    // Manejo del pedido get con ruta del footer
+
+    equipo: (req, res) => {
+        // comunicarse con el modelo, conseguir información
+        res.render( "../views/viewsFooter/equipo")
+    },
+    sucursal: (req, res) => {
+        // comunicarse con el modelo, conseguir información
+        res.render( "../views/viewsFooter/sucursal")
+    },
+    testimonios: (req, res) => {
+        // comunicarse con el modelo, conseguir información
+        res.render( "../views/viewsFooter/testimonios")
+    },
+    eventos: (req, res) => {
+        // comunicarse con el modelo, conseguir información
+        res.render( "../views/viewsFooter/evento")
+    },
+    condiciones: (req, res) => {
+        // comunicarse con el modelo, conseguir información
+        res.render( "../views/viewsFooter/terminoYCondiciones")
+    },
+    privacidad: (req, res) => {
+        // comunicarse con el modelo, conseguir información
+        res.render( "../views/viewsFooter/privacidad")
+    },
+    sprints: (req, res) => {
+        // comunicarse con el modelo, conseguir información
+        res.render( "../views/viewsFooter/sprints")
+    },
+    presentacion: (req, res) => {
+        // comunicarse con el modelo, conseguir información
+        res.render( "../views/viewsFooter/presentacion")
+    },
+
+
     
 
    

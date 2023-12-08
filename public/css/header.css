@@ -75,7 +75,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: #381891;
-  margin-top: -100px;
+  margin-top: 0px;
   padding: 1vw;
 }
 
@@ -154,6 +154,9 @@ h4 {
       transform: translateX(calc(-200px * 7));
   }
 }
+
+
+  
 
 @media (min-width: 361px) {
   .flex-container {
@@ -298,7 +301,16 @@ button {
 }
 
 
+@media screen and (max-width: 600px) {
+  #carrito {
+    /* Cambios de estilo para móvil */
+    width: 50px;
+    height: 50px;
+    /* Otros cambios de estilo */
+  }
 
+  
+}
 
    
   

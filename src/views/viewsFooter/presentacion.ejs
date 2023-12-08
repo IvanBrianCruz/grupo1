@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>炎ATLAS炎_Presentación de Atlas</title>
+  <link rel="shortcut icon" href="/img/logo-tienda.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilos adicionales si los necesitas */
+    .video-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;  /*Proporción 16:9 para el video */
+  margin-bottom: 20px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 70%;
+  border: 0;
+  margin-left: 15%;
+}
+
+/* Estilos para centrar el contenedor */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+  </style>
+</head>
+<%- include('../partials/header1') %>
+<body style="background-image: url('/img/fondo.png'); background-size: cover; background-position: center;">
+
+ 
+        <h1 class="text-center mb-4" style="color: #ffffff;;">Presentación de Atlas</h1>
+        <!-- Contenedor del video -->
+        <div class="video-container">
+          <iframe width="900px" height="700px" src="https://www.youtube.com/embed/sUwotzBu-ns?si=t10JGDo-rn5lr_0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+     
+
+  <!-- Bootstrap JS y FontAwesome (si es necesario) -->
+  <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <%- include('../partials/footer.ejs') %>
+</body>
+</html>

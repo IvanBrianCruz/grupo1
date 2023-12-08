@@ -31,6 +31,8 @@ app.use(express.json());// se ve en formato de objeto
 app.use(methodOverride('_method'));
 
 
+
+
 // ******** template engine
 
 app.set('view engine', 'ejs');
@@ -67,7 +69,9 @@ app.use("/", productsControllerAPI);
 
 app.use("/", usuariosControllerAPI)
 
-
+app.use((req, res) => {
+    res.status(404).render('error404'); // Renderiza la vista error404.ejs en caso de rutas no definidas
+  });
 // Ponemos a escuchar el servidor
 app.listen(3060, () => {
     console.log("Servidor corriendo en http://localhost:3060")
