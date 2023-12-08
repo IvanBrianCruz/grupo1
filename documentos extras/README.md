@@ -32,28 +32,24 @@ DESCRIPCION DE LOS INTEGRANTES DEL GRUPO :
 
 *Rueda Miguel Mateo: Tengo 25 años, vivo en Maimará. Actualmente trabajo para SAME 107 como Radio Operador y estoy estudiando en el IES2 la carrera "Tecnicatura Superior en Mantenimiento Idustrial. Me gustan los videojuegos y todo lo relacionado a la programacion.
 
-*Candela Zapata: no suelo jugar muchos videojuegos, así que no hay mucho más que pueda decir al respecto. Entre mis pasatiempos se encuentran la lectura y hornear.
+*Lopez Daniela Soledad
 
-*Vedia, Milagro Valentina: Tengo 20 años, soy de San Salvador de Jujuy y actualmente estudio en el IES N° 4 el profesorado de Inglés. No tengo mucho conocimiento sobre juegos pero me gusta aprender sobre muchos temas.
+*Jeremias Carballo
 
-*Luis Rojas: Hola, como están? Tengo 21 años y soy estudiante del Profesorado en Inglés y derecho. actualmente vivo en la ciudad de San Salvador de jujuy. Me interesa el mundo de la programación aunque mi base en ella no sea muy buena, pero entiendo que es de suma importancia tener conocimientos y crear una buena base.
+*Nahuel Torrez
 
-Tomás Morales: Vivo en San Salvador de Jujuy.Suelo jugar bastantes videojuegos, una de mis sagas favoritas es METRO. Me gusta mucho leer sobre el arte y un poco de filosofía. También de mis pasatiempos favoritos es escuchar música, en especial heavy metal, rock, genero progresivo, jazz, indie, etc. A mi parecer la programación tiene cosas bastante interesantes y no se me da muy bien pero intento mejorar.
+### :hammer: PAGINAS WEB DE REFERENCIA
 
-
-
-PAGINAS WEB DE REFERENCIA:
-
-* uPlay: elegimos esta pagina por los colores y una un diseño simple pero bien estructurado además de contar con vistosas animaciones, el catalogo de esta pagina esta separado por es bloques bien definidos y fáciles de identificar además de centrarse el lo que el usuario busca.
+- `uPlay:` elegimos esta pagina por los colores y una un diseño simple pero bien estructurado además de contar con vistosas animaciones, el catalogo de esta pagina esta separado por es bloques bien definidos y fáciles de identificar además de centrarse el lo que el usuario busca.
 Además, a la visualidad un producto vemos claramente la información necesaria para el cliente además de contar con una paleta de coleres agradables a la vista, también muestra la información mas relevante al comienzo y deja lo menos relevante hasta abajo se toma algunas ideas para nuestro proyecto 
 
-* Planetagames.com.ar: por los productos que se venden, el carrucel vistoso en el inicio y un boton fijo en la pantalla para iniciar contacto por WhatsApp con los prestadores del servicio.
+- `Planetagames.com.ar:` por los productos que se venden, el carrucel vistoso en el inicio y un boton fijo en la pantalla para iniciar contacto por WhatsApp con los prestadores del servicio.
 
   
-* EA SPORT: Elegimos  como modelo esta plataforma por lo accesible y dinámica que resulta ser, como asi la interfaz muy intuitiva y que cuida mucho el aspecto visual. Ofrece catalogos de juegos muy diversas y que se encuentran en la mayoría de los casos en venta exclusiva de la plataforma. Como así también el cross que pose entre plataformas (steam, uplay,etc).
+- `EA SPORT:` Elegimos  como modelo esta plataforma por lo accesible y dinámica que resulta ser, como asi la interfaz muy intuitiva y que cuida mucho el aspecto visual. Ofrece catalogos de juegos muy diversas y que se encuentran en la mayoría de los casos en venta exclusiva de la plataforma. Como así también el cross que pose entre plataformas (steam, uplay,etc).
   
-* Steam como mi plataforma principal de juegos porque es la más grande y diversa, ofreciendo una increíble variedad de títulos para todos los gustos. Además, es la única que conozco y me encanta su interfaz ordenada. Uno de los juegos que me cautivó es "Astroneer" por su encantador diseño artístico y la mecánica de exploración y supervivencia espacial. También me fascinan los colores de cada escenario del juego.
+- `Steam:` como mi plataforma principal de juegos porque es la más grande y diversa, ofreciendo una increíble variedad de títulos para todos los gustos. Además, es la única que conozco y me encanta su interfaz ordenada. Uno de los juegos que me cautivó es "Astroneer" por su encantador diseño artístico y la mecánica de exploración y supervivencia espacial. También me fascinan los colores de cada escenario del juego.
 
-* Xbox Games: Elegimos  como modelo esta plataforma por lo accesible y rápida que resulta, además ofrece una interfaz que puede personalizarse y adaptarse de acuerdo a los gustos de cada usuario.
+- `Xbox Games:` Elegimos  como modelo esta plataforma por lo accesible y rápida que resulta, además ofrece una interfaz que puede personalizarse y adaptarse de acuerdo a los gustos de cada usuario.
 
-* EpicGames: Resalta mucho su simpleza como su elegancia en su selección de colores además de buenas animaciones que le dan cierto dinamismo y estética a la home page. Sin duda una página web para referenciarnos 
+- `EpicGames:` Resalta mucho su simpleza como su elegancia en su selección de colores además de buenas animaciones que le dan cierto dinamismo y estética a la home page. Sin duda una página web para referenciarnos 
