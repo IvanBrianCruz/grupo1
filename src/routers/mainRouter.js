@@ -35,5 +35,9 @@ router.get("/sprints", mainController.sprints);
 
 router.get("/Presentacion", mainController.presentacion);
 
+router.get("/MarioBros", mainController.marioBros);
+
+router.get("/Envios", mainController.envios);
+
 // Exportamos la variable router ya con todas las rutas "guardadas", que se usará en app.js
 module.exports = router;

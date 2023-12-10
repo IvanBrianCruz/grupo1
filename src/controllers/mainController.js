@@ -56,6 +56,17 @@ const mainController = {
         res.render( "../views/viewsFooter/presentacion")
     },
 
+    marioBros: (req, res) => {
+        // comunicarse con el modelo, conseguir información
+        res.render( "../views/viewsFooter/mariobros")
+    },
+
+    envios: (req, res) => {
+        // comunicarse con el modelo, conseguir información
+        res.render( "../views/viewsFooter/envios")
+    },
+
+
 
     
 

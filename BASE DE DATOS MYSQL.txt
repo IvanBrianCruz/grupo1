@@ -27,7 +27,6 @@ CREATE TABLE Games (
 -- Insertar usuarios en la tabla "Users"
 INSERT INTO `Users` (`first_name`, `last_name`, `email`, `password`, `image`, `category`)
 VALUES
-  ('Nahuel Alex', 'Torres', 'nahuel240701@gmail.com', '$2a$10$V4qF55MZ/jqLtsEpxpkWZuT6iwjBEc7eS173nNqWP7uQYmujcLxsy', 'usuario-1695430217997.jpg','admin' ),
   ('ivan brian', 'cruz', 'ivan4912134@gmail.com', '$2a$10$NGMTCd0PfNztwn0q.e0EfebWojp9jkunUM0q4vOJGJZAPLb3bbieS', 'usuario-1695430271329.png', 'admin'),
   ('brian', 'cruz', 'kingworldpro@gmail.com', '$2a$10$skWScEw2KMLgZo4sgziP..HPVDc1wEYCmAnrd/TrWUqYxN7wzKlKC', 'usuario-1695734895167.png','user');
 

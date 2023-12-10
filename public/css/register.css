@@ -32,7 +32,7 @@ body {
     transform: translateY(-50%);
     color: #333;
     left: 28px;
-    top: -377px;
+    top: -277px;
     filter: drop-shadow(0 0 15px red); /* Sombra personalizada */
     animation: cambioColores 5s infinite; /* Se repite infinitamente durante 5 segundos */
 }
