@@ -1,0 +1,15 @@
+Sprint N° 3: 
+   Este sprint trata sobre los Template engines. Previo al Sprint N° 3 teníamos un sitio maquetado (con su HTML y CSS). Ahora implementamos los “Template engines”: implementamos el módulo EJS y seguido de esto, volvemos a nombrar las vistas para que ahora utilicen la extensión “.ejs”. También modificamos los métodos de nuestros controladores para que ahora pasen a usar el método “render()”. Separamos las vistas que ya teníamos en una nueva carpeta teniendo en cuenta que nuestro sitio va a seguir creciendo y necesitamos ordenar los archivos. Dentro de la carpeta “views”, la carpeta “products” y la carpeta “users”.
+   Dentro de la carpeta products pondremos todas las vistas en donde incluyamos los productos que tengamos.
+   Dentro de la carpeta users pondremos todas las vistas de en donde incluyamos los usuarios que existan.
+   Actualizamos la estructura de directorios, y como ya mencionamos, los archivos de las vistas.
+   Separamos los componentes que se encuentran repetidos en archivos parciales, hacemos esto creando una carpeta llamada “partials”, dentro de la carpeta views, y allí separamos las áreas comunes de nuestro sitio.
+   Obviamente implementamos los archivos parciales en todas las páginas que correspondían.
+   Implementamos un formulario en donde el usuario administrador accede para cargar aquellos nuevos productos que decida y tambien editar los que ya existían si es que lo cree necesario. Para este formulario tomamos los siguientes datos: 
+                                                 Nombre del producto
+                                                 Descripción del producto
+                                                 Imagen del producto
+                                                 Categoría del producto
+                                                 Tipo de producto
+                                                 Precio del producto
+   Nos dividimos el entregable a través de una charla que tuvimos por meet, la cual tenemos una vez por semana para mantenernos al tanto del sprint.

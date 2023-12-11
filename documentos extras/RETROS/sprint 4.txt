@@ -1,0 +1,14 @@
+Sprint N° 4: 
+   Este sprint trata sobre los archivos JSON y los métodos HTTP. Comenzamos esta parte del trabajo integrador con los productos y usuarios ya definidos, ya que es indispensable para crear la primera versión de nuestra fuente de datos de productos y usuarios. Reiniciamos el tablero de trabajo para acomodar este sprint.
+   Pasamos a definir los campos necesarios para los usuarios y también generamos el archivo JSON. Esto deberá estar en la carpeta data con archivo “users.json” con los datos de usuarios ya generados.	
+   Creamos las rutas necesarias para implementar y crear el CRUD a continuación. Dichas rutas tienen que mantener esta estructura:
+/products (GET) (en el caso que sea un listado de productos).
+/products/create (GET) (en el caso que sea un formulario de creación de productos).
+/products/:id (GET) (en el caso que sea un detalle de un producto particular).
+/products (POST) (en el caso que sea una acción de creación (a donde se envía el formulario)).
+/products/:id/edit (GET) (en el caso que sea un formulario de edición de productos).
+/products/:id (PUT) (en el caso que sea una acción de edición (a donde se envía el formulario)).
+/products/:id (DELETE) (en el caso que sea una acción de borrado).
+   Esta sección funcional debe estar listada con: detalle de productos, alta de productos, modificación de productos y baja de productos.
+
+   Realizamos este sprint dividiéndonos las tareas por igual en todos los integrantes del equipo.

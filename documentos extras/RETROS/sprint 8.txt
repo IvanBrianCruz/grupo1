@@ -1,0 +1,5 @@
+Implementamos con éxito una API para usuarios y productos y proporcionando endpoints funcionales guiándonos bastante por las clases grabadas y el material de playground
+Agregamos funcionalidad de paginación a los endpoints de listado, mejorando la usabilidad y eficiencia del sistema.
+Logramos crear un dashboard interactivo en React que muestra de manera clara y concisa las métricas clave de nuestro negocio.
+Podríamos mejorar la gestión de errores en la API y el dashboard para proporcionar mensajes de error más informativos.
+Estamos orgullosos del proyecto realizado a través de los 8 sprints, nos ayudaron a administrar tiempos, organizarnos para realizar las actividades y nos dieron una idea de cómo es una metodología de trabajo en la industria de la programación. Aprendimos que no es necesario saber o tener todos los conocimientos desde un principio, si no que para un programador es importante saber investigar para encontrar soluciones a cualquier inconveniente que pueda surgir.

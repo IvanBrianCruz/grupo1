@@ -1,0 +1,7 @@
+Logramos implementar con éxito las validaciones en el back-end utilizando Express Validator. Esto fortalecerá la integridad de nuestra base de datos y protegerá contra posibles datos incorrectos o inválidos.
+Desarrollamos efectivamente las validaciones del front-end utilizando JavaScript. Aunque no son infalibles, mejorarán significativamente la experiencia del usuario al proporcionar una retroalimentación inmediata.
+El trabajo en equipo fue bueno. Se asignaron responsabilidades de manera eficiente, y los integrantes del equipo colaboraron para cumplir con las consignas del sprint.
+Hubo momentos en los que necesitábamos más comunicación, Implementaremos prácticas para garantizar que todos estén al tanto de los cambios en tiempo real.
+Deberíamos Iniciar la implementación de pruebas unitarias para nuestras validaciones. Esto asegurará una mayor confiabilidad y facilitará la detección temprana de posibles problemas.
+Reduciremos la procrastinación en la documentación. Documentar durante el proceso, en lugar de al final, facilitará el mantenimiento y la comprensión del código.
+Esta retrospectiva nos proporciona valiosas lecciones para el próximo sprint. Con un enfoque en la mejora continua, estamos comprometidos a fortalecer nuestro proceso de desarrollo para lograr mejores resultados.

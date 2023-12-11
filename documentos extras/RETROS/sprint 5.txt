@@ -1,0 +1,31 @@
+sprint 5
+Para iniciar el sprint 5, comenzamos por definir el alcance del trabajo a realizar. Para
+ello, creamos un tablero de tareas donde se enumeraron todas las actividades
+previstas. Una vez que el tablero estuvo completo, nos reunimos en línea mediante
+zoom para realizar una retrospectiva del sprint anterior. Durante esta reunión,
+discutimos lo que habíamos hecho bien, así como los desafíos que habíamos
+enfrentado en el sprint anterior. Con esta información, pudimos identificar los
+objetivos que queríamos alcanzar en el sprint 5.
+A continuación, comenzamos a asignar las tareas a los miembros del equipo. Para
+ello, consideramos las habilidades y experiencia de cada uno. También tomamos en
+cuenta los objetivos individuales de cada miembro. El objetivo era crear un plan de
+trabajo que fuera equitativo y desafiante para todos.
+Para empezar con las actividades que le tocaria a cada uno tuvimos en cuenta las 8
+consignas del sprint
+● Realizar un breve retrospectiva
+● Actualizar el tablero de trabajo
+● (Opcional) Implementar daily / weekly standups
+● Implementar la entidad de usuarios
+● Implementar el registro de usuarios
+● Implementar el login de usuarios
+● (Opcional) Implementar la función de recordar al usuario
+● Implementar rutas de huéspedes y de usuarios
+Finalmente, establecimos un plan para el sprint. Durante esta reunión, definimos las
+fechas de entrega de cada tarea y los hitos que debíamos alcanzar. También
+acordamos cómo nos comunicaríamos durante el sprint y una reunión final para
+controlar que todo este completo.
+Basado en en las consignas y el resumen de entregables, una ves divididas las
+actividades procedimos con la realización del sprint,
+como grupo tuvimos dificultades a la para implementar el registro de usuarios ya
+que no lográbamos hacerlo funcionar, pero trabajando en equipo logramos terminar,
+y tener completo todo lo que nos pide el resumen de entregables.

@@ -1,0 +1,36 @@
+Sprint 6
+Para iniciar el Sprint 6, el equipo se reunió para definir el alcance del trabajo a
+realizar. Para ello, se creó un tablero de tareas donde se enumeraron todas las
+actividades previstas, incluyendo las 8 consignas mencionadas en el texto original.
+Una vez que el tablero estuvo completo, se llevó a cabo una retrospectiva del Sprint
+5. Durante esta reunión, se discutió lo que había ido bien, así como los desafíos que
+se habían enfrentado. Con esta información, se identificaron los objetivos que se
+querían alcanzar en el Sprint 6.
+A continuación, se asignaron las tareas a los miembros del equipo. Para ello, se
+consideró las habilidades y experiencia de cada uno, así como los objetivos
+individuales de cada miembro. El objetivo era crear un plan de trabajo que fuera
+equitativo y desafiante para todos.
+En cuanto a las 8 consignas del Sprint, se realizaron las siguientes tareas:
+● Realizar un breve retrospectiva: El equipo se reunió para discutir lo que había
+ido bien y lo que se podía mejorar en el Sprint 5.
+● Actualizar el tablero de trabajo: El tablero de tareas se actualizó para reflejar
+el progreso del Sprint.
+● (Opcional) Implementar daily / weekly: Se implementó una reunión semanal
+para discutir el progreso y una reunión al finalizar para revisar el estado del
+Sprint.
+● Diagrama de base de datos: Se creó un diagrama de base de datos para
+representar la estructura de la base de datos.
+● Script de estructura: Se creó un script para crear la estructura de la base de
+datos.
+● (Opcional) Script de datos: Se creó un script para cargar datos en la base de
+datos.
+● Creación de carpeta Sequelize y archivos de: Se creó una carpeta Sequelize
+para almacenar los archivos de Sequelize.
+● ¡CRUD!: Se implementó la funcionalidad CRUD para las entidades de la base
+de datos.
+Al final del Sprint 6, el equipo se reunió para revisar el progreso y celebrar los
+logros. Se revisó el tablero de tareas para asegurarse de que todas las tareas se
+habían completado. También se revisó el diagrama de base de datos para
+asegurarse de que la estructura era correcta.
+En general, el Sprint 6 nos dio muchas dificultades pero el equipo completó todas
+las tareas asignadas y cumplió con los objetivos establecidos.
